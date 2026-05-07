@@ -1,0 +1,7 @@
+{
+  "permissions": {
+    "allow": [
+      "PowerShell(Get-ChildItem \"c:\\\\Proyectos\\\\hotelads\\\\src\\\\layouts\" | ForEach-Object { $_.Name })"
+    ]
+  }
+}
