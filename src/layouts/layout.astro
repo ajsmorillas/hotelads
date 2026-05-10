@@ -197,5 +197,40 @@ const { title } = Astro.props;
 				document.getElementById('menu-items')?.classList.toggle('hidden');
 			});
 		</script>
+
+		<!-- WebMCP — expone herramientas del sitio a agentes de IA -->
+		<script is:inline>
+			(function () {
+				if (!('modelContext' in navigator)) return;
+				navigator.modelContext.provideContext({
+					name: 'hotelads-plataforma',
+					tools: [
+						{
+							name: 'solicitar_demo',
+							description: 'Navega a la página de contacto para solicitar una demo de HotelAds, plataforma de optimización de ventas para hoteles independientes.',
+							inputSchema: { type: 'object', properties: {} },
+							execute: function () {
+								window.location.href = '/contacto';
+								return { success: true };
+							}
+						},
+						{
+							name: 'informacion_hotelads',
+							description: 'Devuelve información sobre HotelAds y sus servicios para hoteles independientes.',
+							inputSchema: { type: 'object', properties: {} },
+							execute: function () {
+								return {
+									nombre: 'HotelAds',
+									descripcion: 'Plataforma de optimización de ventas e infraestructura digital para hoteles independientes',
+									servicios: ['Motor de reservas directo', 'Gestión de canales OTA', 'Marketing digital hotelero', 'Revenue management'],
+									contacto: 'https://hotelads.es/contacto',
+									web: 'https://hotelads.es'
+								};
+							}
+						}
+					]
+				});
+			})();
+		</script>
 	</body>
 </html>

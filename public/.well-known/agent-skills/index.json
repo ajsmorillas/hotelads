@@ -1,0 +1,12 @@
+{
+  "$schema": "https://agentskills.io/schemas/v0.2.0/index.json",
+  "skills": [
+    {
+      "name": "solicitar-demo",
+      "type": "action",
+      "description": "Solicita una demo de la plataforma HotelAds para hoteles independientes",
+      "url": "https://hotelads.es/.well-known/agent-skills/solicitar-demo.json",
+      "sha256": "6f0def07960a2fdbaea550f07484985a819dc0149ec612d64ceff0106d2fd299"
+    }
+  ]
+}

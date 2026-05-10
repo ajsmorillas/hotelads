@@ -1,0 +1,10 @@
+{
+  "name": "solicitar-demo",
+  "type": "action",
+  "description": "Solicita una demo de la plataforma HotelAds para hoteles independientes. Incluye motor de reservas, gestión de canales OTA, marketing digital y revenue management.",
+  "endpoint": "https://hotelads.es/contacto",
+  "parameters": {
+    "hotel": { "type": "string", "description": "Nombre del establecimiento" },
+    "contacto": { "type": "string", "description": "Nombre de la persona de contacto" }
+  }
+}

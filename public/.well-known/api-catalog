@@ -1,0 +1,13 @@
+{
+  "linkset": [
+    {
+      "anchor": "https://hotelads.es",
+      "service-doc": [
+        { "href": "https://hotelads.es", "type": "text/html", "title": "HotelAds — Plataforma para hoteles" }
+      ],
+      "describedby": [
+        { "href": "https://hotelads.es/.well-known/agent-skills/index.json", "type": "application/json", "title": "Agent Skills Discovery index" }
+      ]
+    }
+  ]
+}
