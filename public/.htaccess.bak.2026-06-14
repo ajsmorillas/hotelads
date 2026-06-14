@@ -1,10 +1,16 @@
 AddDefaultCharset UTF-8
 Options -Indexes
+DirectorySlash Off
 
 <IfModule mod_rewrite.c>
   RewriteEngine On
   RewriteCond %{HTTPS} off
   RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
+
+  # Servir index.html de directorios sin añadir trailing slash
+  # (compatible con trailingSlash de Astro / evita 301 de DirectorySlash)
+  RewriteCond %{REQUEST_FILENAME} -d
+  RewriteRule ^(.+[^/])/?$ $1/index.html [L]
 </IfModule>
 
 ErrorDocument 404 /404.html
