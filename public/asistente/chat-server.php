@@ -23,6 +23,17 @@ if ($_SERVER['REQUEST_METHOD'] === 'OPTIONS') {
 
 require_once __DIR__ . '/core/bot-core.php';
 
+// Cargar .env
+$_envFile = dirname(dirname(__DIR__)) . '/.env';
+if (file_exists($_envFile)) {
+    foreach (file($_envFile, FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES) as $_line) {
+        if ($_line === '' || $_line[0] === '#' || strpos($_line, '=') === false) continue;
+        [$_k, $_v] = explode('=', $_line, 2);
+        putenv(trim($_k) . '=' . trim($_v));
+    }
+}
+unset($_envFile, $_line, $_k, $_v);
+
 // Rate limiting
 $ip      = $_SERVER['REMOTE_ADDR'] ?? 'unknown';
 $rateKey = sys_get_temp_dir() . '/rl_hotelads_' . md5($ip) . '.json';
