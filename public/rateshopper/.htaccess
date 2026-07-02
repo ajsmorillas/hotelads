@@ -7,6 +7,12 @@
 # (que ya incluye index.php) resuelve la carpeta normalmente.
 <IfModule mod_rewrite.c>
   RewriteEngine On
+  # El .htaccess padre tiene DirectorySlash Off, así que hay que forzar
+  # la barra final explícitamente para esta carpeta antes de cortar el
+  # rewrite heredado, o /rateshopper (sin barra) devuelve 403 en vez de
+  # servir index.php.
+  RewriteCond %{REQUEST_URI} ^/rateshopper$
+  RewriteRule ^ %{REQUEST_URI}/ [R=301,L]
   RewriteRule ^ - [L]
 </IfModule>
 
