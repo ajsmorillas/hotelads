@@ -49,6 +49,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
                 $r = rateshopper_consultar_serpapi(
                     $apiKey,
+                    $hotel['nombre'],
                     $hotel['property_token'],
                     $checkIn,
                     $checkOut,

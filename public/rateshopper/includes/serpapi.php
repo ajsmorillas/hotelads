@@ -4,9 +4,13 @@
  * Lanza una consulta a SerpApi (engine=google_hotels) para un hotel y fechas dadas.
  * Nunca lanza excepción: cualquier fallo se devuelve en la clave 'error' para
  * no interrumpir el resto de combinaciones hotel x fecha de la ejecución.
+ *
+ * `q` es Required por la API aunque se use property_token; se envía el nombre
+ * del hotel solo para satisfacer el requisito, property_token sigue fijando el hotel exacto.
  */
 function rateshopper_consultar_serpapi(
     string $apiKey,
+    string $hotelNombre,
     string $propertyToken,
     string $checkIn,
     string $checkOut,
@@ -24,6 +28,7 @@ function rateshopper_consultar_serpapi(
 
     $params = http_build_query([
         'engine'          => 'google_hotels',
+        'q'               => $hotelNombre, // Required por la API incluso con property_token; este último sigue fijando el hotel exacto.
         'property_token'  => $propertyToken,
         'check_in_date'   => $checkIn,
         'check_out_date'  => $checkOut,
