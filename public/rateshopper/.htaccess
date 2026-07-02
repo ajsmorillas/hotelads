@@ -3,23 +3,29 @@
 # IMPORTANTE: AuthUserFile requiere la ruta ABSOLUTA en el filesystem del servidor,
 # no una ruta relativa ni una URL. Sustituye el placeholder de abajo por la ruta real.
 #
+# El .htpasswd NO vive dentro de esta carpeta (dist/rateshopper/): esa carpeta la
+# regenera `npm run build` en cada deploy y se perdería. Vive en rateshopper-config/,
+# un directorio HERMANO de dist/ (mismo sitio que config.php, ver includes/config-loader.php),
+# que sobrevive a cualquier rebuild.
+#
 # Cómo obtener la ruta real en Plesk:
 #   1. Entra en Plesk > Dominios > hotelads.es > "Administrador de archivos" (o por SSH).
-#   2. Localiza la carpeta desplegada, normalmente:
-#        /var/www/vhosts/hotelads.es/httpdocs/dist/rateshopper/
-#      pero CONFIRMA la ruta exacta: puede variar según la config del hosting
-#      (algunos Plesk usan /var/www/vhosts/hotelads.es/httpdocs/ tal cual,
-#      otros un subdominio o "document root" distinto). Por SSH, desde la propia
-#      carpeta rateshopper ya desplegada, ejecuta `pwd` para confirmarla.
-#   3. Sustituye RUTA_ABSOLUTA_A_RELLENAR por esa ruta completa.
+#   2. Localiza la raíz del dominio, normalmente algo tipo:
+#        /var/www/vhosts/hotelads.es/httpdocs/
+#      pero CONFIRMA la ruta exacta: puede variar según la config del hosting.
+#      Por SSH, desde la carpeta rateshopper ya desplegada (dentro de dist/), ejecuta
+#      `pwd` y súbete un nivel (..) para confirmar la ruta de httpdocs/.
+#   3. La ruta final debe ser esa raíz + /rateshopper-config/.htpasswd, por ejemplo:
+#        /var/www/vhosts/hotelads.es/httpdocs/rateshopper-config/.htpasswd
+#   4. Sustituye RUTA_ABSOLUTA_A_RELLENAR por esa ruta completa.
 
 AuthType Basic
 AuthName "Rate Shopper - Acceso restringido"
-AuthUserFile /RUTA_ABSOLUTA_A_RELLENAR/.htpasswd
+AuthUserFile /RUTA_ABSOLUTA_A_RELLENAR/rateshopper-config/.htpasswd
 Require valid-user
 
-# Refuerzo: deniega el acceso directo a los archivos sensibles aunque alguien
-# adivine la URL exacta (config.php ya está fuera de git, pero por si acaso).
+# Refuerzo: deniega el acceso directo a archivos sensibles si alguno acabara
+# aquí por error (config.php/.htpasswd ya no viven en esta carpeta, pero por si acaso).
 <FilesMatch "^(config\.php|config\.example\.php|\.htpasswd|\.htaccess)$">
     Require all denied
 </FilesMatch>

@@ -1,5 +1,7 @@
 <?php
 
+require_once __DIR__ . '/config-loader.php';
+
 function rateshopper_db(): PDO
 {
     static $pdo = null;
@@ -8,7 +10,7 @@ function rateshopper_db(): PDO
         return $pdo;
     }
 
-    $config = require __DIR__ . '/../config.php';
+    $config = rateshopper_config();
     $db = $config['db'];
 
     $dsn = sprintf(

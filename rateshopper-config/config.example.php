@@ -1,6 +1,13 @@
 <?php
-// Copia este archivo como config.php y rellena los placeholders.
-// config.php NO se versiona (ver .gitignore) porque contiene credenciales reales.
+// Plantilla versionada. El archivo real (config.php) NO se versiona (ver .gitignore)
+// y vive fuera del repo Git en el servidor: un directorio hermano de dist/, es decir
+// dirname($_SERVER['DOCUMENT_ROOT']) . '/rateshopper-config/config.php'.
+// Así sobrevive a cualquier rebuild (`npm run build` limpia dist/ en cada deploy,
+// pero nunca toca esta carpeta porque está fuera del árbol que gestiona Astro).
+//
+// Despliegue: crea manualmente en el servidor la carpeta rateshopper-config/
+// (hermana de dist/, dentro de httpdocs/) y copia este archivo como config.php,
+// rellenando los placeholders reales.
 
 return [
     'db' => [

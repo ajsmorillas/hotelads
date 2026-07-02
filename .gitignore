@@ -18,8 +18,10 @@ pnpm-debug.log*
 .env.production
 
 # rateshopper: config y credenciales reales, nunca versionar
-public/rateshopper/config.php
-public/rateshopper/.htpasswd
+# (viven fuera de public/ a propósito, ver includes/config-loader.php, pero
+# se ignoran también aquí por si alguna vez se crean copias locales dentro del repo)
+rateshopper-config/config.php
+rateshopper-config/.htpasswd
 
 # macOS-specific files
 .DS_Store

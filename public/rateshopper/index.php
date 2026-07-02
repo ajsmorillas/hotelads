@@ -1,10 +1,11 @@
 <?php
 declare(strict_types=1);
 
+require_once __DIR__ . '/includes/config-loader.php';
 require_once __DIR__ . '/includes/db.php';
 require_once __DIR__ . '/includes/serpapi.php';
 
-$config  = require __DIR__ . '/config.php';
+$config  = rateshopper_config();
 $hoteles = $config['hoteles'];
 $apiKey  = $config['serpapi']['api_key'];
 
