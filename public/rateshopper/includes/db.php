@@ -34,11 +34,11 @@ function rateshopper_guardar_precio(array $fila): void
     $sql = 'INSERT INTO rateshopper_precios
         (hotel_key, hotel_nombre, propio, property_token, fecha_checkin, fecha_checkout,
          noches, adultos, precio_noche, precio_noche_sin_tasas, precio_total, moneda,
-         fuente_precio, error, raw_json)
+         fuente_precio, habitacion_nombre, desayuno_incluido, tarifa_inclusiones, error, raw_json)
         VALUES
         (:hotel_key, :hotel_nombre, :propio, :property_token, :fecha_checkin, :fecha_checkout,
          :noches, :adultos, :precio_noche, :precio_noche_sin_tasas, :precio_total, :moneda,
-         :fuente_precio, :error, :raw_json)';
+         :fuente_precio, :habitacion_nombre, :desayuno_incluido, :tarifa_inclusiones, :error, :raw_json)';
 
     $stmt = rateshopper_db()->prepare($sql);
     $stmt->execute([
@@ -55,6 +55,9 @@ function rateshopper_guardar_precio(array $fila): void
         'precio_total'           => $fila['precio_total'],
         'moneda'                 => $fila['moneda'] ?? 'EUR',
         'fuente_precio'          => $fila['fuente_precio'],
+        'habitacion_nombre'      => $fila['habitacion_nombre'] ?? null,
+        'desayuno_incluido'      => $fila['desayuno_incluido'] ?? null,
+        'tarifa_inclusiones'     => $fila['tarifa_inclusiones'] ?? null,
         'error'                  => $fila['error'],
         'raw_json'               => $fila['raw_json'],
     ]);

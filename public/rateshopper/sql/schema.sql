@@ -16,6 +16,9 @@ CREATE TABLE IF NOT EXISTS rateshopper_precios (
     precio_total DECIMAL(10,2) NULL,
     moneda VARCHAR(10) NOT NULL DEFAULT 'EUR',
     fuente_precio VARCHAR(100) NULL,
+    habitacion_nombre VARCHAR(200) NULL,
+    desayuno_incluido TINYINT(1) NULL, -- NULL = dato no disponible, no "no incluido"
+    tarifa_inclusiones VARCHAR(500) NULL,
     fecha_consulta DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
     error VARCHAR(255) NULL,
     raw_json MEDIUMTEXT NULL,

@@ -71,6 +71,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                     'precio_total'           => $r['precio_total'],
                     'moneda'                 => $r['moneda'],
                     'fuente_precio'          => $r['fuente_precio'],
+                    'habitacion_nombre'      => $r['habitacion_nombre'],
+                    'desayuno_incluido'      => $r['desayuno_incluido'],
+                    'tarifa_inclusiones'     => $r['tarifa_inclusiones'],
                     'error'                  => $r['error'],
                     'raw_json'               => $r['raw_json'],
                 ];
@@ -205,6 +208,9 @@ function e(?string $v): string
                 <th>Precio/noche sin tasas</th>
                 <th>Precio total</th>
                 <th>Fuente</th>
+                <th>Habitación</th>
+                <th>Desayuno</th>
+                <th>Inclusiones</th>
             </tr>
         </thead>
         <tbody>
@@ -212,12 +218,15 @@ function e(?string $v): string
             <tr class="<?= $fila['error'] ? 'error' : ($fila['propio'] ? 'propio' : '') ?>">
                 <td><?= e($fila['hotel_nombre']) ?></td>
                 <?php if ($fila['error']): ?>
-                    <td colspan="4">Error: <?= e($fila['error']) ?></td>
+                    <td colspan="7">Error: <?= e($fila['error']) ?></td>
                 <?php else: ?>
                     <td><?= $fila['precio_noche'] !== null ? number_format((float) $fila['precio_noche'], 2, ',', '.') . ' €' : '—' ?></td>
                     <td><?= $fila['precio_noche_sin_tasas'] !== null ? number_format((float) $fila['precio_noche_sin_tasas'], 2, ',', '.') . ' €' : '—' ?></td>
                     <td><?= $fila['precio_total'] !== null ? number_format((float) $fila['precio_total'], 2, ',', '.') . ' €' : '—' ?></td>
                     <td><?= e($fila['fuente_precio']) ?: '—' ?></td>
+                    <td><?= e($fila['habitacion_nombre']) ?: '—' ?></td>
+                    <td><?= $fila['desayuno_incluido'] === null ? '—' : ($fila['desayuno_incluido'] ? 'Sí' : 'No') ?></td>
+                    <td><?= e($fila['tarifa_inclusiones']) ?: '—' ?></td>
                 <?php endif; ?>
             </tr>
         <?php endforeach; ?>
