@@ -17,6 +17,10 @@ pnpm-debug.log*
 .env
 .env.production
 
+# rateshopper: config y credenciales reales, nunca versionar
+public/rateshopper/config.php
+public/rateshopper/.htpasswd
+
 # macOS-specific files
 .DS_Store
 

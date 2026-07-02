@@ -1,0 +1,29 @@
+# Rate Shopper - acceso restringido (herramienta interna, uso facturable vía SerpApi)
+#
+# IMPORTANTE: AuthUserFile requiere la ruta ABSOLUTA en el filesystem del servidor,
+# no una ruta relativa ni una URL. Sustituye el placeholder de abajo por la ruta real.
+#
+# Cómo obtener la ruta real en Plesk:
+#   1. Entra en Plesk > Dominios > hotelads.es > "Administrador de archivos" (o por SSH).
+#   2. Localiza la carpeta desplegada, normalmente:
+#        /var/www/vhosts/hotelads.es/httpdocs/dist/rateshopper/
+#      pero CONFIRMA la ruta exacta: puede variar según la config del hosting
+#      (algunos Plesk usan /var/www/vhosts/hotelads.es/httpdocs/ tal cual,
+#      otros un subdominio o "document root" distinto). Por SSH, desde la propia
+#      carpeta rateshopper ya desplegada, ejecuta `pwd` para confirmarla.
+#   3. Sustituye RUTA_ABSOLUTA_A_RELLENAR por esa ruta completa.
+
+AuthType Basic
+AuthName "Rate Shopper - Acceso restringido"
+AuthUserFile /RUTA_ABSOLUTA_A_RELLENAR/.htpasswd
+Require valid-user
+
+# Refuerzo: deniega el acceso directo a los archivos sensibles aunque alguien
+# adivine la URL exacta (config.php ya está fuera de git, pero por si acaso).
+<FilesMatch "^(config\.php|config\.example\.php|\.htpasswd|\.htaccess)$">
+    Require all denied
+</FilesMatch>
+
+<FilesMatch "\.sql$">
+    Require all denied
+</FilesMatch>
