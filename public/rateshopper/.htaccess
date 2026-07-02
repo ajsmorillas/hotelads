@@ -1,5 +1,15 @@
 # Rate Shopper - acceso restringido (herramienta interna, uso facturable vía SerpApi)
 #
+# Corta la herencia del rewrite de public/.htaccess (regla que reescribe cualquier
+# directorio a $1/index.html sin comprobar si existe). Esta carpeta sirve index.php,
+# no index.html, así que sin esto /rateshopper/ cae al 404 del sitio. Con "RewriteRule ^ - [L]"
+# se detiene aquí la cadena de rewrite heredada y el DirectoryIndex global de Apache
+# (que ya incluye index.php) resuelve la carpeta normalmente.
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteRule ^ - [L]
+</IfModule>
+
 # IMPORTANTE: AuthUserFile requiere la ruta ABSOLUTA en el filesystem del servidor,
 # no una ruta relativa ni una URL. Sustituye el placeholder de abajo por la ruta real.
 #
