@@ -107,7 +107,7 @@ $payload = json_encode([
     'type'              => 'template',
     'template'          => [
         'name'       => 'info_hotel',
-        'language'   => ['code' => 'es_ES'],
+        'language'   => ['code' => 'es'],
         'components' => [
             [
                 'type'       => 'body',
