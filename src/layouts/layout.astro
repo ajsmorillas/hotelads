@@ -5,23 +5,72 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 
 interface Props {
 	title: string;
+	description?: string;
+	image?: string;
+	noindex?: boolean;
 }
 
-const { title } = Astro.props;
+const {
+	title,
+	description = 'Estratega en optimización de ventas e infraestructura para hoteles independientes: gestión, motor de reservas, asesoría y marketing digital.',
+	image = '/images/engin_akyurt-bed-4416515_1920.jpg',
+	noindex = false,
+} = Astro.props;
+
+const ogImageURL = new URL(image, Astro.site);
 ---
 
 <!doctype html>
 <html lang="es">
 	<head>
 		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
 		<link rel="canonical" href={canonicalURL} />
 		<title>{title}</title>
-		<meta name="description" content="Estratega en optimización de ventas e infraestructura para hoteles" />
+		<meta name="description" content={description} />
+		{noindex && <meta name="robots" content="noindex, follow" />}
+
+		<meta property="og:type" content="website" />
+		<meta property="og:site_name" content="Hotel Ads" />
+		<meta property="og:locale" content="es_ES" />
+		<meta property="og:url" content={canonicalURL} />
+		<meta property="og:title" content={title} />
+		<meta property="og:description" content={description} />
+		<meta property="og:image" content={ogImageURL} />
+		<meta name="twitter:card" content="summary_large_image" />
+		<meta name="twitter:title" content={title} />
+		<meta name="twitter:description" content={description} />
+		<meta name="twitter:image" content={ogImageURL} />
+
+		<script type="application/ld+json" is:inline set:html={JSON.stringify({
+			"@context": "https://schema.org",
+			"@type": "ProfessionalService",
+			"name": "Hotel Ads",
+			"image": ogImageURL.toString(),
+			"url": "https://hotelads.es",
+			"telephone": "+34950131911",
+			"email": "info@hotelads.es",
+			"description": "Consultoría y estrategia de optimización de ventas e infraestructura para hoteles independientes.",
+			"address": {
+				"@type": "PostalAddress",
+				"addressLocality": "Almería",
+				"addressCountry": "ES"
+			},
+			"founder": {
+				"@type": "Person",
+				"name": "Antonio Soler"
+			},
+			"areaServed": "ES"
+		})} />
+
+		<slot name="head" />
 	</head>
 	<body class="bg-slate-50 text-slate-900 font-sans antialiased">
+		<a href="#main-content" class="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-[100] focus:bg-blue-700 focus:text-white focus:px-4 focus:py-2 focus:rounded-lg focus:font-semibold">
+			Saltar al contenido
+		</a>
 
 		<!-- Cookie consent banner -->
 		<div
@@ -75,7 +124,7 @@ const { title } = Astro.props;
 					</a>
 				</div>
 
-				<button id="menu-button" class="md:hidden p-2 text-slate-600" aria-label="Abrir menú">
+				<button id="menu-button" class="md:hidden p-2 text-slate-600" aria-label="Abrir menú" aria-expanded="false" aria-controls="menu-items">
 					<svg xmlns="http://www.w3.org/2000/svg" class="w-7 h-7" fill="none" viewBox="0 0 24 24" stroke="currentColor">
 						<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
 					</svg>
@@ -94,7 +143,7 @@ const { title } = Astro.props;
 			</div>
 		</nav>
 
-		<slot />
+		<div id="main-content"><slot /></div>
 
 		<footer class="bg-slate-900 text-slate-400 py-16 mt-20">
 			<div class="max-w-6xl mx-auto px-4">
@@ -193,8 +242,11 @@ const { title } = Astro.props;
 			}
 
 			// ── Mobile menu ───────────────────────────────────────────────────
-			document.getElementById('menu-button')?.addEventListener('click', () => {
-				document.getElementById('menu-items')?.classList.toggle('hidden');
+			const menuButton = document.getElementById('menu-button');
+			menuButton?.addEventListener('click', () => {
+				const menuItems = document.getElementById('menu-items');
+				const isHidden = menuItems?.classList.toggle('hidden');
+				menuButton.setAttribute('aria-expanded', String(!isHidden));
 			});
 		</script>
 
