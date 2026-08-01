@@ -38,6 +38,18 @@ if (file_exists($_envFile)) {
 }
 unset($_envFile, $_line, $_k, $_v);
 
+// ── Autenticación entre proyectos de la red Hotelads ────────────────────
+// Solo chatbots conocidos (hotelesarrecife.es, etc.) deben poder disparar
+// envíos reales de WhatsApp a través de este endpoint compartido.
+$sharedToken = getenv('INTERNAL_API_TOKEN') ?: '';
+$givenToken  = (string) ($_SERVER['HTTP_X_INTERNAL_TOKEN'] ?? '');
+if ($sharedToken === '' || $givenToken === '' || !hash_equals($sharedToken, $givenToken)) {
+    ob_end_clean();
+    http_response_code(401);
+    echo json_encode(['success' => false, 'error' => 'No autorizado']);
+    exit;
+}
+
 function sw_log(string $mensaje): void
 {
     $log_dir = dirname(__DIR__) . '/chat-log';
@@ -71,6 +83,19 @@ if ($phone === '' || $nombre === '' || $hotel === '' || $info === '' || $phone_n
     http_response_code(400);
     echo json_encode(['success' => false, 'error' => 'Faltan datos obligatorios']);
     sw_log("ERROR | Datos incompletos | phone='{$phone}' nombre='{$nombre}' hotel='{$hotel}' phone_number_id='{$phone_number_id}'");
+    exit;
+}
+
+// Whitelist de phone_number_id conocidos de la red Hotelads — no confiar en
+// cualquier ID que envíe el llamante, aunque ya esté autenticado por token.
+$allowed_phone_number_ids = [
+    '1109730118900166', // hotelesarrecife.es
+];
+if (!in_array($phone_number_id, $allowed_phone_number_ids, true)) {
+    ob_end_clean();
+    http_response_code(403);
+    echo json_encode(['success' => false, 'error' => 'phone_number_id no autorizado']);
+    sw_log("ERROR | phone_number_id no autorizado | '{$phone_number_id}'");
     exit;
 }
 

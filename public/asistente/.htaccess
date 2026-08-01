@@ -1,0 +1,12 @@
+# Bloquear acceso directo a las instrucciones del system prompt (y a
+# cualquier variante instrucciones_*.txt, en esta carpeta o subcarpetas
+# de hoteles/) — no deben poder leerse por HTTP directo.
+<FilesMatch "^instrucciones">
+    <IfModule mod_authz_core.c>
+        Require all denied
+    </IfModule>
+    <IfModule !mod_authz_core.c>
+        Order Allow,Deny
+        Deny from all
+    </IfModule>
+</FilesMatch>

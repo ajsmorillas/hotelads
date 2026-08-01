@@ -2,6 +2,17 @@ AddDefaultCharset UTF-8
 Options -Indexes
 DirectorySlash Off
 
+# ── Proteger archivos sensibles ──────────────────────────────
+<FilesMatch "(^\.htaccess.*|^\.htpasswd$|^\.env.*|^web\.config$|\.bak$|\.bak\..*$|\.sql$|\.orig$)">
+  <IfModule mod_authz_core.c>
+    Require all denied
+  </IfModule>
+  <IfModule !mod_authz_core.c>
+    Order allow,deny
+    Deny from all
+  </IfModule>
+</FilesMatch>
+
 <IfModule mod_rewrite.c>
   RewriteEngine On
   RewriteCond %{HTTPS} off
