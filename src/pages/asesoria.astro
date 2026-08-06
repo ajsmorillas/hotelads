@@ -3,72 +3,361 @@ import Layout from '../layouts/layout.astro';
 ---
 
 <Layout
-  title="Asesoría Hotelera | Optimización de Ventas | Hotel Ads"
-  description="Asesoría hotelera personalizada: análisis de canales, control de OTAs y pricing dinámico para maximizar el beneficio neto de tu hotel."
+  title="Asesoría Hotelera Estratégica | Canales, OTAs y Pricing | Hotel Ads"
+  description="Asesoría hotelera personalizada: análisis de canales, control de OTAs y pricing dinámico para maximizar el beneficio neto de tu hotel. Auditoría gratuita."
   image="/images/3534679-bedroom-3475656_640.jpg"
 >
   <main>
-    <header class="bg-white border-b border-slate-200 py-16 md:py-24">
-      <div class="max-w-4xl mx-auto px-4 text-center">
-        <span class="text-blue-600 font-bold tracking-widest uppercase text-sm">Estrategia y Rentabilidad</span>
-        <h1 class="mt-4 text-4xl md:text-5xl font-extrabold text-slate-900 tracking-tight">
-          Asesoría Hotelera Personalizada
-        </h1>
-        <p class="mt-6 text-xl text-slate-600 leading-relaxed">
-          Analizo tu distribución de ventas para llevar las reservas allí donde tu hotel las necesita, eliminando comisiones innecesarias y maximizando el beneficio neto.
-        </p>
+    <!-- HERO -->
+    <header class="relative py-20 md:py-28 bg-slate-900 text-white overflow-hidden">
+      <div class="absolute top-0 left-0 w-full h-full opacity-10 pointer-events-none">
+        <div class="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(59,130,246,0.5),transparent_70%)]"></div>
+      </div>
+
+      <div class="max-w-6xl mx-auto px-4 relative z-10">
+        <div class="text-center max-w-3xl mx-auto">
+          <span class="bg-blue-600/20 text-blue-400 px-4 py-1 rounded-full text-sm font-bold uppercase tracking-wider border border-blue-500/30">
+            Dosier de servicios · 2026
+          </span>
+          <h1 class="mt-6 text-4xl md:text-6xl font-extrabold tracking-tight">
+            Asesoría Hotelera <br/><span class="text-blue-500">Estratégica</span>
+          </h1>
+          <p class="mt-8 text-xl text-slate-300 leading-relaxed">
+            Análisis de distribución, control de OTAs y pricing dinámico para llevar las reservas allí donde tu hotel las necesita: a tu cuenta de resultados.
+          </p>
+          <div class="mt-10">
+            <a href="https://calendar.app.google/ouMpShqMGVHmtUJU7" target="_blank" rel="noopener noreferrer" class="bg-blue-600 text-white px-10 py-4 rounded-xl font-bold text-lg hover:bg-blue-500 transition-all shadow-xl shadow-blue-900/40 inline-block">
+              Auditoría gratuita de tu hotel
+            </a>
+          </div>
+        </div>
+
+        <div class="mt-16 grid sm:grid-cols-3 gap-8 border-t border-slate-800 pt-10 max-w-4xl mx-auto text-center sm:text-left">
+          <div>
+            <div class="text-blue-400 text-xs font-bold uppercase tracking-widest mb-2">Canales</div>
+            <p class="text-slate-400 text-sm">Menos dependencia de OTAs, más peso del directo</p>
+          </div>
+          <div>
+            <div class="text-blue-400 text-xs font-bold uppercase tracking-widest mb-2">Precio</div>
+            <p class="text-slate-400 text-sm">Pricing dinámico con datos reales de competencia</p>
+          </div>
+          <div>
+            <div class="text-blue-400 text-xs font-bold uppercase tracking-widest mb-2">Procesos</div>
+            <p class="text-slate-400 text-sm">Rutinas que tu equipo puede sostener a diario</p>
+          </div>
+        </div>
       </div>
     </header>
 
-    <section class="py-20 bg-slate-50">
+    <!-- EL PROBLEMA -->
+    <section class="py-20 md:py-24 bg-white">
       <div class="max-w-6xl mx-auto px-4">
-        <div class="grid md:grid-cols-2 gap-12 items-center">
-          <div>
-            <h2 class="text-3xl font-bold text-slate-900 mb-6">Optimización de Procesos de Venta y Distribución</h2>
-            <div class="space-y-6">
-              <div class="flex gap-4">
-                <div class="flex-shrink-0 w-6 h-6 text-blue-600 mt-1">
-                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" />
-                  </svg>
-                </div>
-                <p class="text-slate-700"><strong>Análisis de Canales:</strong> Mejora de procesos internos de ventas directas y canales intermediarios.</p>
-              </div>
-              <div class="flex gap-4">
-                <div class="flex-shrink-0 w-6 h-6 text-blue-600 mt-1">
-                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" />
-                  </svg>
-                </div>
-                <p class="text-slate-700"><strong>Control de OTAs y GDS:</strong> Optimización de la presencia en plataformas externas para evitar la dependencia excesiva.</p>
-              </div>
-              <div class="flex gap-4">
-                <div class="flex-shrink-0 w-6 h-6 text-blue-600 mt-1">
-                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" />
-                  </svg>
-                </div>
-                <p class="text-slate-700"><strong>Pricing Dinámico:</strong> Maximización de rentabilidad mediante análisis de precios y estudios profundos de la competencia.</p>
-              </div>
+        <span class="text-blue-600 font-bold tracking-widest uppercase text-sm">01 · El punto de partida</span>
+        <h2 class="mt-4 text-3xl md:text-4xl font-bold text-slate-900 leading-tight">
+          El problema no es vender más. <br/><span class="text-blue-700">Es vender mejor.</span>
+        </h2>
+        <p class="mt-6 text-lg text-slate-600 leading-relaxed max-w-2xl">
+          La mayoría de hoteles que analizamos no tienen un problema de ocupación: tienen un problema de <strong class="text-slate-900">mix de canales, precio y proceso</strong>. Se vende, sí, pero cada reserva deja menos margen del que debería.
+        </p>
+
+        <div class="mt-12 grid md:grid-cols-2 gap-6">
+          <div class="p-8 border-t-4 border-blue-600 bg-slate-50 rounded-b-xl">
+            <div class="text-xs font-bold uppercase tracking-widest text-slate-400 mb-2">Síntoma 01</div>
+            <h3 class="text-lg font-bold text-slate-900 mb-2">Dependencia excesiva de OTAs</h3>
+            <p class="text-slate-600 text-sm leading-relaxed">El canal intermediado crece cada temporada y el directo se estanca. La comisión deja de ser una herramienta de captación y pasa a ser un coste fijo estructural.</p>
+          </div>
+          <div class="p-8 border-t-4 border-blue-600 bg-slate-50 rounded-b-xl">
+            <div class="text-xs font-bold uppercase tracking-widest text-slate-400 mb-2">Síntoma 02</div>
+            <h3 class="text-lg font-bold text-slate-900 mb-2">Precio estático en un mercado dinámico</h3>
+            <p class="text-slate-600 text-sm leading-relaxed">Tarifas cargadas al inicio de temporada y apenas revisadas. Se vende barato cuando hay demanda y caro cuando no la hay, sin datos de competencia que lo corrijan.</p>
+          </div>
+          <div class="p-8 border-t-4 border-blue-600 bg-slate-50 rounded-b-xl">
+            <div class="text-xs font-bold uppercase tracking-widest text-slate-400 mb-2">Síntoma 03</div>
+            <h3 class="text-lg font-bold text-slate-900 mb-2">Venta directa infrautilizada</h3>
+            <p class="text-slate-600 text-sm leading-relaxed">Web con tráfico, motor con fugas: fricción en el proceso de reserva, paridad mal gestionada y ninguna razón clara para que el cliente reserve en tu web y no en la OTA.</p>
+          </div>
+          <div class="p-8 border-t-4 border-blue-600 bg-slate-50 rounded-b-xl">
+            <div class="text-xs font-bold uppercase tracking-widest text-slate-400 mb-2">Síntoma 04</div>
+            <h3 class="text-lg font-bold text-slate-900 mb-2">Procesos manuales y decisiones a ciegas</h3>
+            <p class="text-slate-600 text-sm leading-relaxed">Carga de tarifas repetida canal a canal, sin cuadro de mando ni trazabilidad. El equipo dedica horas a tareas que deberían estar automatizadas.</p>
+          </div>
+        </div>
+
+        <div class="mt-10 bg-slate-900 text-white rounded-2xl p-8 md:p-10">
+          <h3 class="text-xl font-bold mb-3">La consecuencia es siempre la misma</h3>
+          <p class="text-slate-300 leading-relaxed">
+            Dos hoteles con la <span class="text-blue-400 font-semibold">misma ocupación y el mismo ADR</span> pueden tener beneficios netos muy distintos. La diferencia no está en cuánto venden, sino en <span class="text-blue-400 font-semibold">a través de qué canal, a qué precio y con qué coste de adquisición</span>. Ahí es exactamente donde trabaja esta asesoría.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- LOS TRES PILARES -->
+    <section class="py-20 md:py-24 bg-slate-50 border-t border-slate-100">
+      <div class="max-w-6xl mx-auto px-4">
+        <span class="text-blue-600 font-bold tracking-widest uppercase text-sm">02 · El servicio</span>
+        <h2 class="mt-4 text-3xl md:text-4xl font-bold text-slate-900">Asesoría Hotelera <span class="text-blue-700">Personalizada</span></h2>
+        <p class="mt-6 text-lg text-slate-600 leading-relaxed max-w-2xl">
+          No es un informe genérico ni una plantilla. Analizamos tu distribución de ventas real y diseñamos un plan de acción sobre tres pilares, con responsables, plazos y métricas.
+        </p>
+
+        <div class="mt-14 space-y-10">
+          <div class="flex flex-col md:flex-row gap-6 md:gap-10">
+            <div class="flex-shrink-0 text-5xl md:text-6xl font-extrabold text-blue-100 md:w-20">01</div>
+            <div class="flex-1 md:border-l md:border-slate-200 md:pl-10">
+              <h3 class="text-xl font-bold text-slate-900 mb-1">Análisis de canales</h3>
+              <p class="text-slate-500 text-sm mb-4">Mejora de los procesos internos de venta directa y de los canales intermediarios.</p>
+              <ul class="space-y-2">
+                <li class="flex gap-3 text-slate-700 text-sm"><span class="text-blue-600 font-bold">—</span>Radiografía del mix de canales: volumen, ADR, estancia media y coste real de adquisición por canal.</li>
+                <li class="flex gap-3 text-slate-700 text-sm"><span class="text-blue-600 font-bold">—</span>Detección de fugas en el embudo de venta directa, desde la web hasta la confirmación.</li>
+                <li class="flex gap-3 text-slate-700 text-sm"><span class="text-blue-600 font-bold">—</span>Revisión de los procesos internos de reservas: teléfono, email, WhatsApp y mostrador.</li>
+                <li class="flex gap-3 text-slate-700 text-sm"><span class="text-blue-600 font-bold">—</span>Definición del mix objetivo y de la ruta para alcanzarlo sin perder ocupación.</li>
+              </ul>
             </div>
           </div>
-          
-          <div class="bg-blue-700 rounded-3xl p-8 md:p-12 text-white shadow-xl shadow-blue-200">
-  <h3 class="text-2xl font-bold mb-4">¿Hablamos de tu estrategia?</h3>
-  <p class="text-blue-100 mb-8 text-lg">
-    Ofrezco un enfoque personalizado, orientado a resultados y adaptado a las necesidades específicas de cada hotel.
-  </p>
-  
-  <div class="flex"> <a 
-      href="https://calendar.app.google/ouMpShqMGVHmtUJU7" 
-      target="_blank" 
-      rel="noopener noreferrer"
-      class="inline-flex items-center justify-center bg-white text-blue-700 font-bold px-8 py-4 rounded-xl hover:bg-blue-50 transition-all shadow-sm hover:scale-105 active:scale-95 text-center"
-    >
-      Agendar Auditoría Gratuita
-    </a>
-  </div>
-</div>
+
+          <div class="flex flex-col md:flex-row gap-6 md:gap-10">
+            <div class="flex-shrink-0 text-5xl md:text-6xl font-extrabold text-blue-100 md:w-20">02</div>
+            <div class="flex-1 md:border-l md:border-slate-200 md:pl-10">
+              <h3 class="text-xl font-bold text-slate-900 mb-1">Control de OTAs y GDS</h3>
+              <p class="text-slate-500 text-sm mb-4">Optimización de la presencia en plataformas externas para evitar la dependencia excesiva.</p>
+              <ul class="space-y-2">
+                <li class="flex gap-3 text-slate-700 text-sm"><span class="text-blue-600 font-bold">—</span>Auditoría de fichas, contenido, puntuación y posicionamiento en las principales OTAs.</li>
+                <li class="flex gap-3 text-slate-700 text-sm"><span class="text-blue-600 font-bold">—</span>Revisión de condiciones, comisiones y programas de visibilidad: qué aporta margen y qué solo lo consume.</li>
+                <li class="flex gap-3 text-slate-700 text-sm"><span class="text-blue-600 font-bold">—</span>Gestión de la paridad y de las ventajas exclusivas del canal directo.</li>
+                <li class="flex gap-3 text-slate-700 text-sm"><span class="text-blue-600 font-bold">—</span>Estrategia de conectividad y presencia en GDS cuando el segmento corporativo lo justifica.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="flex flex-col md:flex-row gap-6 md:gap-10">
+            <div class="flex-shrink-0 text-5xl md:text-6xl font-extrabold text-blue-100 md:w-20">03</div>
+            <div class="flex-1 md:border-l md:border-slate-200 md:pl-10">
+              <h3 class="text-xl font-bold text-slate-900 mb-1">Pricing dinámico</h3>
+              <p class="text-slate-500 text-sm mb-4">Maximización de la rentabilidad mediante análisis de precios y estudios profundos de la competencia.</p>
+              <ul class="space-y-2">
+                <li class="flex gap-3 text-slate-700 text-sm"><span class="text-blue-600 font-bold">—</span>Estudio del set competitivo real y seguimiento continuo de sus tarifas.</li>
+                <li class="flex gap-3 text-slate-700 text-sm"><span class="text-blue-600 font-bold">—</span>Estructura de tarifas, restricciones y planes: simplificar para poder mover el precio con agilidad.</li>
+                <li class="flex gap-3 text-slate-700 text-sm"><span class="text-blue-600 font-bold">—</span>Calendario de demanda, eventos y temporadas aplicado a la estrategia de precio.</li>
+                <li class="flex gap-3 text-slate-700 text-sm"><span class="text-blue-600 font-bold">—</span>Reglas de pricing automatizables y rutina de revisión que el equipo pueda mantener.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="mt-14 bg-slate-900 text-white rounded-2xl p-8 md:p-10">
+          <h3 class="text-xl font-bold mb-3">Los tres pilares se trabajan juntos</h3>
+          <p class="text-slate-300 leading-relaxed">
+            Bajar comisiones sin tocar el precio deja ocupación por el camino. Subir precio sin ordenar los canales solo empuja al cliente a la OTA. <span class="text-blue-400 font-semibold">El resultado aparece cuando canal, precio y proceso se mueven en la misma dirección.</span>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- METODOLOGÍA -->
+    <section class="py-20 md:py-24 bg-white border-t border-slate-100">
+      <div class="max-w-6xl mx-auto px-4">
+        <span class="text-blue-600 font-bold tracking-widest uppercase text-sm">03 · Cómo trabajamos</span>
+        <h2 class="mt-4 text-3xl md:text-4xl font-bold text-slate-900">Un método en <span class="text-blue-700">cuatro fases</span></h2>
+        <p class="mt-6 text-lg text-slate-600 leading-relaxed max-w-2xl">
+          Del diagnóstico al resultado medible. Cada fase tiene entregable propio: en ningún momento pagas por un análisis que no se traduzca en acciones concretas.
+        </p>
+
+        <div class="mt-12 divide-y divide-slate-200">
+          <div class="flex flex-col md:flex-row md:items-start gap-2 md:gap-8 py-6">
+            <div class="md:w-32 flex-shrink-0 text-xs font-bold uppercase tracking-widest text-blue-600">Fase 01</div>
+            <div class="md:w-48 flex-shrink-0 text-lg font-bold text-slate-900">Diagnóstico</div>
+            <p class="text-slate-600 text-sm leading-relaxed">Analizamos datos de producción, mix de canales, tarifario, set competitivo y procesos internos. Entregable: informe de situación con las oportunidades cuantificadas y priorizadas por impacto.</p>
+          </div>
+          <div class="flex flex-col md:flex-row md:items-start gap-2 md:gap-8 py-6">
+            <div class="md:w-32 flex-shrink-0 text-xs font-bold uppercase tracking-widest text-blue-600">Fase 02</div>
+            <div class="md:w-48 flex-shrink-0 text-lg font-bold text-slate-900">Estrategia</div>
+            <p class="text-slate-600 text-sm leading-relaxed">Definimos el mix objetivo, la estructura tarifaria, la política de paridad y el posicionamiento por canal. Entregable: plan de distribución y pricing con calendario de aplicación.</p>
+          </div>
+          <div class="flex flex-col md:flex-row md:items-start gap-2 md:gap-8 py-6">
+            <div class="md:w-32 flex-shrink-0 text-xs font-bold uppercase tracking-widest text-blue-600">Fase 03</div>
+            <div class="md:w-48 flex-shrink-0 text-lg font-bold text-slate-900">Implementación</div>
+            <p class="text-slate-600 text-sm leading-relaxed">Acompañamos la ejecución: carga de tarifas, ajustes en channel manager y motor, fichas de OTAs y formación del equipo. Trabajamos con tu tecnología actual o proponemos alternativas si la limita.</p>
+          </div>
+          <div class="flex flex-col md:flex-row md:items-start gap-2 md:gap-8 py-6">
+            <div class="md:w-32 flex-shrink-0 text-xs font-bold uppercase tracking-widest text-blue-600">Fase 04</div>
+            <div class="md:w-48 flex-shrink-0 text-lg font-bold text-slate-900">Seguimiento</div>
+            <p class="text-slate-600 text-sm leading-relaxed">Revisión periódica con cuadro de mando: evolución del directo, ADR, RevPAR y coste de adquisición. Ajustamos lo que no funciona y consolidamos lo que sí.</p>
+          </div>
+        </div>
+
+        <h3 class="mt-16 text-xl font-bold text-slate-900 mb-6">Sobre qué se mide el resultado</h3>
+        <div class="grid sm:grid-cols-2 md:grid-cols-4 gap-4">
+          <div class="bg-slate-50 rounded-xl p-6 text-center">
+            <div class="text-xs font-bold uppercase tracking-widest text-blue-600 mb-2">Cuota directa</div>
+            <p class="text-sm text-slate-600">Porcentaje de reservas y de ingreso que entra sin comisión</p>
+          </div>
+          <div class="bg-slate-50 rounded-xl p-6 text-center">
+            <div class="text-xs font-bold uppercase tracking-widest text-blue-600 mb-2">Coste de adquisición</div>
+            <p class="text-sm text-slate-600">Lo que cuesta traer cada reserva, canal a canal</p>
+          </div>
+          <div class="bg-slate-50 rounded-xl p-6 text-center">
+            <div class="text-xs font-bold uppercase tracking-widest text-blue-600 mb-2">ADR y RevPAR</div>
+            <p class="text-sm text-slate-600">Precio medio e ingreso por habitación disponible</p>
+          </div>
+          <div class="bg-slate-50 rounded-xl p-6 text-center">
+            <div class="text-xs font-bold uppercase tracking-widest text-blue-600 mb-2">Beneficio neto</div>
+            <p class="text-sm text-slate-600">El único indicador que importa al final del ejercicio</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PARA QUIÉN -->
+    <section class="py-20 md:py-24 bg-slate-50 border-t border-slate-100">
+      <div class="max-w-6xl mx-auto px-4">
+        <span class="text-blue-600 font-bold tracking-widest uppercase text-sm">04 · Encaje</span>
+        <h2 class="mt-4 text-3xl md:text-4xl font-bold text-slate-900">Para quién está <span class="text-blue-700">pensado</span></h2>
+        <p class="mt-6 text-lg text-slate-600 leading-relaxed max-w-2xl">
+          El método es el mismo; la profundidad y el interlocutor cambian según la estructura del establecimiento.
+        </p>
+
+        <div class="mt-12 grid md:grid-cols-2 gap-6">
+          <div class="bg-white border border-slate-200 rounded-2xl p-8">
+            <div class="text-xs font-bold uppercase tracking-widest text-blue-600 mb-2">Perfil A</div>
+            <h3 class="text-lg font-bold text-slate-900 mb-4">Hotel independiente</h3>
+            <ul class="space-y-2">
+              <li class="flex gap-3 text-slate-700 text-sm"><span class="text-blue-600 font-bold">—</span>Dirección o propiedad asume también el revenue y la distribución.</li>
+              <li class="flex gap-3 text-slate-700 text-sm"><span class="text-blue-600 font-bold">—</span>Necesita criterio experto sin incorporar un departamento completo.</li>
+              <li class="flex gap-3 text-slate-700 text-sm"><span class="text-blue-600 font-bold">—</span>Busca reducir comisiones sin arriesgar la ocupación.</li>
+              <li class="flex gap-3 text-slate-700 text-sm"><span class="text-blue-600 font-bold">—</span>Quiere procesos que el equipo actual pueda sostener en el día a día.</li>
+            </ul>
+          </div>
+          <div class="bg-white border border-slate-200 rounded-2xl p-8">
+            <div class="text-xs font-bold uppercase tracking-widest text-blue-600 mb-2">Perfil B</div>
+            <h3 class="text-lg font-bold text-slate-900 mb-4">Cadena o grupo</h3>
+            <ul class="space-y-2">
+              <li class="flex gap-3 text-slate-700 text-sm"><span class="text-blue-600 font-bold">—</span>Varios establecimientos con criterios de precio y canal desalineados.</li>
+              <li class="flex gap-3 text-slate-700 text-sm"><span class="text-blue-600 font-bold">—</span>Necesita una capa de estrategia común y comparabilidad entre hoteles.</li>
+              <li class="flex gap-3 text-slate-700 text-sm"><span class="text-blue-600 font-bold">—</span>Busca una visión externa que audite lo que el equipo interno ya hace.</li>
+              <li class="flex gap-3 text-slate-700 text-sm"><span class="text-blue-600 font-bold">—</span>Quiere estandarizar procesos y cuadro de mando entre propiedades.</li>
+            </ul>
+          </div>
+        </div>
+
+        <h3 class="mt-16 text-xl font-bold text-slate-900 mb-6">Qué recibes</h3>
+        <div class="grid sm:grid-cols-3 gap-6">
+          <div class="p-6 border border-slate-100 rounded-2xl bg-white hover:shadow-lg transition-all">
+            <h4 class="font-bold text-slate-900 mb-2">Informe de diagnóstico</h4>
+            <p class="text-slate-600 text-sm">Situación real de canales, precio y procesos, con oportunidades cuantificadas.</p>
+          </div>
+          <div class="p-6 border border-slate-100 rounded-2xl bg-white hover:shadow-lg transition-all">
+            <h4 class="font-bold text-slate-900 mb-2">Plan de acción</h4>
+            <p class="text-slate-600 text-sm">Acciones priorizadas con responsable, plazo e impacto esperado.</p>
+          </div>
+          <div class="p-6 border border-slate-100 rounded-2xl bg-white hover:shadow-lg transition-all">
+            <h4 class="font-bold text-slate-900 mb-2">Cuadro de mando</h4>
+            <p class="text-slate-600 text-sm">Los indicadores que hay que mirar cada semana, y solo esos.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- AUDITORÍA GRATUITA -->
+    <section class="py-20 md:py-24 bg-white border-t border-slate-100">
+      <div class="max-w-6xl mx-auto px-4">
+        <span class="text-blue-600 font-bold tracking-widest uppercase text-sm">05 · Primer paso</span>
+        <h2 class="mt-4 text-3xl md:text-4xl font-bold text-slate-900">Auditoría gratuita <span class="text-blue-700">de tu hotel</span></h2>
+        <p class="mt-6 text-lg text-slate-600 leading-relaxed max-w-2xl">
+          Antes de proponer nada, miramos tu hotel. Una sesión de análisis sin coste y sin compromiso en la que revisamos tu situación real y te decimos con franqueza dónde está el margen que estás dejando escapar.
+        </p>
+
+        <div class="mt-12 grid md:grid-cols-2 gap-6">
+          <div class="bg-slate-50 rounded-2xl p-8">
+            <div class="text-xs font-bold uppercase tracking-widest text-blue-600 mb-4">Qué incluye</div>
+            <ul class="space-y-2">
+              <li class="flex gap-3 text-slate-700 text-sm"><span class="text-blue-600 font-bold">—</span>Revisión de tu presencia y posicionamiento en las principales OTAs.</li>
+              <li class="flex gap-3 text-slate-700 text-sm"><span class="text-blue-600 font-bold">—</span>Comparativa rápida de precios frente a tu set competitivo.</li>
+              <li class="flex gap-3 text-slate-700 text-sm"><span class="text-blue-600 font-bold">—</span>Análisis del recorrido de reserva en tu web y motor actual.</li>
+              <li class="flex gap-3 text-slate-700 text-sm"><span class="text-blue-600 font-bold">—</span>Identificación de las tres oportunidades de mayor impacto inmediato.</li>
+            </ul>
+          </div>
+          <div class="bg-slate-50 rounded-2xl p-8">
+            <div class="text-xs font-bold uppercase tracking-widest text-blue-600 mb-4">Cómo funciona</div>
+            <ul class="space-y-2">
+              <li class="flex gap-3 text-slate-700 text-sm"><span class="text-blue-600 font-bold">—</span>Duración aproximada: 45 minutos, por videollamada o presencial.</li>
+              <li class="flex gap-3 text-slate-700 text-sm"><span class="text-blue-600 font-bold">—</span>Solo necesitamos tu web, tus canales activos y, si es posible, un extracto de producción por canal.</li>
+              <li class="flex gap-3 text-slate-700 text-sm"><span class="text-blue-600 font-bold">—</span>Recibes conclusiones por escrito tras la sesión.</li>
+              <li class="flex gap-3 text-slate-700 text-sm"><span class="text-blue-600 font-bold">—</span>Sin coste, sin compromiso y sin permanencia posterior.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="mt-10 bg-slate-900 rounded-2xl p-8 md:p-12 text-white">
+          <h3 class="text-2xl font-bold mb-4">Agenda tu auditoría</h3>
+          <p class="text-slate-300 mb-8 text-lg max-w-xl">
+            Elige el hueco que mejor te venga en el calendario. En menos de un minuto queda reservado.
+          </p>
+          <a href="https://calendar.app.google/ouMpShqMGVHmtUJU7" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center bg-blue-600 text-white font-bold px-8 py-4 rounded-xl hover:bg-blue-500 transition-all shadow-lg shadow-blue-900/40 hover:scale-105 active:scale-95">
+            Agendar auditoría gratuita
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- OTROS SERVICIOS -->
+    <section class="py-20 md:py-24 bg-slate-50 border-t border-slate-100">
+      <div class="max-w-6xl mx-auto px-4">
+        <span class="text-blue-600 font-bold tracking-widest uppercase text-sm">06 · El resto de la casa</span>
+        <h2 class="mt-4 text-3xl md:text-4xl font-bold text-slate-900">Otros servicios de <span class="text-blue-700">HotelAds</span></h2>
+        <p class="mt-6 text-lg text-slate-600 leading-relaxed max-w-2xl">
+          La asesoría funciona con la tecnología que ya tienes. Si en algún punto esa tecnología es el cuello de botella, estos son los servicios que podemos poner sobre la mesa.
+        </p>
+
+        <div class="mt-12 divide-y divide-slate-200">
+          <a href="/gestion" class="flex flex-col md:flex-row md:items-start gap-2 md:gap-8 py-6 group">
+            <div class="md:w-12 flex-shrink-0 text-blue-600 font-bold">01</div>
+            <div class="flex-1">
+              <h3 class="text-lg font-bold text-slate-900 mb-1 group-hover:text-blue-700 transition-colors">Gestión Integral</h3>
+              <p class="text-slate-600 text-sm leading-relaxed">Software todo en uno: PMS de recepción, channel manager con sincronización automática de inventario y precios, motor integrado y app móvil para controlar el hotel desde cualquier lugar.</p>
+            </div>
+          </a>
+          <a href="/motor" class="flex flex-col md:flex-row md:items-start gap-2 md:gap-8 py-6 group">
+            <div class="md:w-12 flex-shrink-0 text-blue-600 font-bold">02</div>
+            <div class="flex-1">
+              <h3 class="text-lg font-bold text-slate-900 mb-1 group-hover:text-blue-700 transition-colors">Motor de Reservas · 0% de comisión</h3>
+              <p class="text-slate-600 text-sm leading-relaxed">Cuota fija mensual independientemente de cuánto vendas, proceso de reserva en tres pasos optimizado para móvil y sin contratos de permanencia. Integrado con Google Hotel Ads, Meta Ads y los principales comparadores.</p>
+            </div>
+          </a>
+          <a href="/asistente-ai" class="flex flex-col md:flex-row md:items-start gap-2 md:gap-8 py-6 group">
+            <div class="md:w-12 flex-shrink-0 text-blue-600 font-bold">03</div>
+            <div class="flex-1">
+              <h3 class="text-lg font-bold text-slate-900 mb-1 group-hover:text-blue-700 transition-colors">Asistente IA · «Antonio»</h3>
+              <p class="text-slate-600 text-sm leading-relaxed">Una misma inteligencia atendiendo el chat de tu web, WhatsApp y también el teléfono, en varios idiomas y 24/7. Detecta intención de reserva, abre el motor con fechas y pax ya seleccionados y propone alternativas cuando no hay disponibilidad.</p>
+            </div>
+          </a>
+        </div>
+
+        <div class="mt-10 bg-slate-900 text-white rounded-2xl p-8 md:p-10">
+          <h3 class="text-xl font-bold mb-3">Se puede empezar por donde tenga sentido</h3>
+          <p class="text-slate-300 leading-relaxed">
+            Cada servicio funciona por separado. Pero cuando la estrategia, el motor, el channel manager y la atención al cliente hablan el mismo idioma, <span class="text-blue-400 font-semibold">el efecto sobre el directo se multiplica</span>.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CIERRE -->
+    <section class="py-24 md:py-32 bg-slate-900 text-white text-center">
+      <div class="max-w-2xl mx-auto px-4">
+        <h2 class="text-3xl md:text-5xl font-extrabold leading-tight">
+          Empecemos por <br/><span class="text-blue-500">mirar tu hotel</span>.
+        </h2>
+        <p class="mt-8 text-xl text-slate-300 leading-relaxed">
+          Sin coste, sin compromiso y sin presentación comercial. Cuarenta y cinco minutos para saber dónde está el margen que hoy se te escapa.
+        </p>
+        <div class="mt-10">
+          <a href="https://calendar.app.google/ouMpShqMGVHmtUJU7" target="_blank" rel="noopener noreferrer" class="bg-blue-600 text-white px-10 py-4 rounded-xl font-bold text-lg hover:bg-blue-500 transition-all shadow-xl shadow-blue-900/40 inline-block">
+            Agendar auditoría gratuita
+          </a>
+        </div>
+        <div class="mt-10 pt-8 border-t border-slate-800 text-sm text-slate-400 space-y-1">
+          <p>info@hotelads.es · 693 75 24 24</p>
         </div>
       </div>
     </section>
