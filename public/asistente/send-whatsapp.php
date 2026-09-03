@@ -6,10 +6,19 @@ error_reporting(0);
 ob_start();
 
 /**
- * Envía la plantilla WhatsApp "info_hotel" a un cliente con la disponibilidad
- * consultada en el chatbot. Multi-tenant: cualquier chatbot de la red Hotelads
- * (hotelesarrecife.es, etc.) llama a este endpoint pasando su propio
- * phone_number_id; el WA_ACCESS_TOKEN es el de la WABA de Hotelads.
+ * Envía una plantilla WhatsApp aprobada por Meta. Multi-tenant: cualquier
+ * chatbot de la red Hotelads (hotelesarrecife.es, etc.) llama a este
+ * endpoint pasando su propio phone_number_id; el WA_ACCESS_TOKEN es el de la
+ * WABA de Hotelads.
+ *
+ * Dos plantillas soportadas (parámetro opcional 'template', por defecto
+ * "info_hotel" para no romper llamadas existentes):
+ * - "info_hotel": disponibilidad/precio para el CLIENTE (comportamiento
+ *   histórico, sin cambios).
+ * - "aviso_de_cliente": aviso al EQUIPO del hotel de una petición de
+ *   contacto humano (hotelesarrecife.es §3 ESCALADO A HUMANO) — requiere
+ *   además 'customer_phone', el teléfono del cliente para que el equipo
+ *   pueda devolverle la llamada.
  */
 
 $allowed_origins = ['https://hotelesarrecife.es', 'https://hotelads.es'];
@@ -77,12 +86,31 @@ $nombre          = trim((string) ($input['nombre'] ?? ''));
 $hotel           = trim((string) ($input['hotel'] ?? ''));
 $info            = trim((string) ($input['info'] ?? ''));
 $phone_number_id = trim((string) ($input['phone_number_id'] ?? ''));
+$template        = trim((string) ($input['template'] ?? 'info_hotel'));
+$customer_phone  = trim((string) ($input['customer_phone'] ?? ''));
+
+$allowed_templates = ['info_hotel', 'aviso_de_cliente'];
+if (!in_array($template, $allowed_templates, true)) {
+    ob_end_clean();
+    http_response_code(400);
+    echo json_encode(['success' => false, 'error' => 'Plantilla no soportada']);
+    sw_log("ERROR | Plantilla no soportada | template='{$template}'");
+    exit;
+}
 
 if ($phone === '' || $nombre === '' || $hotel === '' || $info === '' || $phone_number_id === '') {
     ob_end_clean();
     http_response_code(400);
     echo json_encode(['success' => false, 'error' => 'Faltan datos obligatorios']);
     sw_log("ERROR | Datos incompletos | phone='{$phone}' nombre='{$nombre}' hotel='{$hotel}' phone_number_id='{$phone_number_id}'");
+    exit;
+}
+
+if ($template === 'aviso_de_cliente' && $customer_phone === '') {
+    ob_end_clean();
+    http_response_code(400);
+    echo json_encode(['success' => false, 'error' => 'Falta customer_phone para aviso_de_cliente']);
+    sw_log("ERROR | Falta customer_phone | template='{$template}' phone='{$phone}'");
     exit;
 }
 
@@ -124,25 +152,42 @@ $param1 = mb_substr($toAscii($nombre), 0, 60);
 $param2 = mb_substr($toAscii($hotel), 0, 60);
 $param3 = mb_substr($toAscii($info), 0, 600);
 
-sw_log("SENDING | nombre='{$param1}' hotel='{$param2}' phone='{$phone}' info='" . substr($param3, 0, 80) . "'");
+if ($template === 'aviso_de_cliente') {
+    $param_phone = mb_substr($toAscii($customer_phone), 0, 30);
+    sw_log("SENDING | template=aviso_de_cliente nombre='{$param1}' customer_phone='{$param_phone}' target='{$param2}' phone='{$phone}' resumen='" . substr($param3, 0, 80) . "'");
+    $template_components = [
+        [
+            'type'       => 'body',
+            'parameters' => [
+                ['type' => 'text', 'parameter_name' => 'customer_name',    'text' => $param1],
+                ['type' => 'text', 'parameter_name' => 'customer_phone',   'text' => $param_phone],
+                ['type' => 'text', 'parameter_name' => 'target_label',     'text' => $param2],
+                ['type' => 'text', 'parameter_name' => 'request_summary',  'text' => $param3],
+            ],
+        ],
+    ];
+} else {
+    sw_log("SENDING | template=info_hotel nombre='{$param1}' hotel='{$param2}' phone='{$phone}' info='" . substr($param3, 0, 80) . "'");
+    $template_components = [
+        [
+            'type'       => 'body',
+            'parameters' => [
+                ['type' => 'text', 'parameter_name' => 'customer_name', 'text' => $param1],
+                ['type' => 'text', 'parameter_name' => 'hotel_name',    'text' => $param2],
+                ['type' => 'text', 'parameter_name' => 'booking_info',  'text' => $param3],
+            ],
+        ],
+    ];
+}
 
 $payload = json_encode([
     'messaging_product' => 'whatsapp',
     'to'                => $phone,
     'type'              => 'template',
     'template'          => [
-        'name'       => 'info_hotel',
+        'name'       => $template,
         'language'   => ['code' => 'es'],
-        'components' => [
-            [
-                'type'       => 'body',
-                'parameters' => [
-                    ['type' => 'text', 'parameter_name' => 'customer_name', 'text' => $param1],
-                    ['type' => 'text', 'parameter_name' => 'hotel_name',    'text' => $param2],
-                    ['type' => 'text', 'parameter_name' => 'booking_info',  'text' => $param3],
-                ],
-            ],
-        ],
+        'components' => $template_components,
     ],
 ], JSON_UNESCAPED_UNICODE);
 
@@ -172,6 +217,6 @@ if ($raw === false || $code < 200 || $code >= 300) {
     exit;
 }
 
-sw_log("OK | {$nombre} ({$phone}) <- {$hotel} vía {$phone_number_id}");
+sw_log("OK | template={$template} | {$nombre} ({$phone}) <- {$hotel} vía {$phone_number_id}");
 
 echo json_encode(['success' => true]);
