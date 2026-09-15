@@ -1,0 +1,228 @@
+{
+"type":
+"hotel",
+"name":
+"Hotel Naturaleza Rodalquilar & Spa Cabo de Gata",
+"description":
+"Hotel de estilo desenfadado con habitaciones acogedoras, piscina exterior, spa, bar y restaurante.",
+"link":
+"http://www.hotelrodalquilar.com/",
+"property_token":
+"ChgIwayUhtTyrLt6GgwvZy8xaGMxMmNyMWwQAQ",
+"serpapi_property_details_link":
+"https://serpapi.com/search.json?adults=2&check_in_date=2026-09-09&check_out_date=2026-09-10&children=0&currency=EUR&engine=google_hotels&gl=es&hl=es&property_token=ChgIwayUhtTyrLt6GgwvZy8xaGMxMmNyMWwQAQ&q=El+Dorado+San+Jos%C3%A9",
+"gps_coordinates":
+{
+"latitude":
+36.8502528,
+"longitude":
+-2.0309532999999997
+},
+"check_in_time":
+"14:00",
+"rate_per_night":
+{
+"lowest":
+"89 €",
+"extracted_lowest":
+89,
+"before_taxes_fees":
+"80 €",
+"extracted_before_taxes_fees":
+80
+},
+"total_rate":
+{
+"lowest":
+"89 €",
+"extracted_lowest":
+89,
+"before_taxes_fees":
+"80 €",
+"extracted_before_taxes_fees":
+80
+},
+"nearby_places":
+[
+{
+"name":
+"El Playazo de Rodalquilar",
+"transportations":
+[
+{
+"type":
+"Taxi",
+"duration":
+"6 min"
+}
+]
+},
+{
+"name":
+"Hortichuelas Campohermoso",
+"transportations":
+[
+{
+"type":
+"Taxi",
+"duration":
+"7 min"
+}
+]
+},
+{
+"name":
+"Aeropuerto de Almería",
+"transportations":
+[
+{
+"type":
+"Taxi",
+"duration":
+"39 min"
+},
+{
+"type":
+"Public transport",
+"duration":
+"6 h 39 min"
+}
+]
+},
+{
+"name":
+"Hotel Oro Y Luz",
+"transportations":
+[
+{
+"type":
+"Walking",
+"duration":
+"2 min"
+}
+]
+}
+],
+"hotel_class":
+"Hotel de 4 estrellas",
+"extracted_hotel_class":
+4,
+"images":
+[
+{
+"thumbnail":
+"https://lh3.googleusercontent.com/gps-cs-s/APNQkAHRzSnaV4yckcAyG1WsX8-dQ_8j0WY3mBsbi8GqtSbPPRL88hIOcEPE4l5KvqOub7Ui7F4PyqEF7-yIFNnwg-X70LNihEQOxzas1IBSpXDs9WZ867ObAGnoYQO-cOK_4cjkXCE=s287-w287-h192-n-k-no-v1",
+"original_image":
+"https://lh3.googleusercontent.com/gps-cs-s/APNQkAHRzSnaV4yckcAyG1WsX8-dQ_8j0WY3mBsbi8GqtSbPPRL88hIOcEPE4l5KvqOub7Ui7F4PyqEF7-yIFNnwg-X70LNihEQOxzas1IBSpXDs9WZ867ObAGnoYQO-cOK_4cjkXCE=s10000"
+},
+{
+"thumbnail":
+"https://lh3.googleusercontent.com/gps-cs-s/APNQkAHaLrr73PNMGwTojAhxSRlMo5ibTDhymzYArcwfkJ2mKKmzfxFQlHvMwNEH49PUtAge3ksFDmF1Tuk2JGvxpIFvjhGKMBkhk-d5Pi4l1pmJNlL68jTTpMcRuP23EgjYMJbiNLMa=s287-w287-h192-n-k-no-v1",
+"original_image":
+"https://lh3.googleusercontent.com/gps-cs-s/APNQkAHaLrr73PNMGwTojAhxSRlMo5ibTDhymzYArcwfkJ2mKKmzfxFQlHvMwNEH49PUtAge3ksFDmF1Tuk2JGvxpIFvjhGKMBkhk-d5Pi4l1pmJNlL68jTTpMcRuP23EgjYMJbiNLMa=s10000"
+},
+{
+"thumbnail":
+"https://lh3.googleusercontent.com/gps-cs-s/APNQkAEWuoppRJmFgyelt5rNwTJ1FinH9wldm_9EMqQiPMyN-g-Nz1ks-mAidM-avCmd3oWIwcRvHZuwef3Sf41v532odT9mNiR0V-wxkGLjShlHylGiEtbxuKgDI87A9u2EZY0tl6ClUMNFvWTo=s287-w287-h192-n-k-no-v1",
+"original_image":
+"https://lh3.googleusercontent.com/gps-cs-s/APNQkAEWuoppRJmFgyelt5rNwTJ1FinH9wldm_9EMqQiPMyN-g-Nz1ks-mAidM-avCmd3oWIwcRvHZuwef3Sf41v532odT9mNiR0V-wxkGLjShlHylGiEtbxuKgDI87A9u2EZY0tl6ClUMNFvWTo=s10000"
+},
+{
+"thumbnail":
+"https://lh3.googleusercontent.com/gps-cs-s/APNQkAFB0fDgUA-OY86MismUsDhtE1EaNdWgLy1ttKUsX89u73-wr_cR1yjpkhnm3Hb-Bx5cw2VHCU_sHLyqXJnmVwc02_WcdDbmzReFEhd3HOalnSlQDKAEvMW3WbmLIepusuz6IYs=s287-w287-h192-n-k-no-v1",
+"original_image":
+"https://lh3.googleusercontent.com/gps-cs-s/APNQkAFB0fDgUA-OY86MismUsDhtE1EaNdWgLy1ttKUsX89u73-wr_cR1yjpkhnm3Hb-Bx5cw2VHCU_sHLyqXJnmVwc02_WcdDbmzReFEhd3HOalnSlQDKAEvMW3WbmLIepusuz6IYs=s10000"
+},
+{
+"thumbnail":
+"https://lh3.googleusercontent.com/gps-cs-s/APNQkAHkA0zjJsQEXdMZ8_TPpTgl3l0CgiLsrNZNjW2aLVA9Qs07UQ0O-oUuyRwrQoXNuv9S526cznzthNaETrNtArHB-OSvLEXTStU5UB36TbOxDCW1qxv0r9gpTKNOvmf7SAcAdYU8Yg=s287-w287-h192-n-k-no-v1",
+"original_image":
+"https://lh3.googleusercontent.com/gps-cs-s/APNQkAHkA0zjJsQEXdMZ8_TPpTgl3l0CgiLsrNZNjW2aLVA9Qs07UQ0O-oUuyRwrQoXNuv9S526cznzthNaETrNtArHB-OSvLEXTStU5UB36TbOxDCW1qxv0r9gpTKNOvmf7SAcAdYU8Yg=s10000"
+},
+{
+"thumbnail":
+"https://lh3.googleusercontent.com/gps-cs-s/APNQkAGdCs-5DKq5B4cLOKQNLjiUljzf3Lw0LipVWCALO122rujT0GnY4TQ6MkXHlAOaZBV6VkiUaxgVUcNPUx4yeXKF3OaA_3zk8fkWGKAB6xQ7Vw3YYNvf52ZFhY3setfwxaD6MQzM=s287-w287-h192-n-k-no-v1",
+"original_image":
+"https://lh3.googleusercontent.com/gps-cs-s/APNQkAGdCs-5DKq5B4cLOKQNLjiUljzf3Lw0LipVWCALO122rujT0GnY4TQ6MkXHlAOaZBV6VkiUaxgVUcNPUx4yeXKF3OaA_3zk8fkWGKAB6xQ7Vw3YYNvf52ZFhY3setfwxaD6MQzM=s10000"
+},
+{
+"thumbnail":
+"https://lh3.googleusercontent.com/gps-cs-s/APNQkAGYmc3G9h9nBSenru0VWtBzvFP4gvgiqa5Jw0j6M6SoJ6u_MO4gn6HRie7PfMPNNvBvN0caWu5r1U03Nv32eSeC41zIQ1lS-Gl8cijRVpWVCv5WQlBFqd8A92j3DPvah9hMy2Ny=s287-w287-h192-n-k-no-v1",
+"original_image":
+"https://lh3.googleusercontent.com/gps-cs-s/APNQkAGYmc3G9h9nBSenru0VWtBzvFP4gvgiqa5Jw0j6M6SoJ6u_MO4gn6HRie7PfMPNNvBvN0caWu5r1U03Nv32eSeC41zIQ1lS-Gl8cijRVpWVCv5WQlBFqd8A92j3DPvah9hMy2Ny=s10000"
+},
+{
+"thumbnail":
+"https://lh3.googleusercontent.com/gps-cs-s/APNQkAHaNPNmoptkq50d-DSUoiQvcg5lPESKEe4-OJKoqa2HG3kzHHeVGxqzZf02oRMoMMyP95xczSo0imaK6MXVdP2MeGLBkAxE-OTIEzjM4_zBFNlOKFlkn71a91yHzpHt84XyV6e6Q7gOrJY=s287-w287-h192-n-k-no-v1",
+"original_image":
+"https://lh3.googleusercontent.com/gps-cs-s/APNQkAHaNPNmoptkq50d-DSUoiQvcg5lPESKEe4-OJKoqa2HG3kzHHeVGxqzZf02oRMoMMyP95xczSo0imaK6MXVdP2MeGLBkAxE-OTIEzjM4_zBFNlOKFlkn71a91yHzpHt84XyV6e6Q7gOrJY=s10000"
+},
+{
+"thumbnail":
+"https://lh3.googleusercontent.com/gps-cs-s/APNQkAH_DFOnwXuI-jS6ScEGrtqMMMRET1PZ1TpGJIuM_xXvn6ombtDDwJxkE-N6cxX79FPJ_SEFAyWZ8OEQ3PjQfUnyQE0YLBqoe3gZO-1gv7HdgaaWKvfZ04yXsQ_87g5qZYZXYbLU=s287-w287-h192-n-k-no-v1",
+"original_image":
+"https://lh3.googleusercontent.com/gps-cs-s/APNQkAH_DFOnwXuI-jS6ScEGrtqMMMRET1PZ1TpGJIuM_xXvn6ombtDDwJxkE-N6cxX79FPJ_SEFAyWZ8OEQ3PjQfUnyQE0YLBqoe3gZO-1gv7HdgaaWKvfZ04yXsQ_87g5qZYZXYbLU=s10000"
+}
+],
+"overall_rating":
+4.4,
+"reviews":
+1062,
+"ratings":
+[
+{
+"stars":
+5,
+"count":
+643
+},
+{
+"stars":
+4,
+"count":
+307
+},
+{
+"stars":
+3,
+"count":
+75
+},
+{
+"stars":
+2,
+"count":
+16
+},
+{
+"stars":
+1,
+"count":
+21
+}
+],
+"location_rating":
+3.6,
+"amenities":
+[
+"Breakfast",
+"Free Wi-Fi",
+"Free parking",
+"Outdoor pool",
+"Hot tub",
+"Air conditioning",
+"Pet-friendly",
+"Spa",
+"Bar",
+"Restaurant",
+"Room service",
+"Airport shuttle",
+"Full-service laundry",
+"Accessible",
+"Kid-friendly"
+],
+"serpapi_google_hotels_reviews_link":
+"https://serpapi.com/search.json?engine=google_hotels_reviews&hl=en&property_token=ChgIwayUhtTyrLt6GgwvZy8xaGMxMmNyMWwQAQ",
+"serpapi_google_hotels_photos_link":
+"https://serpapi.com/search.json?engine=google_hotels_photos&property_token=ChgIwayUhtTyrLt6GgwvZy8xaGMxMmNyMWwQAQ"
+},

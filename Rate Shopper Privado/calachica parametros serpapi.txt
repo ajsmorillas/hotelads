@@ -1,0 +1,2807 @@
+# Calachica Las Negras Hotel Boutique
+
+{
+"search_metadata":
+{
+"id":
+"6a461707d3fb858d03864bd9",
+"status":
+"Success",
+"json_endpoint":
+"https://serpapi.com/searches/Aad7l1apxBWOyjXJGR2JaQ/6a461707d3fb858d03864bd9.json",
+"created_at":
+"2026-07-02T07:45:11.220Z",
+"processed_at":
+"2026-07-02T07:45:11.232Z",
+"google_hotels_url":
+"https://www.google.com/travel/search?q=Calachica+las+negras&hl=es&gl=es",
+"raw_html_file":
+"https://serpapi.com/searches/Aad7l1apxBWOyjXJGR2JaQ/6a461707d3fb858d03864bd9.html",
+"prettify_html_file":
+"https://serpapi.com/searches/Aad7l1apxBWOyjXJGR2JaQ/6a461707d3fb858d03864bd9.prettify",
+"total_time_taken":
+{
+"float":
+1.2945556640625
+}
+},
+"search_parameters":
+{
+"engine":
+"google_hotels",
+"q":
+"Calachica las negras",
+"gl":
+"es",
+"hl":
+"es",
+"currency":
+"EUR",
+"check_in_date":
+"2026-09-09",
+"check_out_date":
+"2026-09-10",
+"adults":
+2,
+"children":
+0
+},
+"search_information":
+{
+"hotels_results_state":
+"Showing results for property details"
+},
+"ads":
+[
+{
+"name":
+"Hotel Senderos",
+"source":
+"Booking.com",
+"source_icon":
+"https://www.gstatic.com/travel-hotels/branding/icon_184.png",
+"link":
+"https://www.google.com/aclk?sa=l&ai=DChsSEwjq0brnv7OVAxWcMwgFHU47HRcYACICCAEQCRoCbWQ&co=1&ase=2&gclid=EAIaIQobChMI6tG657-zlQMVnDMIBR1OOx0XECQYASABEgK4C_D_BwE&cid=CAASuwHkaHnUPYWrXTSGXgDb5kEZFhUM9hI4fyk3ELsiRZsI99YDxtWPCVH9qO8VOlD-BxWMa331U27W4Si1_WyCVYrz9LsFUxvbRc5v51EbUhs6N0FaCRW7yiThvITcrOCU-OHikdmLpwP8SAZspNE8N1IZOznDmQL84iVtzirpl9OXKEJoA_0UGYhaRofkbM7iGlr4JVb3ifEGpQ_j_qDi8XTCa4nH_dyJO69mOUFa_88KJ1FqdaQjHwFwnST2&category=acrcp_v1_48&sig=AOD64_2G3Trtjmtb6YDcValFF-dPmbPSCg&adurl=",
+"property_token":
+"CgoIztnPg-LZjO5pEAE",
+"serpapi_property_details_link":
+"https://serpapi.com/search.json?adults=2&check_in_date=2026-09-09&check_out_date=2026-09-10&children=0&currency=EUR&engine=google_hotels&gl=es&hl=es&property_token=CgoIztnPg-LZjO5pEAE&q=Calachica+las+negras",
+"gps_coordinates":
+{
+"latitude":
+36.940894,
+"longitude":
+-1.9346859999999997
+},
+"hotel_class":
+3,
+"overall_rating":
+4.7,
+"reviews":
+404,
+"price":
+"149 €",
+"extracted_price":
+149,
+"amenities":
+[
+"Pool",
+"Free parking",
+"Parking",
+"Free Wi-Fi",
+"Outdoor pool",
+"Free breakfast",
+"Horseback riding"
+],
+"free_cancellation":
+true
+},
+{
+"name":
+"Logis Hotel Cortijo Los Malenos",
+"source":
+"Booking.com",
+"source_icon":
+"https://www.gstatic.com/travel-hotels/branding/icon_184.png",
+"link":
+"https://www.google.com/aclk?sa=l&ai=DChsSEwjq0brnv7OVAxWcMwgFHU47HRcYACICCAEQBxoCbWQ&co=1&ase=2&gclid=EAIaIQobChMI6tG657-zlQMVnDMIBR1OOx0XECQYAiABEgJTYPD_BwE&cid=CAASuwHkaHnUPYWrXTSGXgDb5kEZFhUM9hI4fyk3ELsiRZsI99YDxtWPCVH9qO8VOlD-BxWMa331U27W4Si1_WyCVYrz9LsFUxvbRc5v51EbUhs6N0FaCRW7yiThvITcrOCU-OHikdmLpwP8SAZspNE8N1IZOznDmQL84iVtzirpl9OXKEJoA_0UGYhaRofkbM7iGlr4JVb3ifEGpQ_j_qDi8XTCa4nH_dyJO69mOUFa_88KJ1FqdaQjHwFwnST2&category=acrcp_v1_48&sig=AOD64_1A4bvszJjB5XxjZ8ZnfAXpLRaSBA&adurl=",
+"property_token":
+"CgsIvZCz-vLMjY6aARAB",
+"serpapi_property_details_link":
+"https://serpapi.com/search.json?adults=2&check_in_date=2026-09-09&check_out_date=2026-09-10&children=0&currency=EUR&engine=google_hotels&gl=es&hl=es&property_token=CgsIvZCz-vLMjY6aARAB&q=Calachica+las+negras",
+"gps_coordinates":
+{
+"latitude":
+36.954518,
+"longitude":
+-1.979051
+},
+"hotel_class":
+3,
+"overall_rating":
+4.7,
+"reviews":
+208,
+"price":
+"185 €",
+"extracted_price":
+185,
+"amenities":
+[
+"Pool",
+"Pet-friendly",
+"Free parking",
+"Parking",
+"Free Wi-Fi",
+"Outdoor pool",
+"Free breakfast"
+],
+"free_cancellation":
+true
+},
+{
+"name":
+"Calachica Las Negras Hotel Boutique",
+"source":
+"Expedia.com",
+"source_icon":
+"https://www.gstatic.com/travel-hotels/branding/ac238c97-1652-4830-8da8-bb8d8883af88.png",
+"link":
+"https://www.google.com/aclk?sa=l&ai=DChsSEwjq0brnv7OVAxWcMwgFHU47HRcYACICCAEQAxoCbWQ&co=1&ase=2&gclid=EAIaIQobChMI6tG657-zlQMVnDMIBR1OOx0XECQYAyABEgKmA_D_BwE&cid=CAASuwHkaHnUPYWrXTSGXgDb5kEZFhUM9hI4fyk3ELsiRZsI99YDxtWPCVH9qO8VOlD-BxWMa331U27W4Si1_WyCVYrz9LsFUxvbRc5v51EbUhs6N0FaCRW7yiThvITcrOCU-OHikdmLpwP8SAZspNE8N1IZOznDmQL84iVtzirpl9OXKEJoA_0UGYhaRofkbM7iGlr4JVb3ifEGpQ_j_qDi8XTCa4nH_dyJO69mOUFa_88KJ1FqdaQjHwFwnST2&category=acrcp_v1_48&sig=AOD64_0mTxsfKcg_IRVYKorjHH8i3TSFiw&adurl=",
+"property_token":
+"CgoI8MvLwduHlupDEAE",
+"serpapi_property_details_link":
+"https://serpapi.com/search.json?adults=2&check_in_date=2026-09-09&check_out_date=2026-09-10&children=0&currency=EUR&engine=google_hotels&gl=es&hl=es&property_token=CgoI8MvLwduHlupDEAE&q=Calachica+las+negras",
+"gps_coordinates":
+{
+"latitude":
+36.880326,
+"longitude":
+-2.006138
+},
+"hotel_class":
+3,
+"overall_rating":
+4.4,
+"reviews":
+418,
+"price":
+"130 €",
+"extracted_price":
+130,
+"amenities":
+[
+"Pool",
+"Pet-friendly",
+"Free Wi-Fi",
+"Outdoor pool",
+"Free breakfast"
+]
+},
+{
+"name":
+"Hotel Naturaleza Rodalquilar & Spa Cabo de Gata",
+"source":
+"Booking.com",
+"source_icon":
+"https://www.gstatic.com/travel-hotels/branding/icon_184.png",
+"link":
+"https://www.google.com/aclk?sa=l&ai=DChsSEwjq0brnv7OVAxWcMwgFHU47HRcYACICCAEQBRoCbWQ&co=1&ase=2&gclid=EAIaIQobChMI6tG657-zlQMVnDMIBR1OOx0XECQYBCABEgJ7cvD_BwE&cid=CAASuwHkaHnUPYWrXTSGXgDb5kEZFhUM9hI4fyk3ELsiRZsI99YDxtWPCVH9qO8VOlD-BxWMa331U27W4Si1_WyCVYrz9LsFUxvbRc5v51EbUhs6N0FaCRW7yiThvITcrOCU-OHikdmLpwP8SAZspNE8N1IZOznDmQL84iVtzirpl9OXKEJoA_0UGYhaRofkbM7iGlr4JVb3ifEGpQ_j_qDi8XTCa4nH_dyJO69mOUFa_88KJ1FqdaQjHwFwnST2&category=acrcp_v1_48&sig=AOD64_1KWbrneeQR47cMBsMKaKDEnc9KCQ&adurl=",
+"property_token":
+"CgoIwayUhtTyrLt6EAE",
+"serpapi_property_details_link":
+"https://serpapi.com/search.json?adults=2&check_in_date=2026-09-09&check_out_date=2026-09-10&children=0&currency=EUR&engine=google_hotels&gl=es&hl=es&property_token=CgoIwayUhtTyrLt6EAE&q=Calachica+las+negras",
+"gps_coordinates":
+{
+"latitude":
+36.850252999999995,
+"longitude":
+-2.030953
+},
+"hotel_class":
+4,
+"overall_rating":
+4.4,
+"reviews":
+1061,
+"price":
+"100 €",
+"extracted_price":
+100,
+"amenities":
+[
+"Hot tub",
+"Spa",
+"Pool",
+"Pet-friendly",
+"Free parking",
+"Parking",
+"Free Wi-Fi",
+"Outdoor pool"
+]
+},
+{
+"name":
+"Equilicuá Hotel Riad",
+"source":
+"Agoda",
+"source_icon":
+"https://www.gstatic.com/travel-hotels/branding/b13642de-d476-41bd-8254-3edc2e567aa6.png",
+"link":
+"https://www.google.com/aclk?sa=l&ai=DChsSEwjq0brnv7OVAxWcMwgFHU47HRcYACICCAEQARoCbWQ&co=1&ase=2&gclid=EAIaIQobChMI6tG657-zlQMVnDMIBR1OOx0XECQYBSABEgI_XPD_BwE&cid=CAASuwHkaHnUPYWrXTSGXgDb5kEZFhUM9hI4fyk3ELsiRZsI99YDxtWPCVH9qO8VOlD-BxWMa331U27W4Si1_WyCVYrz9LsFUxvbRc5v51EbUhs6N0FaCRW7yiThvITcrOCU-OHikdmLpwP8SAZspNE8N1IZOznDmQL84iVtzirpl9OXKEJoA_0UGYhaRofkbM7iGlr4JVb3ifEGpQ_j_qDi8XTCa4nH_dyJO69mOUFa_88KJ1FqdaQjHwFwnST2&category=acrcp_v1_48&sig=AOD64_0tMejxKH29BQN1d4Ci5Rt3R2wH7Q&adurl=",
+"property_token":
+"CgoIuIimnP6IlYcsEAE",
+"serpapi_property_details_link":
+"https://serpapi.com/search.json?adults=2&check_in_date=2026-09-09&check_out_date=2026-09-10&children=0&currency=EUR&engine=google_hotels&gl=es&hl=es&property_token=CgoIuIimnP6IlYcsEAE&q=Calachica+las+negras",
+"gps_coordinates":
+{
+"latitude":
+36.946583,
+"longitude":
+-1.9263579999999998
+},
+"overall_rating":
+5,
+"reviews":
+223,
+"price":
+"164 €",
+"extracted_price":
+164,
+"amenities":
+[
+"Pool",
+"Free parking",
+"Parking",
+"Free Wi-Fi",
+"Wi-Fi",
+"Outdoor pool",
+"Free breakfast"
+],
+"free_cancellation":
+true
+}
+],
+"type":
+"hotel",
+"name":
+"Calachica Las Negras Hotel Boutique",
+"link":
+"https://hotelesarrecife.es/calachica/?utm_source=maps&utm_medium=google&utm_campaign=organic_maps&utm_id=organic&utm_content=calachica",
+"property_token":
+"ChcI8MvLwduHlupDGgsvZy8xdHBfN3JoYxAB",
+"serpapi_property_details_link":
+"https://serpapi.com/search.json?adults=2&check_in_date=2026-09-09&check_out_date=2026-09-10&children=0&currency=EUR&engine=google_hotels&gl=es&hl=es&property_token=ChcI8MvLwduHlupDGgsvZy8xdHBfN3JoYxAB&q=Calachica+las+negras",
+"address":
+"C. Hélice, 1, 04116 Las Negras, Almería, España",
+"directions":
+"https://maps.google.com/maps?hl=es&gl=ZZ&um=1&ie=UTF-8&fb=1&sa=X&geocode=KZVx3h2T6HoNMfDlMrg9WNRD&daddr=Calachica+Las+Negras+Hotel+Boutique,+C.+H%C3%A9lice,+1,+04116+Las+Negras,+Almer%C3%ADa,+Espa%C3%B1a",
+"phone":
+"+34 950 80 40 94",
+"phone_link":
+"tel:+34950804094",
+"gps_coordinates":
+{
+"latitude":
+36.8803257,
+"longitude":
+-2.0061378999999997
+},
+"check_in_time":
+"15:00",
+"check_out_time":
+"12:00",
+"rate_per_night":
+{
+"lowest":
+"EUR 143",
+"extracted_lowest":
+143,
+"before_taxes_fees":
+"EUR 130",
+"extracted_before_taxes_fees":
+130
+},
+"total_rate":
+{
+"lowest":
+"EUR 143",
+"extracted_lowest":
+143,
+"before_taxes_fees":
+"EUR 130",
+"extracted_before_taxes_fees":
+130
+},
+"featured_prices":
+[
+{
+"source":
+"Booking.com",
+"link":
+"https://www.google.com/aclk?sa=l&ai=DChsSEwjkxrfnv7OVAxUYm1oFHYVeC0oYACICCAEQARoCdnU&co=1&ase=2&gclid=EAIaIQobChMI5Ma357-zlQMVGJtaBR2FXgtKEAoYASABEgJlWPD_BwE&cid=CAASuwHkaFzBThR9zUpUGQUoVnS2_6T7S7e3nqnuZBrZWHRCWGcouAgXAaHfAR3L5YUzCkT397cQiE1hAt_TuaoaJ3Rq0GHh4MD40KIIojNVyCBmNX8W9iRwzTcR11Rya7i3zLdruNNgsx33AbpitFsbTQHM4XK2zDNG3udBgkYCu8eFLAfuX0fyAUy97sLtE4q7_EHtDhhHSjVivcwBM60LNz-7rpux9RDKNAAlgCM0ks9nFqxwqVIdvGC2npgL&category=acrcp_v1_48&sig=AOD64_2hvwwcgN19qAEd9Kjwfv-DufCzdA&adurl",
+"logo":
+"https://www.gstatic.com/travel-hotels/branding/icon_184.png",
+"rooms":
+[
+{
+"name":
+"Habitación Doble con balcón ",
+"images":
+[
+"https://lh3.googleusercontent.com/hrppk/ANjXD_zqt_X_1A6BeZ3CtQfBtty4EC8jGzixwVDvPnzs3kLHl6Lz5qma1Vyz6qG4K4NrdxELFVSPbwlj6L_KylepqqP65F5y1j8lpuMDy-EyDzlohRoFrNDt1a4QzQcjmgfwknXYvBNljiUdw5J16SJG1jUF32PsUlETuFNuXcFHhVH9TB0J70dKxR_B_FtRyibzFuPxoPGLA1Y_xeTOaCk4onGTzNXUFsQjEP8",
+"https://lh3.googleusercontent.com/hrppk/ANjXD_xLFwPIFnSqSbAD9VjcFm_a1sUOI2pLHkeRTmHAS6UFe9swLeQVFFEdn38uDVfypNMwt5i1c46BSMsiyLyi7KdyEV0DTWYSDOBTgNbJBKiNlgIxIykGaMPSxuEU7Rr5kYtzX_3CPinSyeJ0LM7Qjcq2xLHokNcW1TDuRujiciEST12Rs0xweKOjZIxvvCVopuACTAAD60k2frLAsgfssyCRK28FDuWk6Q",
+"https://lh3.googleusercontent.com/hrppk/ANjXD_zm4Rx6fXq6JnHadhHHdGrd6xT7VgQrvvK1433E8wq7_tteRApfv87qYxK1jDPsUgDhmp6RCkWKB1CoJ7Rs_ntCObTjKbxhoIH4ZYqqP_Rb_217jvLeD2gpflBkvHwOJbuHM_LSb5EPLlEOKSjnzg_2kfbyLFizpRFPEHyIkPB1ELVrScIFoaLpJARtbsZrcnfgWzoAF1Ls7pDaQNO88NbLSk-vrzhaKyg",
+"https://lh3.googleusercontent.com/hrppk/ANjXD_yShfHVL_bfcNmrNCPAemCShxApEzOvphDW6ALaaRiE0c2K-qwm-_9M4SwlHV3YWaIjPm14tdE-PPnZy6nRluIg783URdHgE55DZcLW_ipX4_pyQn3z8Pnx3Jyv53HLfIc9mkCL10IENA00Nmf54b8oJhWxXO_bI3lWpDxNsKbiJrtLvWf43yPxlIyUN4TeFovJfDn3afQBUzpFy_vlnggAM7gpHIVFnPI",
+"https://lh3.googleusercontent.com/hrppk/ANjXD_whM-0zdveSMD7HvgSslfoKaom02bnqO3wE0Uei_pB1KqtImqQ0VPH2iqWye63NyUOXHdHf3U4x6fF7-9NDjOV6bq6FoQU3aY83LA3y7KIDPZw97anccI5OoZp8j9te1Zuq7sjpLnLXpex03CKf88Aea_mN77NYcwFTc2SBu2ENswnSziHVrHcIczsmbnFef_azaKIHyP-lDYwhk6wMjVwy851EiLbBK-8"
+],
+"link":
+"https://www.google.com/aclk?sa=l&ai=DChsSEwjkxrfnv7OVAxUYm1oFHYVeC0oYACICCAEQAxoCdnU&co=1&ase=2&gclid=EAIaIQobChMI5Ma357-zlQMVGJtaBR2FXgtKEAoYASADEgKKMPD_BwE&cid=CAASuwHkaFzBThR9zUpUGQUoVnS2_6T7S7e3nqnuZBrZWHRCWGcouAgXAaHfAR3L5YUzCkT397cQiE1hAt_TuaoaJ3Rq0GHh4MD40KIIojNVyCBmNX8W9iRwzTcR11Rya7i3zLdruNNgsx33AbpitFsbTQHM4XK2zDNG3udBgkYCu8eFLAfuX0fyAUy97sLtE4q7_EHtDhhHSjVivcwBM60LNz-7rpux9RDKNAAlgCM0ks9nFqxwqVIdvGC2npgL&category=acrcp_v1_48&sig=AOD64_0VP9sCB50Sm-pqNf9jcDCOSNcOJg&adurl",
+"num_guests":
+2,
+"rate_per_night":
+{
+"lowest":
+"159 €",
+"extracted_lowest":
+159,
+"before_taxes_fees":
+"145 €",
+"extracted_before_taxes_fees":
+145
+},
+"total_rate":
+{
+"lowest":
+"159 €",
+"extracted_lowest":
+159,
+"before_taxes_fees":
+"145 €",
+"extracted_before_taxes_fees":
+145
+},
+"rates":
+[
+{
+"link":
+"https://www.google.com/aclk?sa=l&ai=DChsSEwjkxrfnv7OVAxUYm1oFHYVeC0oYACICCAEQAxoCdnU&co=1&ase=2&gclid=EAIaIQobChMI5Ma357-zlQMVGJtaBR2FXgtKEAoYASADEgKKMPD_BwE&cid=CAASuwHkaFzBThR9zUpUGQUoVnS2_6T7S7e3nqnuZBrZWHRCWGcouAgXAaHfAR3L5YUzCkT397cQiE1hAt_TuaoaJ3Rq0GHh4MD40KIIojNVyCBmNX8W9iRwzTcR11Rya7i3zLdruNNgsx33AbpitFsbTQHM4XK2zDNG3udBgkYCu8eFLAfuX0fyAUy97sLtE4q7_EHtDhhHSjVivcwBM60LNz-7rpux9RDKNAAlgCM0ks9nFqxwqVIdvGC2npgL&category=acrcp_v1_48&sig=AOD64_0VP9sCB50Sm-pqNf9jcDCOSNcOJg&adurl",
+"num_guests":
+2,
+"breakfast_included":
+true,
+"beds":
+[
+{
+"type":
+"Double",
+"count":
+1
+}
+],
+"rate_per_night":
+{
+"lowest":
+"159 €",
+"extracted_lowest":
+159,
+"before_taxes_fees":
+"145 €",
+"extracted_before_taxes_fees":
+145
+},
+"total_rate":
+{
+"lowest":
+"159 €",
+"extracted_lowest":
+159,
+"before_taxes_fees":
+"145 €",
+"extracted_before_taxes_fees":
+145
+},
+"inclusions":
+[
+"1 cama doble",
+"los desayunos",
+"Balcón"
+]
+},
+{
+"link":
+"https://www.google.com/aclk?sa=l&ai=DChsSEwjkxrfnv7OVAxUYm1oFHYVeC0oYACICCAEQBBoCdnU&co=1&ase=2&gclid=EAIaIQobChMI5Ma357-zlQMVGJtaBR2FXgtKEAoYASAEEgKlzPD_BwE&cid=CAASuwHkaFzBThR9zUpUGQUoVnS2_6T7S7e3nqnuZBrZWHRCWGcouAgXAaHfAR3L5YUzCkT397cQiE1hAt_TuaoaJ3Rq0GHh4MD40KIIojNVyCBmNX8W9iRwzTcR11Rya7i3zLdruNNgsx33AbpitFsbTQHM4XK2zDNG3udBgkYCu8eFLAfuX0fyAUy97sLtE4q7_EHtDhhHSjVivcwBM60LNz-7rpux9RDKNAAlgCM0ks9nFqxwqVIdvGC2npgL&category=acrcp_v1_48&sig=AOD64_2JNpa-4zbgtEVGsWqVON8-ZmiElQ&adurl",
+"num_guests":
+2,
+"free_cancellation":
+true,
+"free_cancellation_until_date":
+"1 sept",
+"free_cancellation_until_time":
+"23:59",
+"breakfast_included":
+true,
+"beds":
+[
+{
+"type":
+"Double",
+"count":
+1
+}
+],
+"rate_per_night":
+{
+"lowest":
+"181 €",
+"extracted_lowest":
+181,
+"before_taxes_fees":
+"164 €",
+"extracted_before_taxes_fees":
+164
+},
+"total_rate":
+{
+"lowest":
+"181 €",
+"extracted_lowest":
+181,
+"before_taxes_fees":
+"164 €",
+"extracted_before_taxes_fees":
+164
+},
+"inclusions":
+[
+"1 cama doble",
+"Cancelación gratuita hasta el 1 sept",
+"los desayunos",
+"Balcón"
+]
+}
+]
+}
+],
+"num_guests":
+2,
+"rate_per_night":
+{
+"lowest":
+"159 €",
+"extracted_lowest":
+159,
+"before_taxes_fees":
+"145 €",
+"extracted_before_taxes_fees":
+145
+},
+"total_rate":
+{
+"lowest":
+"159 €",
+"extracted_lowest":
+159,
+"before_taxes_fees":
+"145 €",
+"extracted_before_taxes_fees":
+145
+}
+},
+{
+"source":
+"Expedia.com",
+"link":
+"https://www.google.com/aclk?sa=l&ai=DChsSEwjkxrfnv7OVAxUYm1oFHYVeC0oYACICCAEQBhoCdnU&co=1&ase=2&gclid=EAIaIQobChMI5Ma357-zlQMVGJtaBR2FXgtKEAoYAiABEgKop_D_BwE&cid=CAASuwHkaFzBThR9zUpUGQUoVnS2_6T7S7e3nqnuZBrZWHRCWGcouAgXAaHfAR3L5YUzCkT397cQiE1hAt_TuaoaJ3Rq0GHh4MD40KIIojNVyCBmNX8W9iRwzTcR11Rya7i3zLdruNNgsx33AbpitFsbTQHM4XK2zDNG3udBgkYCu8eFLAfuX0fyAUy97sLtE4q7_EHtDhhHSjVivcwBM60LNz-7rpux9RDKNAAlgCM0ks9nFqxwqVIdvGC2npgL&category=acrcp_v1_48&sig=AOD64_1ZBWkdgoP2_P0jHMen6r-orfgT2w&adurl",
+"logo":
+"https://www.gstatic.com/travel-hotels/branding/ac238c97-1652-4830-8da8-bb8d8883af88.png",
+"rooms":
+[
+{
+"name":
+"Habitación Confort, vista al jardín",
+"images":
+[
+"https://lh3.googleusercontent.com/hrppk/ANjXD_xi6ehN7G1KTHDEb64g9yxRyht6n2j1eUDT4Dj2-93k5x6r7VFaJHBj9aGY75swLmCjj-lxj7DZi-NwMYM8DCePko91voJrCQ2BzGrF2plW6XLvX_eQxLx7IXyR5kxzLt9xRSRauWpIaHseNfimfN995kFZC7R4OK8uZ1zUI7Bx",
+"https://lh3.googleusercontent.com/hrppk/ANjXD_yJQFN233-snnBbgx_gy3Pay5ln2ZQYDdvbokkozSJ5xN3gmEjtltD6USMH4wRMBnGk1RJTl-WdnWGfffi-sP_hbKWJIthFD9QCbsip-7XZq25Ol2jg5MI_pUU8MwHT4XMRuj_UYtnCS-Kyo92rJgBgYMNCbpGsWzecfxusConE",
+"https://lh3.googleusercontent.com/hrppk/ANjXD_yzjPh0dZNaSPuFA5UNBvcXEzJqIVt4dDG7U8ZGqdE0l9_t1HesFJPvZ_Xj7NQb3atoXOMb0y7n9AeZsIKg98ZSjsKByZ7lCwwhcInhSxROoqo3gWIR2rHaJ2EVG92hIXu-WsoFcoqMdS5h6RtI7ZVW2GxmkxjwNmBXWc1dA37c",
+"https://lh3.googleusercontent.com/hrppk/ANjXD_wRqvL_rxU4XokrNcYft6yCoXk6PRfMlZogOZ8KYzo6vcVo0dm7xL4baVxV52zwT1qhEjDVy9Sv2_lk0Ojg1RUZ6I1vyqvHe73EIvAsWyEGLoxAt1M9BSvzqhmiqztoVKQY6ZaFKyYfrIr8ygaSZc9Y-whfUFn4GsUcADBVEGxv"
+],
+"link":
+"https://www.google.com/aclk?sa=l&ai=DChsSEwjkxrfnv7OVAxUYm1oFHYVeC0oYACICCAEQBxoCdnU&co=1&ase=2&gclid=EAIaIQobChMI5Ma357-zlQMVGJtaBR2FXgtKEAoYAiACEgLQj_D_BwE&cid=CAASuwHkaFzBThR9zUpUGQUoVnS2_6T7S7e3nqnuZBrZWHRCWGcouAgXAaHfAR3L5YUzCkT397cQiE1hAt_TuaoaJ3Rq0GHh4MD40KIIojNVyCBmNX8W9iRwzTcR11Rya7i3zLdruNNgsx33AbpitFsbTQHM4XK2zDNG3udBgkYCu8eFLAfuX0fyAUy97sLtE4q7_EHtDhhHSjVivcwBM60LNz-7rpux9RDKNAAlgCM0ks9nFqxwqVIdvGC2npgL&category=acrcp_v1_48&sig=AOD64_3ToaumdC8pUnyBahRMYHCaLr2eVw&adurl",
+"num_guests":
+2,
+"rate_per_night":
+{
+"lowest":
+"143 €",
+"extracted_lowest":
+143,
+"before_taxes_fees":
+"130 €",
+"extracted_before_taxes_fees":
+130
+},
+"total_rate":
+{
+"lowest":
+"143 €",
+"extracted_lowest":
+143,
+"before_taxes_fees":
+"130 €",
+"extracted_before_taxes_fees":
+130
+},
+"rates":
+[
+{
+"link":
+"https://www.google.com/aclk?sa=l&ai=DChsSEwjkxrfnv7OVAxUYm1oFHYVeC0oYACICCAEQBxoCdnU&co=1&ase=2&gclid=EAIaIQobChMI5Ma357-zlQMVGJtaBR2FXgtKEAoYAiACEgLQj_D_BwE&cid=CAASuwHkaFzBThR9zUpUGQUoVnS2_6T7S7e3nqnuZBrZWHRCWGcouAgXAaHfAR3L5YUzCkT397cQiE1hAt_TuaoaJ3Rq0GHh4MD40KIIojNVyCBmNX8W9iRwzTcR11Rya7i3zLdruNNgsx33AbpitFsbTQHM4XK2zDNG3udBgkYCu8eFLAfuX0fyAUy97sLtE4q7_EHtDhhHSjVivcwBM60LNz-7rpux9RDKNAAlgCM0ks9nFqxwqVIdvGC2npgL&category=acrcp_v1_48&sig=AOD64_3ToaumdC8pUnyBahRMYHCaLr2eVw&adurl",
+"num_guests":
+2,
+"breakfast_included":
+true,
+"rate_per_night":
+{
+"lowest":
+"143 €",
+"extracted_lowest":
+143,
+"before_taxes_fees":
+"130 €",
+"extracted_before_taxes_fees":
+130
+},
+"total_rate":
+{
+"lowest":
+"143 €",
+"extracted_lowest":
+143,
+"before_taxes_fees":
+"130 €",
+"extracted_before_taxes_fees":
+130
+},
+"inclusions":
+[
+"los desayunos"
+]
+},
+{
+"link":
+"https://www.google.com/aclk?sa=l&ai=DChsSEwjkxrfnv7OVAxUYm1oFHYVeC0oYACICCAEQCBoCdnU&co=1&ase=2&gclid=EAIaIQobChMI5Ma357-zlQMVGJtaBR2FXgtKEAoYAiADEgJKjvD_BwE&cid=CAASuwHkaFzBThR9zUpUGQUoVnS2_6T7S7e3nqnuZBrZWHRCWGcouAgXAaHfAR3L5YUzCkT397cQiE1hAt_TuaoaJ3Rq0GHh4MD40KIIojNVyCBmNX8W9iRwzTcR11Rya7i3zLdruNNgsx33AbpitFsbTQHM4XK2zDNG3udBgkYCu8eFLAfuX0fyAUy97sLtE4q7_EHtDhhHSjVivcwBM60LNz-7rpux9RDKNAAlgCM0ks9nFqxwqVIdvGC2npgL&category=acrcp_v1_48&sig=AOD64_3NC_yiA2ER4UjauTHZ_upUuvwFaA&adurl",
+"num_guests":
+2,
+"free_cancellation":
+true,
+"free_cancellation_until_date":
+"1 sept",
+"free_cancellation_until_time":
+"18:00",
+"breakfast_included":
+true,
+"rate_per_night":
+{
+"lowest":
+"162 €",
+"extracted_lowest":
+162,
+"before_taxes_fees":
+"148 €",
+"extracted_before_taxes_fees":
+148
+},
+"total_rate":
+{
+"lowest":
+"162 €",
+"extracted_lowest":
+162,
+"before_taxes_fees":
+"148 €",
+"extracted_before_taxes_fees":
+148
+},
+"inclusions":
+[
+"Cancelación gratuita hasta el 1 sept",
+"los desayunos"
+]
+}
+]
+},
+{
+"name":
+"Habitación doble Comfort con vista al mar",
+"images":
+[
+"https://lh3.googleusercontent.com/hrppk/ANjXD_zFBr-aOIop4FUruxr2uazWNq-Tmte0S-PhccScKin3o4c1kbyV8RXoyh4RV2lEYcpdjobL_uTLOnEe9pt0hgBU4hKr2T-CiUaR7fV2b91fla1uzmpNqY96RPwe_cGzgFCKCBVNQ3NzFFb1oggKd9eyKIolaokFO0rrTlKlhdUs",
+"https://lh3.googleusercontent.com/hrppk/ANjXD_zvs6dr9RgcrVVslQB3aE1VA2uITtHoYxV_9T-DXNLuwm17bpD5NwS9c9U5xjdLIGMeJycrXAE3V4E1IlI9Q0ZY0Y4oFL6_V7fGqkdecChE5_KU3RxxaK3o4dgHkpMmGWpqfmPMoxqLso12gmQ9xKF56hF89XnMgJjmCRnJJv0I",
+"https://lh3.googleusercontent.com/hrppk/ANjXD_zdQY0-qlrijkH3W18mWkf0XiZnKcp6eLqZPfSLIxeD-yy-OoSQWCUDIpIXyYOLr2vFkhcThMK8enU04qjHz8UZ_Ir_9H1frljgXMA0CGxSPrL5zsjQDJdZCYMmv0ywpZ_8foteyApCqF8gT4ZzvJUo5WEr6ciz1hmeDtl9TaK7",
+"https://lh3.googleusercontent.com/hrppk/ANjXD_zoU_H0wvBBDrzqDPvLgDGtRdr5fv4fdxwAIdx9wQzP8eFGU0K9vVRd54VVNcd4ZbRSuCW2qM4DdJcN7bWEvlImBMb1mA0hTXtAD_nNMnWO72Q2jdUC0KZil6ggEMEjsxxErUJgjWASWimofa8Xj11doujjJ1hXFgZgf3c3A4On",
+"https://lh3.googleusercontent.com/hrppk/ANjXD_yJQFN233-snnBbgx_gy3Pay5ln2ZQYDdvbokkozSJ5xN3gmEjtltD6USMH4wRMBnGk1RJTl-WdnWGfffi-sP_hbKWJIthFD9QCbsip-7XZq25Ol2jg5MI_pUU8MwHT4XMRuj_UYtnCS-Kyo92rJgBgYMNCbpGsWzecfxusConE"
+],
+"link":
+"https://www.google.com/aclk?sa=l&ai=DChsSEwjkxrfnv7OVAxUYm1oFHYVeC0oYACICCAEQCRoCdnU&co=1&ase=2&gclid=EAIaIQobChMI5Ma357-zlQMVGJtaBR2FXgtKEAoYAiAEEgJQE_D_BwE&cid=CAASuwHkaFzBThR9zUpUGQUoVnS2_6T7S7e3nqnuZBrZWHRCWGcouAgXAaHfAR3L5YUzCkT397cQiE1hAt_TuaoaJ3Rq0GHh4MD40KIIojNVyCBmNX8W9iRwzTcR11Rya7i3zLdruNNgsx33AbpitFsbTQHM4XK2zDNG3udBgkYCu8eFLAfuX0fyAUy97sLtE4q7_EHtDhhHSjVivcwBM60LNz-7rpux9RDKNAAlgCM0ks9nFqxwqVIdvGC2npgL&category=acrcp_v1_48&sig=AOD64_1MgbfcnbcwJhuo4ey7Eo0ujlehcQ&adurl",
+"num_guests":
+2,
+"rate_per_night":
+{
+"lowest":
+"155 €",
+"extracted_lowest":
+155,
+"before_taxes_fees":
+"141 €",
+"extracted_before_taxes_fees":
+141
+},
+"total_rate":
+{
+"lowest":
+"155 €",
+"extracted_lowest":
+155,
+"before_taxes_fees":
+"141 €",
+"extracted_before_taxes_fees":
+141
+},
+"rates":
+[
+{
+"link":
+"https://www.google.com/aclk?sa=l&ai=DChsSEwjkxrfnv7OVAxUYm1oFHYVeC0oYACICCAEQCRoCdnU&co=1&ase=2&gclid=EAIaIQobChMI5Ma357-zlQMVGJtaBR2FXgtKEAoYAiAEEgJQE_D_BwE&cid=CAASuwHkaFzBThR9zUpUGQUoVnS2_6T7S7e3nqnuZBrZWHRCWGcouAgXAaHfAR3L5YUzCkT397cQiE1hAt_TuaoaJ3Rq0GHh4MD40KIIojNVyCBmNX8W9iRwzTcR11Rya7i3zLdruNNgsx33AbpitFsbTQHM4XK2zDNG3udBgkYCu8eFLAfuX0fyAUy97sLtE4q7_EHtDhhHSjVivcwBM60LNz-7rpux9RDKNAAlgCM0ks9nFqxwqVIdvGC2npgL&category=acrcp_v1_48&sig=AOD64_1MgbfcnbcwJhuo4ey7Eo0ujlehcQ&adurl",
+"num_guests":
+2,
+"breakfast_included":
+true,
+"beds":
+[
+{
+"type":
+"Single",
+"count":
+1
+}
+],
+"rate_per_night":
+{
+"lowest":
+"155 €",
+"extracted_lowest":
+155,
+"before_taxes_fees":
+"141 €",
+"extracted_before_taxes_fees":
+141
+},
+"total_rate":
+{
+"lowest":
+"155 €",
+"extracted_lowest":
+155,
+"before_taxes_fees":
+"141 €",
+"extracted_before_taxes_fees":
+141
+},
+"inclusions":
+[
+"1 cama individual",
+"los desayunos"
+]
+},
+{
+"link":
+"https://www.google.com/aclk?sa=l&ai=DChsSEwjkxrfnv7OVAxUYm1oFHYVeC0oYACICCAEQChoCdnU&co=1&ase=2&gclid=EAIaIQobChMI5Ma357-zlQMVGJtaBR2FXgtKEAoYAiAFEgKJc_D_BwE&cid=CAASuwHkaFzBThR9zUpUGQUoVnS2_6T7S7e3nqnuZBrZWHRCWGcouAgXAaHfAR3L5YUzCkT397cQiE1hAt_TuaoaJ3Rq0GHh4MD40KIIojNVyCBmNX8W9iRwzTcR11Rya7i3zLdruNNgsx33AbpitFsbTQHM4XK2zDNG3udBgkYCu8eFLAfuX0fyAUy97sLtE4q7_EHtDhhHSjVivcwBM60LNz-7rpux9RDKNAAlgCM0ks9nFqxwqVIdvGC2npgL&category=acrcp_v1_48&sig=AOD64_2hMpuaYpv5UPsADshScgmWVX7qvg&adurl",
+"num_guests":
+2,
+"free_cancellation":
+true,
+"free_cancellation_until_date":
+"1 sept",
+"free_cancellation_until_time":
+"18:00",
+"breakfast_included":
+true,
+"beds":
+[
+{
+"type":
+"Single",
+"count":
+1
+}
+],
+"rate_per_night":
+{
+"lowest":
+"176 €",
+"extracted_lowest":
+176,
+"before_taxes_fees":
+"160 €",
+"extracted_before_taxes_fees":
+160
+},
+"total_rate":
+{
+"lowest":
+"176 €",
+"extracted_lowest":
+176,
+"before_taxes_fees":
+"160 €",
+"extracted_before_taxes_fees":
+160
+},
+"inclusions":
+[
+"1 cama individual",
+"Cancelación gratuita hasta el 1 sept",
+"los desayunos"
+]
+}
+]
+},
+{
+"name":
+"Habitación doble Comfort, vista al mar",
+"images":
+[
+"https://lh3.googleusercontent.com/hrppk/ANjXD_xi6ehN7G1KTHDEb64g9yxRyht6n2j1eUDT4Dj2-93k5x6r7VFaJHBj9aGY75swLmCjj-lxj7DZi-NwMYM8DCePko91voJrCQ2BzGrF2plW6XLvX_eQxLx7IXyR5kxzLt9xRSRauWpIaHseNfimfN995kFZC7R4OK8uZ1zUI7Bx",
+"https://lh3.googleusercontent.com/hrppk/ANjXD_zFBr-aOIop4FUruxr2uazWNq-Tmte0S-PhccScKin3o4c1kbyV8RXoyh4RV2lEYcpdjobL_uTLOnEe9pt0hgBU4hKr2T-CiUaR7fV2b91fla1uzmpNqY96RPwe_cGzgFCKCBVNQ3NzFFb1oggKd9eyKIolaokFO0rrTlKlhdUs",
+"https://lh3.googleusercontent.com/hrppk/ANjXD_zvs6dr9RgcrVVslQB3aE1VA2uITtHoYxV_9T-DXNLuwm17bpD5NwS9c9U5xjdLIGMeJycrXAE3V4E1IlI9Q0ZY0Y4oFL6_V7fGqkdecChE5_KU3RxxaK3o4dgHkpMmGWpqfmPMoxqLso12gmQ9xKF56hF89XnMgJjmCRnJJv0I",
+"https://lh3.googleusercontent.com/hrppk/ANjXD_zoU_H0wvBBDrzqDPvLgDGtRdr5fv4fdxwAIdx9wQzP8eFGU0K9vVRd54VVNcd4ZbRSuCW2qM4DdJcN7bWEvlImBMb1mA0hTXtAD_nNMnWO72Q2jdUC0KZil6ggEMEjsxxErUJgjWASWimofa8Xj11doujjJ1hXFgZgf3c3A4On",
+"https://lh3.googleusercontent.com/hrppk/ANjXD_zYO5-nTgjOC4SiLj30qct93IybYBE3syzQMHYjSbuWZZXIAfC8VNZ3mtewJueJFIQBXQqEr7nCWgxFzL4YxzZQwJP9HsPYfRuOt9-yiKhwzhNKVQH48JfxptFI5r3kQTm-2gi4Cr7Ms-GXyrAGoQAlN0WLAYmRTtsvNIbm6nTi"
+],
+"link":
+"https://www.google.com/aclk?sa=l&ai=DChsSEwjkxrfnv7OVAxUYm1oFHYVeC0oYACICCAEQCxoCdnU&co=1&ase=2&gclid=EAIaIQobChMI5Ma357-zlQMVGJtaBR2FXgtKEAoYAiAGEgITefD_BwE&cid=CAASuwHkaFzBThR9zUpUGQUoVnS2_6T7S7e3nqnuZBrZWHRCWGcouAgXAaHfAR3L5YUzCkT397cQiE1hAt_TuaoaJ3Rq0GHh4MD40KIIojNVyCBmNX8W9iRwzTcR11Rya7i3zLdruNNgsx33AbpitFsbTQHM4XK2zDNG3udBgkYCu8eFLAfuX0fyAUy97sLtE4q7_EHtDhhHSjVivcwBM60LNz-7rpux9RDKNAAlgCM0ks9nFqxwqVIdvGC2npgL&category=acrcp_v1_48&sig=AOD64_2AYofk89ElgDXmgVY-5QS65ZIB7w&adurl",
+"num_guests":
+2,
+"rate_per_night":
+{
+"lowest":
+"155 €",
+"extracted_lowest":
+155,
+"before_taxes_fees":
+"141 €",
+"extracted_before_taxes_fees":
+141
+},
+"total_rate":
+{
+"lowest":
+"155 €",
+"extracted_lowest":
+155,
+"before_taxes_fees":
+"141 €",
+"extracted_before_taxes_fees":
+141
+},
+"rates":
+[
+{
+"link":
+"https://www.google.com/aclk?sa=l&ai=DChsSEwjkxrfnv7OVAxUYm1oFHYVeC0oYACICCAEQCxoCdnU&co=1&ase=2&gclid=EAIaIQobChMI5Ma357-zlQMVGJtaBR2FXgtKEAoYAiAGEgITefD_BwE&cid=CAASuwHkaFzBThR9zUpUGQUoVnS2_6T7S7e3nqnuZBrZWHRCWGcouAgXAaHfAR3L5YUzCkT397cQiE1hAt_TuaoaJ3Rq0GHh4MD40KIIojNVyCBmNX8W9iRwzTcR11Rya7i3zLdruNNgsx33AbpitFsbTQHM4XK2zDNG3udBgkYCu8eFLAfuX0fyAUy97sLtE4q7_EHtDhhHSjVivcwBM60LNz-7rpux9RDKNAAlgCM0ks9nFqxwqVIdvGC2npgL&category=acrcp_v1_48&sig=AOD64_2AYofk89ElgDXmgVY-5QS65ZIB7w&adurl",
+"num_guests":
+2,
+"breakfast_included":
+true,
+"beds":
+[
+{
+"type":
+"Double",
+"count":
+1
+}
+],
+"rate_per_night":
+{
+"lowest":
+"155 €",
+"extracted_lowest":
+155,
+"before_taxes_fees":
+"141 €",
+"extracted_before_taxes_fees":
+141
+},
+"total_rate":
+{
+"lowest":
+"155 €",
+"extracted_lowest":
+155,
+"before_taxes_fees":
+"141 €",
+"extracted_before_taxes_fees":
+141
+},
+"inclusions":
+[
+"1 cama doble",
+"los desayunos"
+]
+},
+{
+"link":
+"https://www.google.com/aclk?sa=l&ai=DChsSEwjkxrfnv7OVAxUYm1oFHYVeC0oYACICCAEQDBoCdnU&co=1&ase=2&gclid=EAIaIQobChMI5Ma357-zlQMVGJtaBR2FXgtKEAoYAiAHEgKm7vD_BwE&cid=CAASuwHkaFzBThR9zUpUGQUoVnS2_6T7S7e3nqnuZBrZWHRCWGcouAgXAaHfAR3L5YUzCkT397cQiE1hAt_TuaoaJ3Rq0GHh4MD40KIIojNVyCBmNX8W9iRwzTcR11Rya7i3zLdruNNgsx33AbpitFsbTQHM4XK2zDNG3udBgkYCu8eFLAfuX0fyAUy97sLtE4q7_EHtDhhHSjVivcwBM60LNz-7rpux9RDKNAAlgCM0ks9nFqxwqVIdvGC2npgL&category=acrcp_v1_48&sig=AOD64_2t3KprYdGjk1xzJLxasl_hnNAonw&adurl",
+"num_guests":
+2,
+"free_cancellation":
+true,
+"free_cancellation_until_date":
+"1 sept",
+"free_cancellation_until_time":
+"18:00",
+"breakfast_included":
+true,
+"beds":
+[
+{
+"type":
+"Double",
+"count":
+1
+}
+],
+"rate_per_night":
+{
+"lowest":
+"176 €",
+"extracted_lowest":
+176,
+"before_taxes_fees":
+"160 €",
+"extracted_before_taxes_fees":
+160
+},
+"total_rate":
+{
+"lowest":
+"176 €",
+"extracted_lowest":
+176,
+"before_taxes_fees":
+"160 €",
+"extracted_before_taxes_fees":
+160
+},
+"inclusions":
+[
+"1 cama doble",
+"Cancelación gratuita hasta el 1 sept",
+"los desayunos"
+]
+}
+]
+}
+],
+"num_guests":
+2,
+"rate_per_night":
+{
+"lowest":
+"143 €",
+"extracted_lowest":
+143,
+"before_taxes_fees":
+"130 €",
+"extracted_before_taxes_fees":
+130
+},
+"total_rate":
+{
+"lowest":
+"143 €",
+"extracted_lowest":
+143,
+"before_taxes_fees":
+"130 €",
+"extracted_before_taxes_fees":
+130
+}
+}
+],
+"prices":
+[
+{
+"source":
+"Calachica Las Negras Hotel Boutique",
+"link":
+"https://www.google.com/travel/lodging/clk?pc=AA80OsyXWkbt8mS71sjh0eXuLQZJ5UsiPn9TMZ8CRLu87fdAr5Q3kecDcH_ZbdPoZEVbIr4E40antHOadC3OYwfwE3sqCByK650ci03VpZ5Z_briij6bNnh-QnXtvtVAVoWUaxCAlH4QSrzWkV5hO2t3HjHGzOVfxidscqQLIV7llJEFQCdXuJ3XPPoTdQ&pcurl=https://gha.witbooking.com/api/property/forwarder?propertyTicker%3Darrecife_calachica%26adults%3D2%26children%3D0%26datein%3D09-09-2026%26dateout%3D10-09-2026%26lang%3Des%26channel%3Dgoogle%26utm_source%3Dgoogle%26utm_medium%3Dorganic%26setconversion%3DEUR%26origin%3Dmeta&s=AD1XQnnh_kXeWT2JJ51ePWcmrUuF&ap=1",
+"logo":
+"https://www.gstatic.com/travel-hotels/branding/icon_default.png",
+"official":
+true,
+"num_guests":
+2,
+"rate_per_night":
+{
+"lowest":
+"EUR 143",
+"extracted_lowest":
+143,
+"before_taxes_fees":
+"EUR 130",
+"extracted_before_taxes_fees":
+130
+},
+"total_rate":
+{
+"lowest":
+"EUR 143",
+"extracted_lowest":
+143,
+"before_taxes_fees":
+"EUR 130",
+"extracted_before_taxes_fees":
+130
+}
+},
+{
+"source":
+"Hotels.com",
+"link":
+"https://www.google.com/travel/lodging/clk?pc=AA80OsyeBo7WXtYfsGwbn7mOlMwj9R023jxroq-Bj0u8R4FJPYjfW0s5Y-rOfuFMmtx5xyIalpezNrx9b4JHI9j6ppg2ozYoIkkaZQNqeUvMSmAPKmO0BTBngHT0pmm5mZco1HxvqXolbVhixf1Wv9vyi_bX1A7avWrRTMKrarXvSVv_k5Mf_rEbnyXEEHlcl98&pcurl=https://www.hotels.com/Hotel-Search?selected%3D104484773%26startDate%3D2026-09-09%26endDate%3D2026-09-10%26mdpcid%3DHCOM-US.META.HPA.HOTEL-ORGANIC-desktop.HOTEL%26MDPDTL%3DHTL.104484773.20260909.20260910.DDF.69.CID..AUDID.%26adults%3D2%26children%3D%26mctc%3D10%26mpf%3D142.99%26mpg%3DEUR%26mpl%3DUSD%26mpj%3D13.00%26mpr%3D0.00%26rffrid%3Dsem.hcom.US.156.024.localuniversal.02.desktop-1.kwrd%3DGGMETA.104484773USes-20260909-N-ABW%3D69-camp%3D-aud%3D-N%26rateplanid%3D395186670%26mpm%3D24%26mpn%3D324670751%26mpo%3DEC%26mpp%3D1%26locale%3Des_US%26siteid%3D300000001&s=AD1XQnmzmkj3FQksrkmMAwh7J9HL&ap=1",
+"logo":
+"https://www.gstatic.com/travel-hotels/branding/306127930749010778.png",
+"num_guests":
+2,
+"rate_per_night":
+{
+"lowest":
+"EUR 143",
+"extracted_lowest":
+143,
+"before_taxes_fees":
+"EUR 130",
+"extracted_before_taxes_fees":
+130
+},
+"total_rate":
+{
+"lowest":
+"EUR 143",
+"extracted_lowest":
+143,
+"before_taxes_fees":
+"EUR 130",
+"extracted_before_taxes_fees":
+130
+}
+},
+{
+"source":
+"Expedia.com",
+"link":
+"https://www.google.com/travel/lodging/clk?pc=AA80OswAIItOKRnZC2B_024yF2h6w_dAXoeu9oaYfm1nhhGaYQvM5RgbSn2YPS_28nCAaZSsD5IewqXNlzIIh2Eifb-5RudcKtIUZznxVJ84_Rx9lsu7kbI-doLl9L62Q86PytfIFcPCKDhUDC86ogdqsOxaMFvyKNNptZz-Gj8DSzLHXHwxhA1xMg9hyZ422ETS&pcurl=https://www.expedia.com/Hotel-Search?selected%3D104484773%26startDate%3D2026-09-09%26endDate%3D2026-09-10%26MDPCID%3DUS.META.HPA.HOTEL-ORGANIC-desktop.HOTEL%26MDPDTL%3DHTL.104484773.20260909.20260910.DDF.69.CID..AUDID..RRID.bex_us_desktop%26mctc%3D10%26ct%3Dhotel%26mpg%3DEUR%26mpf%3D142.99%26mpj%3D13.00%26mpr%3D0.00%26mpl%3DUSD%26exp_pg%3Dgoogle%26langid%3Des%26ad%3D2%26tp%3D%26utm_source%3Dgoogle%26utm_medium%3Dcpc%26utm_term%3D104484773%26utm_content%3Dlocaluniversal%26utm_campaign%3DHotelAds%26langid%3D2058%26adults%3D2%26children%3D%26rateplanid%3D395186670%26mpm%3D24%26mpn%3D324670751%26mpo%3DEC%26mpp%3D1&s=AD1XQnmy71_ZRFpcz_YZUbXrTXZ5&ap=1",
+"logo":
+"https://www.gstatic.com/travel-hotels/branding/ac238c97-1652-4830-8da8-bb8d8883af88.png",
+"num_guests":
+2,
+"rate_per_night":
+{
+"lowest":
+"EUR 143",
+"extracted_lowest":
+143,
+"before_taxes_fees":
+"EUR 130",
+"extracted_before_taxes_fees":
+130
+},
+"total_rate":
+{
+"lowest":
+"EUR 143",
+"extracted_lowest":
+143,
+"before_taxes_fees":
+"EUR 130",
+"extracted_before_taxes_fees":
+130
+}
+},
+{
+"source":
+"Travelocity.com",
+"link":
+"https://www.google.com/travel/lodging/clk?pc=AA80OszkPCBCg2hJJzWsPUt8FeKADbB3fAtQqE9BzDJTo-8U7h6JegBn36ownU0WrAmL471XSF-4Mn0zF4a6lUnH4MH_nHjJaUEKW2iIeZYbXbAHRXCNdtFnbvsiZGUQxiSJ5QY94SiMqoP0oQ1oWYBfestPqU_2cLMkGo2tvE15Rv03zw4Pgv2QaYdPLGkl_FqN&pcurl=https://www.travelocity.com/Hotel-Search?selected%3D104484773%26startDate%3D2026-09-09%26endDate%3D2026-09-10%26adults%3D2%26children%3D%26langid%3D2058%26MDPCID%3Dtravelocity-US.META.HPA.ORGANIC-US-ES.HOTEL%26MDPDTL%3DHTL.104484773.20260909.20260910.DDF.69.CID..AUDID..localuniversal%26mpg%3DEUR%26mpf%3D142.99%26mpj%3D13.00%26mpr%3D0.00%26mctc%3D10%26rateplanid%3D395186670%26mpm%3D24%26mpn%3D324670751%26mpo%3DEC%26mpp%3D1&s=AD1XQnnjA6Zy3piyzNG144Qr--g5&ap=1",
+"logo":
+"https://www.gstatic.com/travel-hotels/branding/icon_185.png",
+"num_guests":
+2,
+"rate_per_night":
+{
+"lowest":
+"EUR 143",
+"extracted_lowest":
+143,
+"before_taxes_fees":
+"EUR 130",
+"extracted_before_taxes_fees":
+130
+},
+"total_rate":
+{
+"lowest":
+"EUR 143",
+"extracted_lowest":
+143,
+"before_taxes_fees":
+"EUR 130",
+"extracted_before_taxes_fees":
+130
+}
+},
+{
+"source":
+"Orbitz.com",
+"link":
+"https://www.google.com/travel/lodging/clk?pc=AA80Osx1VKOcXR9W700wDJK4Va6CQ79pU1KWri_XvUtypMxAhMW-nH-5a2EsBjjM-zgsucDaJmtVygsAnQNnyjH3n7xIKsp44jXURfTi-SEdYS7NZPRJiSEWHOV4XEId4bXvFVkC1aOHdVSQKcwKOi0CC2vC0IgonKvtVSO3OmIBNFJMsUCEyu5P2EwRylWhQtY&pcurl=https://www.orbitz.com/Hotel-Search?selected%3D104484773%26startDate%3D2026-09-09%26endDate%3D2026-09-10%26adults%3D2%26children%3D%26langid%3D2058%26MDPCID%3DORBITZ-US.META.HPA.ORGANIC-desktop-US-ES.HOTEL%26MDPDTL%3Dhtl.104484773.20260909.20260910.DDF.69.CID..AUDID..localuniversal%26mpg%3DEUR%26mpf%3D142.99%26mpj%3D13.00%26mctc%3D10%26rateplanid%3D395186670%26mpm%3D24%26mpn%3D324670751%26mpo%3DEC%26mpp%3D1&s=AD1XQnlTYeIUORcF69zobC2OZhvh&ap=1",
+"logo":
+"https://www.gstatic.com/travel-hotels/branding/icon_100640403.png",
+"num_guests":
+2,
+"rate_per_night":
+{
+"lowest":
+"EUR 143",
+"extracted_lowest":
+143,
+"before_taxes_fees":
+"EUR 130",
+"extracted_before_taxes_fees":
+130
+},
+"total_rate":
+{
+"lowest":
+"EUR 143",
+"extracted_lowest":
+143,
+"before_taxes_fees":
+"EUR 130",
+"extracted_before_taxes_fees":
+130
+}
+},
+{
+"source":
+"eDreams",
+"link":
+"https://www.google.com/travel/lodging/clk?pc=AA80Oswp0ZoXV5tKWqeZtURRYAMoB9ZrW3gJJmNsprTk4ZOXA2HoNSgfAFCnehA6-E2utU-6QhX-1ghOkNpHP0pQLUyhW3juwrkPrwrW_elO8wUK5TRwd10FaFKWc7H8qH-4j5_5fuh_EUtySA3XBs313er7lT_ak_5c9DFr7oI1Eq4zT1K4QHY2&pcurl=https://accommodation.edreams.net/Hotel-Search?selected%3D104484773%26startDate%3D2026-09-09%26endDate%3D2026-09-10%26adults%3D2%26children%3D%26mpf%3D142.99%26cur%3DEUR%26mpj%3D13.00%26MDPCID%3DeDreams-US.DPS.Edreams.MetaSearch-GHA.HOTEL%26mpl%3DUSD%26numberOfRooms%3D1%26locale%3Den_US%26rffrid%3Dh4p.hcom.US.ghaodigeo.000.000.kwrd%3D%26pos%3DEDREAMS_US%26rateplanid%3D395186670%26mctc%3D10%26utm_medium%3Dmetasearch%26utm_campaign%3D3344512736%26utm_term%3Dhotel%26utm_source%3DFREEBOOKING&s=AD1XQnnum_VFwlPjyVfUc14FcEE9&ap=1",
+"logo":
+"https://www.gstatic.com/travel-hotels/branding/05208793-cd83-4e8b-b76c-7ff346e093e3.png",
+"num_guests":
+2,
+"rate_per_night":
+{
+"lowest":
+"EUR 143",
+"extracted_lowest":
+143,
+"before_taxes_fees":
+"EUR 132",
+"extracted_before_taxes_fees":
+132
+},
+"total_rate":
+{
+"lowest":
+"EUR 143",
+"extracted_lowest":
+143,
+"before_taxes_fees":
+"EUR 132",
+"extracted_before_taxes_fees":
+132
+}
+},
+{
+"source":
+"Booking.com",
+"link":
+"https://www.google.com/travel/lodging/clk?pc=AA80OsziZQ1W38e3D4HwFT0xzEM76aI0kARJrP9K_K9Vs658iXU57Zbl-CLT9OTe3ZYtBRtNq-DYx9O9AP4D4WpW8ODlqflYcOWAxD1tm0-U-FyIGxePLUIH3DMNcehKt-53_PfafGE2OBzeSt-z0B6c_kS3MrQpuMyKQGiFz8_CZGr66jXiRPDIpYzkl_wRrTO8mRfUBQ&pcurl=https://www.booking.com/searchresults.es.html?dest_id%3D191833%26highlighted_hotels%3D191833%26dest_type%3Dhotel%26checkin%3D2026-09-09%26checkout%3D2026-09-10%26group_adults%3D2%26req_adults%3D2%26show_room%3D19183311_88203941_0_1_0%26lang%3Des%26selected_currency%3DEUR%26exrt%3D1.00000000%26ext_price_total%3D159.11%26ext_price_tax%3D14.46%26xfc%3DEUR%26hca%3Dm%26group_children%3D0%26req_children%3D0%26%26ts%3D1782957029%26no_rooms%3D1%26%26utm_source%3Dmetagha%26utm_medium%3Dlocaluniversal%26utm_campaign%3DUS%26utm_term%3Dhotel-191833%26utm_content%3Ddev-desktop_los-1_bw-69_dow-Wednesday_defdate-0_room-0_gstadt-2_rateid-0_aud-0_gacid-_mcid-10_ppa-0_clrid-0_ad-0_gstkid-0_checkin-20260909_ppt-%26aid%3D2127486%26label%3Dmetagha-link-LUUS-hotel-191833_dev-desktop_los-1_bw-69_dow-Wednesday_defdate-0_room-0_gstadt-2_rateid-0_aud-0_gacid-_mcid-10_ppa-0_clrid-0_ad-0_gstkid-0_checkin-20260909_ppt-&s=AD1XQnlfpzbSO_lNlbWNSoqKM0t3&ap=1",
+"logo":
+"https://www.gstatic.com/travel-hotels/branding/icon_184.png",
+"num_guests":
+2,
+"rate_per_night":
+{
+"lowest":
+"EUR 159",
+"extracted_lowest":
+159,
+"before_taxes_fees":
+"EUR 145",
+"extracted_before_taxes_fees":
+145
+},
+"total_rate":
+{
+"lowest":
+"EUR 159",
+"extracted_lowest":
+159,
+"before_taxes_fees":
+"EUR 145",
+"extracted_before_taxes_fees":
+145
+}
+},
+{
+"source":
+"Priceline",
+"link":
+"https://www.google.com/travel/lodging/clk?pc=AA80Osy_fv_IR2CbAUTQ-nB_5XkwYgNb9NdnTpgtmiW8F-T--WCowP9Wq27uY-SwXbrzhmOxfpkXvu4WnABxkza-dpQS5AwGlDLH8LAu3V9yuD_qwaIrYJcf7LC-QXjG2VENJW0JmaOdGm-25A75z2ZWrc6iUC41cbAg0DPUbTRX_QzdC0FBJyFPEQCq8yg13C8KQJ8&pcurl=https://www.priceline.com/r/?channel%3Dmeta%26product%3Dhotel%26theme%3Dghalistings%26refid%3DPLGOOGLEMSS%26refclickid%3DUS_HP%257C2833105_localuniversal_1%257C20260909%257Cdesktop%257Cuserdate%7Cpublic%7C%7C%7C69%257C2%257C0%7C0%7CES%26hotelid%3D2833105%26checkin%3D20260909%26checkout%3D20260910%26rooms%3D1%26currency%3DEUR%26cur%3DEUR%26pOSCountryCode%3DUS%26taxDisplayMode%3DBP%26cityID%3D5000078197%26adults%3D2%26land%3DL%26metaid%3DnrvqOlc0LWDEHBp6ZtHkdx0kLTyObr0gEFjsZ1-KCsJYk5wbcAwjFWRhFCrAQd___mSGHyy0qrfodhT4-DvaBT2cAU2YowdKOayneWoChGW46Q2stRi_EV1nKA3UlBlsjC-ftFKrx8IHN4KCcqRUjUAmneUjOLZOL9GIcswj5WqM9mdqdgtKSAdW1KIC9qzZCMTY83mVNwfp18uX4kXKlKeIgYMWxrXijw9vBE8mhEomjGF4Nw6jdQoH4b3DRAhYDIz3BG5R3QnySGcqwXmpotps3aW_ScnEosfG29-aEo5c-d8t_e48XuLBxuMEgzKzSHzlnx_1dxAG5uTGxvKhWii3Im57v2UOXQLctxF0DOShDCEKX2hdYEK507w_aroKDDPWIWfWl2oH-m0fTOnYzXB1G3ecG3gpXMFC4C8ruUu0O9zsiBr9gh1rMYwG8lop%26dblcnt%3Dtrue%26user_num_adults%3D2%26hc%3D1%26pdtax%3D14.46%26pdf%3D0.00%26pdt%3D159.11%26locale%3Des-us%26numChild%3D0&s=AD1XQnkaAv8KymAXjff1TITdbcgL&ap=1",
+"logo":
+"https://www.gstatic.com/travel-hotels/branding/icon_220.png",
+"num_guests":
+2,
+"rate_per_night":
+{
+"lowest":
+"EUR 159",
+"extracted_lowest":
+159,
+"before_taxes_fees":
+"EUR 145",
+"extracted_before_taxes_fees":
+145
+},
+"total_rate":
+{
+"lowest":
+"EUR 159",
+"extracted_lowest":
+159,
+"before_taxes_fees":
+"EUR 145",
+"extracted_before_taxes_fees":
+145
+}
+},
+{
+"source":
+"Agoda",
+"link":
+"https://www.google.com/travel/lodging/clk?pc=AA80OsyNmdLPj03OSS4R6yHwownQhrEPTOG2Lp1M0LHbL6JAmWV7lN8-GGY3Tzcs5KUlqMuK0ns02pjAK0e5KyPc-M_QMeiMsFD4Yj6VufZ3d6bOMm8Nf6njW-HednwivJX3A9IZNMJ07ZITWzT1_dkaPx0XaEApAaCyF5KBqQGRiCzt5QaJLkIVIZd5e9xz6Q&pcurl=https://www.agoda.com/es-es/partners/partnersearch.aspx?site_id%3D1917614%26CkInDay%3D09%26CkInMonth%3D09%26CkInYear%3D2026%26CkOutDay%3D10%26campaignid%3D%26CkOutMonth%3D09%26CkOutYear%3D2026%26SearchDateType%3Dselected%26NumberOfAdults%3D2%26LT%3D69%26NumberOfChildren%3D0%26childages%3D%26NumberOfRooms%3D1%26gsite%3Dlocaluniversal%26los%3D1%26PartnerCurrency%3DEUR%26hid%3D224388%26RoomID%3D758340440%26masterRoomId%3D758340440%26PriceTotal%3D159.11%26PriceTax%3D14.46%26PriceFee%3D0.00%26RatePlan%3Df969a88b-4391-bb91-8201-4e450372b1ed%26UserCountry%3DUS%26Currency%3DEUR%26UserDevice%3Ddesktop%26Verif%3Dfalse%26rr%3Drow_desktop%26audience_list%3D%26mcid%3D3038%26booking_source%3Dcpc%26adType%3D0%26mpt%3DNjhxbnhLT2FuV1F0WDNqR2Yrc1RWY2N5aFEzNDhUZUgzeWRuTm9YOWdoMFpxUERZdWFEK1Zud3V5T3ZHODl3TXh6UzJGTkdSd3drY1N0U0k%26original_rr%3D%26gaClickSrc%3D%26clickType%3Dhotel%26lang%3Des%26pkgId%3DBreakfast_NoDinner_false&s=AD1XQnkC63FpOevS1v34ZGWNJGLL&ap=1",
+"logo":
+"https://www.gstatic.com/travel-hotels/branding/b13642de-d476-41bd-8254-3edc2e567aa6.png",
+"num_guests":
+2,
+"rate_per_night":
+{
+"lowest":
+"EUR 159",
+"extracted_lowest":
+159,
+"before_taxes_fees":
+"EUR 145",
+"extracted_before_taxes_fees":
+145
+},
+"total_rate":
+{
+"lowest":
+"EUR 159",
+"extracted_lowest":
+159,
+"before_taxes_fees":
+"EUR 145",
+"extracted_before_taxes_fees":
+145
+}
+},
+{
+"source":
+"Bluepillow.com",
+"link":
+"https://www.google.com/travel/lodging/clk?pc=AA80OsxKQ1jvwz_TxT0LVH6E84wevqtMOtKy1VZGVKi_-I1VcKy7nSc995NDbpNGwThmKb3_4h49NkMza-2wSCletLKWx3CTSgqhzIfYgMAIww-bzeoWIP6hWqXdQg9DG65nDunX2QcMpIOB0JFgHWP9fcJ7iBF9DvulN5S1RQeBtGdWGc8ZslZUNxL9pw&pcurl=https://www.bluepillow.com/search/5a84f1647c00cb0e0424780c?begin%3D2026-09-09%26end%3D2026-09-10%26block_id%3D-b,4LUbJnQYM5QX9z_oky1Al8uyagORAFFKJU7k1bdYypaA-ioKxeNDmEpnjxQKXxs3,-bkng-Hotel%26fees%3D0.00%26tax%3D14.46%26total%3D159.08%26adults%3D2%26childs%3D0%26infants%3D0%26childrens%3D0%26country%3DUS%26currency%3DEUR%26language%3Des%26source%3Dlocaluniversal%26utm_campaign%3Dhotel%26prid%3D&s=AD1XQnnSdKM1bPRONG8vtGitY7Pg&ap=1",
+"logo":
+"https://www.gstatic.com/travel-hotels/branding/c770e909-af04-45dd-8ad7-335bc5055826.png",
+"num_guests":
+2,
+"rate_per_night":
+{
+"lowest":
+"EUR 159",
+"extracted_lowest":
+159,
+"before_taxes_fees":
+"EUR 145",
+"extracted_before_taxes_fees":
+145
+},
+"total_rate":
+{
+"lowest":
+"EUR 159",
+"extracted_lowest":
+159,
+"before_taxes_fees":
+"EUR 145",
+"extracted_before_taxes_fees":
+145
+}
+}
+],
+"nearby_places":
+[
+{
+"category":
+"Punto de interés",
+"name":
+"El Playazo de Rodalquilar",
+"link":
+"https://www.google.com/search?q=El+Playazo+de+Rodalquilar&stick=H4sIAAAAAAAAAONgFmJQ4tZP1zc0MsjOMEvK0VLMTrbSz8lPTizJzM-DM6wSS0qKEpNBzGIAj_U1LTQAAAA#fpstate=trskp&trifp=kpq%253DEl%252BPlayazo%252Bde%252BRodalquilar%2526skpm%253D/g/120kh6bl%2526t%253Dd",
+"thumbnail":
+"http://t2.gstatic.com/images?q=tbn:ANd9GcQpf1T30xDp5FsrwRZaj_YLSa1_3yIRebLAnP2XW42osTiL7fOO5B8vNw",
+"transportations":
+[
+{
+"type":
+"Taxi",
+"duration":
+"12 min"
+}
+],
+"rating":
+4.5,
+"reviews":
+3131,
+"description":
+"Playa pintoresca, con aguas tranquilas para bañarse, montañas alrededor y un castillo antiguo situado en una duna fosilizada.",
+"gps_coordinates":
+{
+"latitude":
+36.860966999999995,
+"longitude":
+-2.0062016
+}
+},
+{
+"category":
+"Punto de interés",
+"name":
+"Playa de los Muertos",
+"link":
+"https://www.google.com/search?q=Playa+de+los+Muertos&stick=H4sIAAAAAAAAAONgFmJQ4tZP1zc0MjYwMjVK0VLMTrbSz8lPTizJzM-DM6wSS0qKEpNBzGIACLl7ejQAAAA#fpstate=trskp&trifp=kpq%253DPlaya%252Bde%252Blos%252BMuertos%2526skpm%253D/g/1230252d%2526t%253Dd",
+"thumbnail":
+"http://t3.gstatic.com/images?q=tbn:ANd9GcQYQr2k3KE2JodsD43M4w09eUgfnTg7Y6kWMI81nk_oVO7A4iQvcG0agw",
+"transportations":
+[
+{
+"type":
+"Taxi",
+"duration":
+"33 min"
+}
+],
+"rating":
+4.6,
+"reviews":
+8630,
+"description":
+"Pintoresca playa virgen de piedras a la que se accede por una escarpada ruta de senderismo.",
+"gps_coordinates":
+{
+"latitude":
+36.9527593,
+"longitude":
+-1.8986288
+}
+},
+{
+"category":
+"Punto de interés",
+"name":
+"Cala de San Pedro",
+"link":
+"https://www.google.com/search?q=Cala+de+San+Pedro&stick=H4sIAAAAAAAAAONgFmJQ4tZP1zc0MjSrMDAv0VLMTrbSz8lPTizJzM-DM6wSS0qKEpNBzGIAzyCVtzQAAAA#fpstate=trskp&trifp=kpq%253DCala%252Bde%252BSan%252BPedro%2526skpm%253D/g/1216x07t%2526t%253Dd",
+"thumbnail":
+"http://t1.gstatic.com/images?q=tbn:ANd9GcRM5KkZd0y2gl4yX1-VIcJzCeSPoLV0PAV_YUbq2wMuCc5bepVscRzdZg",
+"transportations":
+[
+{
+"type":
+"Taxi",
+"duration":
+"8 min"
+}
+],
+"rating":
+4.2,
+"reviews":
+147,
+"gps_coordinates":
+{
+"latitude":
+36.9008675,
+"longitude":
+-1.9825523999999999
+}
+},
+{
+"category":
+"Punto de interés",
+"name":
+"Playa de las Negras",
+"link":
+"https://www.google.com/search?q=Playa+de+las+Negras&stick=H4sIAAAAAAAAAONgFmJQ4tVP1zc0TM4zLcjOSCvWUsxOttLPyU9OLMnMz4MzrBJLSooSk0HMYgAZQ04kNgAAAA#fpstate=trskp&trifp=kpq%253DPlaya%252Bde%252Blas%252BNegras%2526skpm%253D/g/11cn5pkhfs%2526t%253Dd",
+"thumbnail":
+"http://t1.gstatic.com/images?q=tbn:ANd9GcTU8Yuz9cftktsWhKXZMKF75BOr_RyF1_dOM5-1qbj2VJn1qXZO8_vTrg",
+"transportations":
+[
+{
+"type":
+"Walking",
+"duration":
+"4 min"
+}
+],
+"rating":
+4.3,
+"reviews":
+885,
+"gps_coordinates":
+{
+"latitude":
+36.8797443,
+"longitude":
+-2.0038304
+}
+},
+{
+"category":
+"Punto de interés",
+"name":
+"Playa Cala de Enmedio",
+"link":
+"https://www.google.com/search?q=Playa+Cala+de+Enmedio&stick=H4sIAAAAAAAAAONgFmJQ4tZP1zc0MsyzTEnP0FLMTrbSz8lPTizJzM-DM6wSS0qKEpNBzGIA-Xx7ETQAAAA#fpstate=trskp&trifp=kpq%253DPlaya%252BCala%252Bde%252BEnmedio%2526skpm%253D/g/121n9dgh%2526t%253Dd",
+"thumbnail":
+"http://t2.gstatic.com/images?q=tbn:ANd9GcQnwftpONdqqhTGo6K4sEi0vnzxJTzl4qxSZ0utedHlE88uzECquIaFrQ",
+"transportations":
+[
+{
+"type":
+"Taxi",
+"duration":
+"36 min"
+}
+],
+"rating":
+4.5,
+"reviews":
+597,
+"description":
+"Sencilla playa rocosa apta para el baño, con vistas al océano y a las colinas.",
+"gps_coordinates":
+{
+"latitude":
+36.9279491,
+"longitude":
+-1.9497715999999998
+}
+},
+{
+"category":
+"Punto de interés",
+"name":
+"Parque Natural del Cabo de Gata-Níjar",
+"link":
+"https://www.google.com/search?q=Parque+Natural+del+Cabo+de+Gata-N%C3%ADjar&stick=H4sIAAAAAAAAAONgFmJQ4tLP1TcwMiswzTbUUsxOttLPyU9OLMnMz4MzrBJLSooSk0HMYgDxmeLRMwAAAA#fpstate=trskp&trifp=kpq%253DParque%252BNatural%252Bdel%252BCabo%252Bde%252BGata-N%2525C3%2525ADjar%2526skpm%253D/m/026p5k1%2526t%253Dd",
+"thumbnail":
+"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbrz1eXWN6c1klMu4H3EJ32OTBhOqdD7fES-sHNNJoSUk_VHhF",
+"transportations":
+[
+{
+"type":
+"Taxi",
+"duration":
+"32 min"
+}
+],
+"rating":
+4.7,
+"reviews":
+9733,
+"description":
+"Centro de visitantes con información sobre el ecosistema, la naturaleza y la historia del asentamiento humano.",
+"gps_coordinates":
+{
+"latitude":
+36.742035699999995,
+"longitude":
+-2.1284552
+}
+},
+{
+"category":
+"Punto de interés",
+"name":
+"Cala del Cuervo",
+"link":
+"https://www.google.com/search?q=Cala+del+Cuervo&stick=H4sIAAAAAAAAAONgFmJQ4tVP1zc0TDIvNDMpyo3XUsxOttLPyU9OLMnMz4MzrBJLSooSk0HMYgDbPhDBNgAAAA#fpstate=trskp&trifp=kpq%253DCala%252Bdel%252BCuervo%2526skpm%253D/g/11b7q64rm_%2526t%253Dd",
+"thumbnail":
+"http://t2.gstatic.com/images?q=tbn:ANd9GcQVYjp-K0r_2xYYfa5tXuZvX1WC_X_TT7kCbvchbIZl_DRKLTcKUqBTsw",
+"transportations":
+[
+{
+"type":
+"Taxi",
+"duration":
+"6 min"
+}
+],
+"rating":
+4.3,
+"reviews":
+758,
+"gps_coordinates":
+{
+"latitude":
+36.872610699999996,
+"longitude":
+-2.0033328999999997
+}
+},
+{
+"category":
+"Punto de interés",
+"name":
+"Playa de los Genoveses",
+"link":
+"https://www.google.com/search?q=Playa+de+los+Genoveses&stick=H4sIAAAAAAAAAONgFmJQ4tZP1zc0MrYoNs021FLMTrbSz8lPTizJzM-DM6wSS0qKEpNBzGIAw3Y3kjQAAAA#fpstate=trskp&trifp=kpq%253DPlaya%252Bde%252Blos%252BGenoveses%2526skpm%253D/g/1238s5k1%2526t%253Dd",
+"thumbnail":
+"http://t2.gstatic.com/images?q=tbn:ANd9GcR8AOu3cXbKXJ36yl3BZU6V77lnaXJQ15alj-T-u3hYu4OEE1W4_6FFJQ",
+"transportations":
+[
+{
+"type":
+"Taxi",
+"duration":
+"34 min"
+},
+{
+"type":
+"Public transport",
+"duration":
+"3 h 35 min"
+}
+],
+"rating":
+4.5,
+"reviews":
+3339,
+"description":
+"Playa virgen del Parque Natural Cabo de Gata‑Níjar, con arena fina, pequeñas dunas y un sendero agreste.",
+"gps_coordinates":
+{
+"latitude":
+36.7445895,
+"longitude":
+-2.1220108
+}
+},
+{
+"category":
+"Punto de interés",
+"name":
+"Playa Los Escullos",
+"link":
+"https://www.google.com/search?q=Playa+Los+Escullos&stick=H4sIAAAAAAAAAONgFmJQ4tVP1zc0TKoqscjONUvSUsxOttLPyU9OLMnMz4MzrBJLSooSk0HMYgCarwRNNgAAAA#fpstate=trskp&trifp=kpq%253DPlaya%252BLos%252BEscullos%2526skpm%253D/g/11bzt8km6b%2526t%253Dd",
+"thumbnail":
+"http://t0.gstatic.com/images?q=tbn:ANd9GcSZKiyiHkza4FdP8lMfmY8D5vUCqE0HGP8ySwfBTxLAjuf00SCWQEaDlA",
+"transportations":
+[
+{
+"type":
+"Taxi",
+"duration":
+"15 min"
+}
+],
+"rating":
+4.4,
+"reviews":
+1575,
+"gps_coordinates":
+{
+"latitude":
+36.8048989,
+"longitude":
+-2.0622187
+}
+},
+{
+"category":
+"Punto de interés",
+"name":
+"Cala del Plomo",
+"link":
+"https://www.google.com/search?q=Cala+del+Plomo&stick=H4sIAAAAAAAAAONgFmJQ4tZP1zc0MipKMTEy1lLMTrbSz8lPTizJzM-DM6wSS0qKEpNBzGIAwB1f8DQAAAA#fpstate=trskp&trifp=kpq%253DCala%252Bdel%252BPlomo%2526skpm%253D/g/122rd423%2526t%253Dd",
+"thumbnail":
+"https://lh3.googleusercontent.com/gps-cs-s/AHVAwepSatMi4L32bYArf3t7ItwQ4DitGCYJSC0la_CF-dGY_xuz-KU2fxH0wFq-fECvYlFlUyJEynO45FNhwiFxtjCsiUyfrRdXf3oZFYrx8TP32ljgu6DGN8DhfDtqNOk36LOgLArx=w213-h120-k-no",
+"transportations":
+[
+{
+"type":
+"Taxi",
+"duration":
+"37 min"
+}
+],
+"rating":
+4.4,
+"reviews":
+1992,
+"gps_coordinates":
+{
+"latitude":
+36.923192199999995,
+"longitude":
+-1.9546211999999998
+}
+},
+{
+"category":
+"Punto de interés",
+"name":
+"Cortijo del Fraile",
+"link":
+"https://www.google.com/search?q=Cortijo+del+Fraile&stick=H4sIAAAAAAAAAONgFmJQ4tZP1zc0MihMKbAs1lLMTrbSz8lPTizJzM-DM6wSS0qKEpNBzGIAm6d1hDQAAAA#fpstate=trskp&trifp=kpq%253DCortijo%252Bdel%252BFraile%2526skpm%253D/g/120qdp9s%2526t%253Dd",
+"thumbnail":
+"https://lh3.googleusercontent.com/gps-cs-s/AHVAwepKPGaGuRlxYlCCHFfH4szfcjIRrtuzjX_5iuR5eFSPI_Pn0JTNUBDZ4JxOwezWWRC2nhh2uaWPHHjQMZ-g8heU2b0NSkXtJKtMITIQNWNlLPnn89ydqbV47UdeDaqcE-iaI87HWA=w160-h120-k-no",
+"transportations":
+[
+{
+"type":
+"Taxi",
+"duration":
+"24 min"
+}
+],
+"rating":
+4.1,
+"reviews":
+850,
+"gps_coordinates":
+{
+"latitude":
+36.8656295,
+"longitude":
+-2.0750612
+}
+},
+{
+"category":
+"Punto de interés",
+"name":
+"Playa de Agua Amarga",
+"link":
+"https://www.google.com/search?q=Playa+de+Agua+Amarga&stick=H4sIAAAAAAAAAONgFmJQ4tVP1zc0TKpMTisxsSzXUsxOttLPyU9OLMnMz4MzrBJLSooSk0HMYgAs0P3sNgAAAA#fpstate=trskp&trifp=kpq%253DPlaya%252Bde%252BAgua%252BAmarga%2526skpm%253D/g/11bycft49w%2526t%253Dd",
+"thumbnail":
+"http://t1.gstatic.com/images?q=tbn:ANd9GcTCeidLNsnsWs7n9qqgDhgvrWJdd2p3WNdJPLUyFA7q5Lq0fs5Hc_99hA",
+"transportations":
+[
+{
+"type":
+"Taxi",
+"duration":
+"28 min"
+}
+],
+"rating":
+4.3,
+"reviews":
+3149,
+"gps_coordinates":
+{
+"latitude":
+36.9394701,
+"longitude":
+-1.9346440999999999
+}
+},
+{
+"category":
+"Punto de interés",
+"name":
+"Cala de Los Toros",
+"link":
+"https://www.google.com/search?q=Cala+de+Los+Toros&stick=H4sIAAAAAAAAAONgFmJQ4tVP1zc0TDIvtLTITsnQUsxOttLPyU9OLMnMz4MzrBJLSooSk0HMYgCp_t_ONgAAAA#fpstate=trskp&trifp=kpq%253DCala%252Bde%252BLos%252BToros%2526skpm%253D/g/11b7q98kdh%2526t%253Dd",
+"thumbnail":
+"https://lh3.googleusercontent.com/gps-cs-s/AHVAweoF1rgjSX4YlMCGRwxwB64as4W5rOHgM-2FcZ5Z13dpKm2nDTycokzZM6aX9dZKbflfkErlpwPjF6q-abxre-cDL-8Os40Jt-dZULZzKt2XPw4l_Pp3saBobGrvEjETbr4lZFpJPnHdIUIH=w160-h120-k-no",
+"transportations":
+[
+{
+"type":
+"Taxi",
+"duration":
+"11 min"
+}
+],
+"rating":
+4.3,
+"reviews":
+346,
+"gps_coordinates":
+{
+"latitude":
+36.821683799999995,
+"longitude":
+-2.0423228
+}
+},
+{
+"category":
+"Punto de interés",
+"name":
+"Mirador de la Playa de los Muertos",
+"link":
+"https://www.google.com/search?q=Mirador+de+la+Playa+de+los+Muertos&stick=H4sIAAAAAAAAAONgFmJQ4tVP1zc0TM8oTqooKkjXUsxOttLPyU9OLMnMz4MzrBJLSooSk0HMYgBieT5iNgAAAA#fpstate=trskp&trifp=kpq%253DMirador%252Bde%252Bla%252BPlaya%252Bde%252Blos%252BMuertos%2526skpm%253D/g/11ghsbxrpg%2526t%253Dd",
+"thumbnail":
+"https://lh3.googleusercontent.com/gps-cs-s/AHVAweo0-fzexq-aY0a_EhEGKRtaE0JhPphuJbt1--KspfFGIzT5a3FCZ9f_l3sveSF4yMNZvwe1yLUH8nTNloSF-4VQ7v3t7F2Kp7Od6lN-AlTEElBSLi5YjqJGuhjIAVuzgk4dRn3w=w160-h120-k-no",
+"transportations":
+[
+{
+"type":
+"Taxi",
+"duration":
+"33 min"
+}
+],
+"rating":
+4.7,
+"reviews":
+591,
+"gps_coordinates":
+{
+"latitude":
+36.9551343,
+"longitude":
+-1.9003242
+}
+},
+{
+"category":
+"Punto de interés",
+"name":
+"Parque Natural Cabo de Gata - Níjar (Almeria)",
+"link":
+"https://www.google.com/search?q=Parque+Natural+Cabo+de+Gata+-+N%C3%ADjar+(Almeria)&stick=H4sIAAAAAAAAAONgFmJQ4tVP1zc0TDY1LU4pjM_WUsxOttLPyU9OLMnMz4MzrBJLSooSk0HMYgDbmwCvNgAAAA#fpstate=trskp&trifp=kpq%253DParque%252BNatural%252BCabo%252Bde%252BGata%252B-%252BN%2525C3%2525ADjar%252B(Almeria)%2526skpm%253D/g/11c55sdq_k%2526t%253Dd",
+"thumbnail":
+"https://lh3.googleusercontent.com/gps-cs-s/AHVAweomw-JscaG7os6al2NkVnFX2uvsYInXmsbtcZjzYDpK8VTv2EyjZpJYiSLcCVjBR5guX38HbTaAd6fNXje9QI5hfRpDlPWmn_vmEAAZfrBl5K4QWLCEDTEM_Vvqi0npi5qhZlYGJA=w179-h120-k-no",
+"transportations":
+[
+{
+"type":
+"Taxi",
+"duration":
+"11 min"
+}
+],
+"rating":
+4.8,
+"reviews":
+119,
+"gps_coordinates":
+{
+"latitude":
+36.8258706,
+"longitude":
+-2.0377351999999997
+}
+},
+{
+"category":
+"Aeropuerto",
+"name":
+"Aeropuerto de Almería",
+"transportations":
+[
+{
+"type":
+"Taxi",
+"duration":
+"43 min"
+},
+{
+"type":
+"Public transport",
+"duration":
+"1 h 26 min"
+}
+],
+"gps_coordinates":
+{
+"latitude":
+36.8452778,
+"longitude":
+-2.3736110999999998
+}
+},
+{
+"category":
+"Restaurante",
+"name":
+"Restaurante Casa Diego",
+"thumbnail":
+"https://lh3.googleusercontent.com/gps-cs-s/AHVAweoNlyAVPMn-6I59-5ul4csd1-nu7kRt4rbYJgflJ9vEE-TAT9GHpiic5Mf1dJUnG2nKY0ssmojIFu61enxN_ESNPQqeCc1M42FLA2D_FpQ47BFhXT6dCgg7e31wq0Wm3op1c6dpxRWV0qf_=k-no-",
+"transportations":
+[
+{
+"type":
+"Taxi",
+"duration":
+"2 min"
+},
+{
+"type":
+"Walking",
+"duration":
+"3 min"
+}
+],
+"rating":
+4.5,
+"reviews":
+840,
+"gps_coordinates":
+{
+"latitude":
+36.8807851,
+"longitude":
+-2.0053696999999997
+}
+},
+{
+"category":
+"Restaurante de cocina mediterránea",
+"name":
+"Sotavento",
+"thumbnail":
+"https://lh3.googleusercontent.com/gps-cs-s/AHVAwepBgggUq8cCESyqgQ01raxzygWxBsIlTJQEeEozAUhmMu_Vb_6jciozMapRQSvr5JgV55Cjtyv6LYkyux16KdWbq8Eo6mbLN9cOe9W6NU7dzFEsOL39Pdmt4e0dQ_kSTBLgBO0=k-no-",
+"transportations":
+[
+{
+"type":
+"Taxi",
+"duration":
+"2 min"
+},
+{
+"type":
+"Walking",
+"duration":
+"4 min"
+}
+],
+"rating":
+4.6,
+"reviews":
+1894,
+"gps_coordinates":
+{
+"latitude":
+36.8796635,
+"longitude":
+-2.0044909
+}
+},
+{
+"category":
+"Restaurante",
+"name":
+"Entre Bares Resto-Bar",
+"thumbnail":
+"https://lh3.googleusercontent.com/gps-cs-s/AHVAwerhZRa3IV0bJ3T8W71JW7ioTh-iNbXPregmlMHInVXvZVbdzWXVg9MYPlADS5Z_EsbEUXHSq4qG38uiDbcNz0rIEXhonpwCb1_U5GO_5U8ZQ_VRvwY8qve_3QPieZp_UT73B6dRo2K7s9oq=k-no-",
+"transportations":
+[
+{
+"type":
+"Walking",
+"duration":
+"2 min"
+},
+{
+"type":
+"Taxi",
+"duration":
+"3 min"
+}
+],
+"rating":
+4.8,
+"reviews":
+258,
+"gps_coordinates":
+{
+"latitude":
+36.8793851,
+"longitude":
+-2.0059228
+}
+},
+{
+"category":
+"Restaurante",
+"name":
+"Restaurante Las Barcas",
+"thumbnail":
+"https://lh3.googleusercontent.com/gps-cs-s/AHVAweoxkl2ZyIRAui2gQpfuZBzW2bX0gjvPjvSfDAbiF0PSSn7TwSXicC-5HLIPjU8Ww7A7oXcsZm6WCd5olIVqT2mjPAtCsTu6Bpj4w7FJcs9D6j0oDxs3hc0dbwePZoH6z657Qm3p=k-no-",
+"transportations":
+[
+{
+"type":
+"Taxi",
+"duration":
+"2 min"
+},
+{
+"type":
+"Walking",
+"duration":
+"4 min"
+}
+],
+"rating":
+4.2,
+"reviews":
+1707,
+"gps_coordinates":
+{
+"latitude":
+36.879538,
+"longitude":
+-2.0040516999999998
+}
+},
+{
+"category":
+"Restaurante",
+"name":
+"La Mar Salá",
+"thumbnail":
+"https://lh3.googleusercontent.com/gps-cs-s/AHVAwerhnfiBxdDQWew6tfjhNZOv_Ztc7VYd6vNkU-1heUHhEgiQkv_ysN5gRKqUSXsZa7BbpKga2Ztq7Ux4LzneTyl8wEtcstyjaBDN6BzqJxbPyyFspI_cWGrOOzRx5SCoYZhRRoJy4gA2NTo=k-no-",
+"transportations":
+[
+{
+"type":
+"Walking",
+"duration":
+"3 min"
+},
+{
+"type":
+"Taxi",
+"duration":
+"3 min"
+}
+],
+"rating":
+4.7,
+"reviews":
+204,
+"gps_coordinates":
+{
+"latitude":
+36.8797,
+"longitude":
+-2.00466
+}
+},
+{
+"category":
+"Restaurante",
+"name":
+"Socorrito",
+"thumbnail":
+"https://lh3.googleusercontent.com/gps-cs-s/AHVAweodC6f_jqQKNyoQmZqmMQ9vwMZlI2Shff2Vyx9za1VoMVrG0XrSuTnAGb4A6araN8fIoLuXoHeSZKFIHs9iMVVBj2c_Z1HZIf8imtlXRXjbNBk52UJCP3PV2zICGlnuhPIZ-1LsRA=k-no-",
+"transportations":
+[
+{
+"type":
+"Taxi",
+"duration":
+"2 min"
+},
+{
+"type":
+"Walking",
+"duration":
+"4 min"
+}
+],
+"rating":
+4.3,
+"reviews":
+199,
+"gps_coordinates":
+{
+"latitude":
+36.8796812,
+"longitude":
+-2.0045231
+}
+},
+{
+"category":
+"Restaurante de cocina mediterránea",
+"name":
+"La Palma",
+"thumbnail":
+"https://lh3.googleusercontent.com/gps-cs-s/AHVAweq4LlbbnI9b52EeQhysnJn3TAnKDod5_ECHjX3jqJ44y_f0MnhW8SPds1Yo-GcRkRsyiit6HZ60bEbErqeiBXffu5hqzJ_ltPYPLOiRYFr-FeRRaTJxsSRPH0l1DyOcyLlO4_bK=k-no-",
+"transportations":
+[
+{
+"type":
+"Taxi",
+"duration":
+"2 min"
+},
+{
+"type":
+"Walking",
+"duration":
+"3 min"
+}
+],
+"rating":
+3.5,
+"reviews":
+597,
+"gps_coordinates":
+{
+"latitude":
+36.8802705,
+"longitude":
+-2.0042856
+}
+},
+{
+"category":
+"Restaurante",
+"name":
+"Restaurante El Timón",
+"thumbnail":
+"https://lh3.googleusercontent.com/gps-cs-s/AHVAwerEIestvN465f1-L8uGcwHccxu095UEXV0aAzcZ3ZdskTmwe8n6FD5jr67oVXv68ZeFzFKEddFU3pfU9hiPq4KCz1VSpWcbA1yIDwEyeiZV_wSCDRPd0uCvV-vV09Ry01DmxGc6=k-no-",
+"transportations":
+[
+{
+"type":
+"Walking",
+"duration":
+"2 min"
+},
+{
+"type":
+"Taxi",
+"duration":
+"3 min"
+}
+],
+"rating":
+4.5,
+"reviews":
+505,
+"gps_coordinates":
+{
+"latitude":
+36.8799178,
+"longitude":
+-2.0052472999999997
+}
+},
+{
+"category":
+"Restaurante",
+"name":
+"El Pikinini",
+"thumbnail":
+"https://lh3.googleusercontent.com/gps-cs-s/AHVAwepgNAKIcGDKYeqiQdBnGm5ST1n4gT5RG7K7f7gfW_xN4ZDdVE5Tp76YDmfYTqYEGBWQQ_D8i5cWCvYfiievew9WqImZst6EPhpgXFwXU3opv2DqD84ABHqegY2aVhmYD422KoQ=k-no-",
+"transportations":
+[
+{
+"type":
+"Walking",
+"duration":
+"2 min"
+},
+{
+"type":
+"Taxi",
+"duration":
+"2 min"
+}
+],
+"rating":
+4.6,
+"reviews":
+1083,
+"gps_coordinates":
+{
+"latitude":
+36.8798939,
+"longitude":
+-2.0053156999999997
+}
+},
+{
+"category":
+"Restaurante de cocina mediterránea",
+"name":
+"El Manteca",
+"thumbnail":
+"https://lh3.googleusercontent.com/gps-cs-s/AHVAwepVcjrXvPbfIPEVmdeMjEW4VSVOpwUIdx2Rv95OE-MJJpFHj2loA3st-kz4nmtflRAEW-02ReuUhgnNiD0xNjfWhE_kc4mGPP93SasLGtUemwfMQqdf3yLOYTTRB7gPK-YFjT5Umw=k-no-",
+"transportations":
+[
+{
+"type":
+"Taxi",
+"duration":
+"3 min"
+},
+{
+"type":
+"Walking",
+"duration":
+"5 min"
+}
+],
+"rating":
+4.4,
+"reviews":
+1560,
+"gps_coordinates":
+{
+"latitude":
+36.878744499999996,
+"longitude":
+-2.0046006
+}
+}
+],
+"hotel_class":
+"Hotel de 3 estrellas",
+"extracted_hotel_class":
+3,
+"images":
+[
+{
+"thumbnail":
+"https://lh3.googleusercontent.com/gps-proxy/ALd4DhE7YmFG0mSDx-lxI0Td1U04HbssFMfQH00m1_HrRIjU6nJJr5tKWUnDtcbpx1oSYvhgxUT4gBJrsvPbhc8ogRvdi7O5aTmaKjlLy_4LS2X-5h0TI0FBtyFDE00_L_siZH7A1f28LI1JmsU3V16Pbry1kvflxJUV5jS-e5e3XccuIPBBzxrf-hM=s287-w287-h192-n-k-no-v1",
+"original_image":
+"https://images.trvl-media.com/lodging/105000000/104490000/104484800/104484773/dc9e6088_z.jpg"
+},
+{
+"thumbnail":
+"https://lh3.googleusercontent.com/gps-cs-s/APNQkAH4_yXF2CHsbYguBsEgOoOw9CrrP7EXWy789MrLbvGLb75qJU7X34-3iiwxsbMi_NXWYIzmmesO5adg20ToHRTFooHXnly2osVoafqU_pjIgDWzLap9BHDJa7c_2_oyw-_KayBqYg=s287-w287-h192-n-k-no-v1",
+"original_image":
+"https://lh3.googleusercontent.com/gps-cs-s/APNQkAH4_yXF2CHsbYguBsEgOoOw9CrrP7EXWy789MrLbvGLb75qJU7X34-3iiwxsbMi_NXWYIzmmesO5adg20ToHRTFooHXnly2osVoafqU_pjIgDWzLap9BHDJa7c_2_oyw-_KayBqYg=s10000"
+},
+{
+"thumbnail":
+"https://lh3.googleusercontent.com/gps-cs-s/APNQkAEVIQq_n0rGZpKaveaKJZ_KvEHRT5erkEBh9ofslev7CXvwSjVdU1mLmoPF4S22h2A7HNFc1wQXvE0nVXgi2D6Y88RVHAh9tgBEnpMsK7T_wwKE7ekvxv6FbNhy1_OJC3y3ON3n=s287-w287-h192-n-k-no-v1",
+"original_image":
+"https://lh3.googleusercontent.com/gps-cs-s/APNQkAEVIQq_n0rGZpKaveaKJZ_KvEHRT5erkEBh9ofslev7CXvwSjVdU1mLmoPF4S22h2A7HNFc1wQXvE0nVXgi2D6Y88RVHAh9tgBEnpMsK7T_wwKE7ekvxv6FbNhy1_OJC3y3ON3n=s10000"
+},
+{
+"thumbnail":
+"https://lh3.googleusercontent.com/gps-proxy/ALd4DhEiiOmtyYP7C6QIWY2IcEoGdol2VN9YwmU4G7PG6dFb2_bd0eLd0zrvIJga-sqrjTpGHTkyXb6lh2BeKNvko0JexF9CRIVtnixJvsVa6CVFP6prc28ANRr6aBEk-ZUq3SJgqs4hC9VnJpZE3EGLhGBLjovyXVsDR5m9ELOS9iQkdsTMWg4wGXnA=s287-w287-h192-n-k-no-v1",
+"original_image":
+"https://images.trvl-media.com/lodging/105000000/104490000/104484800/104484773/513768f4_z.jpg"
+},
+{
+"thumbnail":
+"https://lh3.googleusercontent.com/gps-cs-s/APNQkAEa-7gXkqjvQQdxrZSWORRf0w93lV3G73ds_deNzpQzMAR11LSBYhxRs7abFF8mCY3wc2jtTEuwEa_N9L6yxaa3Qw8SXzcOzlOEy9MYRco88ggbiYKT9zbrxy0JThXdrI0YFv8H=s287-w287-h192-n-k-no-v1",
+"original_image":
+"https://lh3.googleusercontent.com/gps-cs-s/APNQkAEa-7gXkqjvQQdxrZSWORRf0w93lV3G73ds_deNzpQzMAR11LSBYhxRs7abFF8mCY3wc2jtTEuwEa_N9L6yxaa3Qw8SXzcOzlOEy9MYRco88ggbiYKT9zbrxy0JThXdrI0YFv8H=s10000"
+},
+{
+"thumbnail":
+"https://lh3.googleusercontent.com/gps-cs-s/APNQkAGhyZfpi66JzMtleCpYZNpLCU7FDx3prCaW6eAwPmPD9yyD5D0zmfsmIvoq2Itfa1V1dUjuOfZwTtKuNH9d8VnJLEGnHEwcZhLMzQCYvO2becFHJZ4dR4IzZMSdf1Wtbov3Bsngwg=s287-w287-h192-n-k-no-v1",
+"original_image":
+"https://lh3.googleusercontent.com/gps-cs-s/APNQkAGhyZfpi66JzMtleCpYZNpLCU7FDx3prCaW6eAwPmPD9yyD5D0zmfsmIvoq2Itfa1V1dUjuOfZwTtKuNH9d8VnJLEGnHEwcZhLMzQCYvO2becFHJZ4dR4IzZMSdf1Wtbov3Bsngwg=s10000"
+},
+{
+"thumbnail":
+"https://lh3.googleusercontent.com/gps-cs-s/APNQkAGg6ZkciTK7-fYa_drEAdlU-eeft6qlJNRE2wI_q0wOs4lrbw71k6refruLgPn5hF0-kdQ6MIB_nrlHUbf53-MeGYfNkU758Z8KRipbBkP3P8lmqdGZ_RfMV-h58UHgDv114I_ayNNk7do=s287-w287-h192-n-k-no-v1",
+"original_image":
+"https://lh3.googleusercontent.com/gps-cs-s/APNQkAGg6ZkciTK7-fYa_drEAdlU-eeft6qlJNRE2wI_q0wOs4lrbw71k6refruLgPn5hF0-kdQ6MIB_nrlHUbf53-MeGYfNkU758Z8KRipbBkP3P8lmqdGZ_RfMV-h58UHgDv114I_ayNNk7do=s10000"
+},
+{
+"thumbnail":
+"https://lh3.googleusercontent.com/gps-cs-s/APNQkAHCfp7yv_yIlVPJ9ZaaaCvnjt_zvjrJwsLhqC-_B8hbZsDVYtI8duByKv1geCiALiDsPPJpoME-1NGhI_MqyVxb0Oups-5tXdUZ8L-N_88ph2lEGdeRF9I-SPShPYSNsWhmtu7rjg=s287-w287-h192-n-k-no-v1",
+"original_image":
+"https://lh3.googleusercontent.com/gps-cs-s/APNQkAHCfp7yv_yIlVPJ9ZaaaCvnjt_zvjrJwsLhqC-_B8hbZsDVYtI8duByKv1geCiALiDsPPJpoME-1NGhI_MqyVxb0Oups-5tXdUZ8L-N_88ph2lEGdeRF9I-SPShPYSNsWhmtu7rjg=s10000"
+},
+{
+"thumbnail":
+"https://lh3.googleusercontent.com/gps-cs-s/APNQkAFSU1kodHGnjgEyY1yHP8Na472de8ts3VvTe3DRSHC3hcaWfLPLkJgFuP4GHcZJqo9R_ehT2CcUuWEmsPDUbuBIPlyA7yP_YVGOwQd1Qq31PUYz7CgW3ndi58tiEb3qL1iMS3M=s287-w287-h192-n-k-no-v1",
+"original_image":
+"https://lh3.googleusercontent.com/gps-cs-s/APNQkAFSU1kodHGnjgEyY1yHP8Na472de8ts3VvTe3DRSHC3hcaWfLPLkJgFuP4GHcZJqo9R_ehT2CcUuWEmsPDUbuBIPlyA7yP_YVGOwQd1Qq31PUYz7CgW3ndi58tiEb3qL1iMS3M=s10000"
+}
+],
+"overall_rating":
+4.4,
+"reviews":
+418,
+"ratings":
+[
+{
+"stars":
+5,
+"count":
+248
+},
+{
+"stars":
+4,
+"count":
+122
+},
+{
+"stars":
+3,
+"count":
+24
+},
+{
+"stars":
+2,
+"count":
+10
+},
+{
+"stars":
+1,
+"count":
+14
+}
+],
+"location_rating":
+4.3,
+"amenities":
+[
+"Wi-Fi",
+"Bar",
+"Breakfast",
+"Smoke-free property",
+"Credit cards",
+"Debit cards",
+"NFC mobile payments",
+"Cash",
+"Front desk",
+"Baggage storage",
+"Concierge",
+"Full-service laundry",
+"Wake up calls",
+"Housekeeping",
+"Kid-friendly",
+"Outdoor pool",
+"Accessible",
+"Meeting rooms",
+"Pet-friendly",
+"Dogs allowed",
+"Cats allowed",
+"English",
+"Spanish",
+"Air conditioning",
+"Minibar",
+"Private bathroom"
+],
+"excluded_amenities":
+[
+"Hot tub",
+"Parking",
+"Fitness center",
+"Spa"
+],
+"amenities_detailed":
+{
+"groups":
+[
+{
+"title":
+"Internet",
+"list":
+[
+{
+"title":
+"Wi-Fi",
+"label":
+"free",
+"available":
+true
+}
+]
+},
+{
+"title":
+"Food & drink",
+"list":
+[
+{
+"title":
+"Bar",
+"available":
+true
+},
+{
+"title":
+"Breakfast",
+"label":
+"free",
+"available":
+true
+}
+]
+},
+{
+"title":
+"Policies & payments",
+"list":
+[
+{
+"title":
+"Smoke-free property",
+"available":
+true
+},
+{
+"title":
+"Credit cards",
+"available":
+true
+},
+{
+"title":
+"Debit cards",
+"available":
+true
+},
+{
+"title":
+"NFC mobile payments",
+"available":
+true
+},
+{
+"title":
+"Cash",
+"available":
+true
+}
+]
+},
+{
+"title":
+"Services",
+"list":
+[
+{
+"title":
+"Front desk",
+"available":
+true
+},
+{
+"title":
+"Baggage storage",
+"available":
+true
+},
+{
+"title":
+"Concierge",
+"available":
+true
+},
+{
+"title":
+"Full-service laundry",
+"available":
+true
+},
+{
+"title":
+"Wake up calls",
+"available":
+true
+},
+{
+"title":
+"Housekeeping",
+"label":
+"daily",
+"available":
+true
+}
+]
+},
+{
+"title":
+"Children",
+"list":
+[
+{
+"title":
+"Kid-friendly",
+"available":
+true
+}
+]
+},
+{
+"title":
+"Pools",
+"list":
+[
+{
+"title":
+"Outdoor pool",
+"available":
+true
+},
+{
+"title":
+"Hot tub",
+"available":
+false
+}
+]
+},
+{
+"title":
+"Parking & transportation",
+"list":
+[
+{
+"title":
+"Parking",
+"available":
+false
+}
+]
+},
+{
+"title":
+"Accessibility",
+"list":
+[
+{
+"title":
+"Accessible",
+"available":
+true
+}
+]
+},
+{
+"title":
+"Wellness",
+"list":
+[
+{
+"title":
+"Fitness center",
+"available":
+false
+},
+{
+"title":
+"Spa",
+"available":
+false
+}
+]
+},
+{
+"title":
+"Business & events",
+"list":
+[
+{
+"title":
+"Meeting rooms",
+"available":
+true
+}
+]
+},
+{
+"title":
+"Pets",
+"list":
+[
+{
+"title":
+"Pet-friendly",
+"label":
+"extra charge",
+"available":
+true
+},
+{
+"title":
+"Dogs allowed",
+"available":
+true
+},
+{
+"title":
+"Cats allowed",
+"available":
+true
+}
+]
+},
+{
+"title":
+"Languages spoken",
+"list":
+[
+{
+"title":
+"English",
+"available":
+true
+},
+{
+"title":
+"Spanish",
+"available":
+true
+}
+]
+},
+{
+"title":
+"Rooms",
+"list":
+[
+{
+"title":
+"Air conditioning",
+"available":
+true
+},
+{
+"title":
+"Minibar",
+"available":
+true
+}
+]
+},
+{
+"title":
+"Bathrooms",
+"list":
+[
+{
+"title":
+"Private bathroom",
+"available":
+true
+}
+]
+}
+],
+"popular":
+[
+{
+"title":
+"Pool",
+"available":
+true
+},
+{
+"title":
+"Breakfast",
+"label":
+"free",
+"available":
+true
+},
+{
+"title":
+"Wi-Fi",
+"label":
+"free",
+"available":
+true
+},
+{
+"title":
+"Air conditioning",
+"available":
+true
+}
+]
+},
+"health_and_safety":
+{
+"groups":
+[
+{
+"title":
+"Enhanced cleaning",
+"list":
+[
+{
+"title":
+"Enhanced cleaning of guest rooms",
+"available":
+true
+},
+{
+"title":
+"Commercial-grade disinfectant used to clean the property",
+"available":
+true
+},
+{
+"title":
+"Employees trained in COVID-19 cleaning procedures",
+"available":
+true
+},
+{
+"title":
+"Employees wear masks, face shields, and/or gloves",
+"available":
+true
+},
+{
+"title":
+"Enhanced cleaning of common areas",
+"available":
+true
+},
+{
+"title":
+"Employees trained in thorough hand-washing",
+"available":
+true
+}
+]
+},
+{
+"title":
+"Personal protection",
+"list":
+[
+{
+"title":
+"Hand-sanitizer and/or sanitizing wipes in common areas",
+"available":
+true
+},
+{
+"title":
+"Masks and/or gloves available for guests",
+"available":
+true
+}
+]
+}
+]
+},
+"sustainability":
+{
+"groups":
+[
+{
+"title":
+"Energy efficiency",
+"list":
+[
+{
+"title":
+"Energy conservation program",
+"available":
+true
+},
+{
+"title":
+"Energy use audited by an independent organization",
+"available":
+true
+},
+{
+"title":
+"Energy from carbon-free sources",
+"available":
+true
+},
+{
+"title":
+"Energy-efficient heating and cooling systems",
+"available":
+true
+},
+{
+"title":
+"Energy-efficient lighting",
+"available":
+true
+},
+{
+"title":
+"Energy-saving thermostats",
+"available":
+true
+}
+]
+},
+{
+"title":
+"Water conservation",
+"list":
+[
+{
+"title":
+"Water use audited by an independent organization",
+"available":
+true
+},
+{
+"title":
+"Water-efficient faucets, toilets, and showers",
+"available":
+true
+}
+]
+},
+{
+"title":
+"Waste reduction",
+"list":
+[
+{
+"title":
+"Recycling program",
+"available":
+true
+},
+{
+"title":
+"Food waste reduction program",
+"available":
+true
+},
+{
+"title":
+"Donates and composts excess food",
+"available":
+true
+},
+{
+"title":
+"Safely handles hazardous substances",
+"available":
+true
+},
+{
+"title":
+"Safely disposes of batteries and lightbulbs",
+"available":
+true
+},
+{
+"title":
+"No single-use plastic straws",
+"available":
+true
+}
+]
+},
+{
+"title":
+"Sustainable sourcing",
+"list":
+[
+{
+"title":
+"Responsible purchasing policy",
+"available":
+true
+},
+{
+"title":
+"Organic food and beverages",
+"available":
+true
+},
+{
+"title":
+"Locally sourced food and beverages",
+"available":
+true
+},
+{
+"title":
+"Responsibly sourced seafood",
+"available":
+true
+},
+{
+"title":
+"Organic cage-free eggs",
+"available":
+true
+},
+{
+"title":
+"Vegetarian and vegan meals",
+"available":
+true
+},
+{
+"title":
+"Eco-friendly toiletries",
+"available":
+true
+}
+]
+}
+]
+},
+"other_reviews":
+[
+{
+"source":
+"Tripadvisor",
+"source_icon":
+"https://www.gstatic.com/travel-hotels/branding/icon_100532569.png",
+"source_rating":
+{
+"score":
+4.300000190734863,
+"max_score":
+5
+},
+"reviews":
+270,
+"user_review":
+{
+"username":
+"SidiManu",
+"date":
+"Hace un año",
+"rating":
+{
+"score":
+5,
+"max_score":
+5
+},
+"comment":
+"Estupendo fin de semana en Las Negras en este auténtico hotel con encanto. Estuvimos en habitación con jacuzzi el cual pudimos disfrutar hasta las 12 de la noche. La habitación amplia y limpia con terraza con vistas al mar. El baño con todo lo necesario. El hotel dispone de una bonita piscina. El desayuno tipo buffet muy completo y con repostería, fruta y embutidos de calidad. Sin duda repetiremos.",
+"link":
+"https://www.tripadvisor.es/Hotel_Review-g1588116-d565488-r966623964?m=68573&staydates=2026_07_12_2026_07_13&uguests=1_2_0&supdv=desktop&supuc=US&supul=es"
+},
+"source_number":
+100532569,
+"serpapi_link":
+"https://serpapi.com/search.json?engine=google_hotels_reviews&hl=en&property_token=ChcI8MvLwduHlupDGgsvZy8xdHBfN3JoYxAB&source_number=100532569"
+}
+],
+"serpapi_google_hotels_reviews_link":
+"https://serpapi.com/search.json?engine=google_hotels_reviews&hl=en&property_token=ChcI8MvLwduHlupDGgsvZy8xdHBfN3JoYxAB",
+"serpapi_google_hotels_photos_link":
+"https://serpapi.com/search.json?engine=google_hotels_photos&property_token=ChcI8MvLwduHlupDGgsvZy8xdHBfN3JoYxAB"
+}

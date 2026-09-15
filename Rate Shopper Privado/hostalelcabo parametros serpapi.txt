@@ -1,0 +1,220 @@
+{
+"type":
+"hotel",
+"name":
+"Hostal del Cabo",
+"description":
+"Hostal de estilo desenfadado en una colina, con vistas al mar y habitaciones y estudios sencillos.",
+"link":
+"http://www.hostaldelcabo.com/",
+"property_token":
+"ChgI8vePpcfF_OmTARoLL2cvMXRmY181NjYQAQ",
+"serpapi_property_details_link":
+"https://serpapi.com/search.json?adults=2&check_in_date=2026-09-09&check_out_date=2026-09-10&children=0&currency=EUR&engine=google_hotels&gl=es&hl=es&property_token=ChgI8vePpcfF_OmTARoLL2cvMXRmY181NjYQAQ&q=El+Dorado+San+Jos%C3%A9",
+"gps_coordinates":
+{
+"latitude":
+36.7640045,
+"longitude":
+-2.1041966
+},
+"check_in_time":
+"14:00",
+"check_out_time":
+"12:00",
+"rate_per_night":
+{
+"lowest":
+"115 €",
+"extracted_lowest":
+115,
+"before_taxes_fees":
+"105 €",
+"extracted_before_taxes_fees":
+105
+},
+"total_rate":
+{
+"lowest":
+"115 €",
+"extracted_lowest":
+115,
+"before_taxes_fees":
+"105 €",
+"extracted_before_taxes_fees":
+105
+},
+"nearby_places":
+[
+{
+"name":
+"Playa de San José",
+"transportations":
+[
+{
+"type":
+"Walking",
+"duration":
+"4 min"
+}
+]
+},
+{
+"name":
+"San José",
+"transportations":
+[
+{
+"type":
+"Walking",
+"duration":
+"9 min"
+}
+]
+},
+{
+"name":
+"Aeropuerto de Almería",
+"transportations":
+[
+{
+"type":
+"Taxi",
+"duration":
+"34 min"
+},
+{
+"type":
+"Public transport",
+"duration":
+"1 h 8 min"
+}
+]
+},
+{
+"name":
+"Costa Esperanza",
+"transportations":
+[
+{
+"type":
+"Walking",
+"duration":
+"1 min"
+}
+]
+}
+],
+"hotel_class":
+"Hotel de 1 estrella",
+"extracted_hotel_class":
+1,
+"images":
+[
+{
+"thumbnail":
+"https://lh3.googleusercontent.com/gps-cs-s/APNQkAHwfr09OVZvr8BbCSwYBwZRz8CUjyxEpYwAPKXJnVG5PdiL-n5Cw6RzbI7wRsFdemmOzJOLA06Ykoo9EMA6HKECHLzDeCQxkM-9x1vmy3I12tPLvBBwd6qYPvw8Jy7SfdJsV4Ey=s287-w287-h192-n-k-no-v1",
+"original_image":
+"https://lh3.googleusercontent.com/gps-cs-s/APNQkAHwfr09OVZvr8BbCSwYBwZRz8CUjyxEpYwAPKXJnVG5PdiL-n5Cw6RzbI7wRsFdemmOzJOLA06Ykoo9EMA6HKECHLzDeCQxkM-9x1vmy3I12tPLvBBwd6qYPvw8Jy7SfdJsV4Ey=s10000"
+},
+{
+"thumbnail":
+"https://lh3.googleusercontent.com/gps-cs-s/APNQkAEW-GsNRRfZMYVNGOne-aN5Abif6MVZlV-XSYXTtrUnY8LUaf9nAdGcIb7PdnAanpjlTFVCLEqaZxvjMkSOFu97aiT0IUqkKctyl9b1lYqtmjFg39XHdrxsqzzTTQOR9Ap_2Vse=s287-w287-h192-n-k-no-v1",
+"original_image":
+"https://lh3.googleusercontent.com/gps-cs-s/APNQkAEW-GsNRRfZMYVNGOne-aN5Abif6MVZlV-XSYXTtrUnY8LUaf9nAdGcIb7PdnAanpjlTFVCLEqaZxvjMkSOFu97aiT0IUqkKctyl9b1lYqtmjFg39XHdrxsqzzTTQOR9Ap_2Vse=s10000"
+},
+{
+"thumbnail":
+"https://lh3.googleusercontent.com/gps-cs-s/APNQkAEzvOvDcJi5XUDtarejQ3S20tuAfD0OsyE2lL9m-GuoBEz5Tw_VqRV82KsI7JFMRIhJ87jgpFwPtUtKyw1ew0jeL_Uke9mDriQ37xPv5APDAVG17-GrQBzFm_W69r7f5vw-PzZATA=s287-w287-h192-n-k-no-v1",
+"original_image":
+"https://lh3.googleusercontent.com/gps-cs-s/APNQkAEzvOvDcJi5XUDtarejQ3S20tuAfD0OsyE2lL9m-GuoBEz5Tw_VqRV82KsI7JFMRIhJ87jgpFwPtUtKyw1ew0jeL_Uke9mDriQ37xPv5APDAVG17-GrQBzFm_W69r7f5vw-PzZATA=s10000"
+},
+{
+"thumbnail":
+"https://lh3.googleusercontent.com/gps-cs-s/APNQkAFZuXmJlyQRlNpAHDki4ZWCH5R9Fbplj6W2gqGjrwk8GFokIsWVGoDBTBhzp2kOjSNXBK9bye5RA-kG14noHF6VFxkSCpu_hVrfjaS7lE59K76gHHnaI6JGTzcilnaIgqk2OYu1fA=s287-w287-h192-n-k-no-v1",
+"original_image":
+"https://lh3.googleusercontent.com/gps-cs-s/APNQkAFZuXmJlyQRlNpAHDki4ZWCH5R9Fbplj6W2gqGjrwk8GFokIsWVGoDBTBhzp2kOjSNXBK9bye5RA-kG14noHF6VFxkSCpu_hVrfjaS7lE59K76gHHnaI6JGTzcilnaIgqk2OYu1fA=s10000"
+},
+{
+"thumbnail":
+"https://lh3.googleusercontent.com/gps-cs-s/APNQkAHHhMU_9UU-8KrrlZVDnaaQjRGUz2HI13q2FNv1cFjyqDlQQI92Ka0aZi3jH5OqiLd4iIS93gl7-ZiMd8PAx4_EAQrqnwo4fGDeusXuJWizMFBaAotl0On6ljqkE7O9ykVLJMDV=s287-w287-h192-n-k-no-v1",
+"original_image":
+"https://lh3.googleusercontent.com/gps-cs-s/APNQkAHHhMU_9UU-8KrrlZVDnaaQjRGUz2HI13q2FNv1cFjyqDlQQI92Ka0aZi3jH5OqiLd4iIS93gl7-ZiMd8PAx4_EAQrqnwo4fGDeusXuJWizMFBaAotl0On6ljqkE7O9ykVLJMDV=s10000"
+},
+{
+"thumbnail":
+"https://lh3.googleusercontent.com/gps-cs-s/APNQkAFHUwdGYLI-NdRy-7T48rbqNl8X3vZGxvUWnU3n1tu8jDRz6LJfTQsUHhvzx-PKYfdLnha4LofSnUL3PXDiEIATXaf9Zfm5o2GV0lAQzq-IBYUpAYniPc2dKQPOZRlq5radbBCD=s287-w287-h192-n-k-no-v1",
+"original_image":
+"https://lh3.googleusercontent.com/gps-cs-s/APNQkAFHUwdGYLI-NdRy-7T48rbqNl8X3vZGxvUWnU3n1tu8jDRz6LJfTQsUHhvzx-PKYfdLnha4LofSnUL3PXDiEIATXaf9Zfm5o2GV0lAQzq-IBYUpAYniPc2dKQPOZRlq5radbBCD=s10000"
+},
+{
+"thumbnail":
+"https://lh3.googleusercontent.com/gps-cs-s/APNQkAEvbEa2Ml0dxZwbHXwKZagoP9JSV5n2rFivTj4swBeXHj6mfpzaOu39GuyhojVysA4EO6nJWboQILnwZkYIFuAdhDzIbL05BICMt58kgRyqCrtIgmRahsckQb24EzN1aAb-Wtk=s287-w287-h192-n-k-no-v1",
+"original_image":
+"https://lh3.googleusercontent.com/gps-cs-s/APNQkAEvbEa2Ml0dxZwbHXwKZagoP9JSV5n2rFivTj4swBeXHj6mfpzaOu39GuyhojVysA4EO6nJWboQILnwZkYIFuAdhDzIbL05BICMt58kgRyqCrtIgmRahsckQb24EzN1aAb-Wtk=s10000"
+},
+{
+"thumbnail":
+"https://lh4.googleusercontent.com/proxy/wrp1CDP1BfvR39B15Aic63Xvlqt0N5O1gLNC0xGnb9Tiy2Yu8wwNiiBM71Q6tfzrfPEA1anWPdu85Zt0KcqW9XrZT9wjN2fX9lDUvEXihQmC5dse9KmeMM7ZSOOfQhnC2ZMIWwa3bIHVBc9HefwCXFsiLD-L8A=s287-w287-h192-n-k-no-v1",
+"original_image":
+"https://photos.hotelbeds.com/giata/original/00/009749/009749a_hb_a_005.jpg"
+},
+{
+"thumbnail":
+"https://lh3.googleusercontent.com/gps-cs-s/APNQkAE76i3ZKZyGhKMZ89alhE1wJ4JCRiiuteg3inUbdCbTRE4xA4icvlroUTkSe2krQn2Pck3pFZCvV_CgR5yjiEmDvNAZObVZeiP-umr0Qc919ku4QkM6tpbgyhxHKCdWrPWNXyEFwg=s287-w287-h192-n-k-no-v1",
+"original_image":
+"https://lh3.googleusercontent.com/gps-cs-s/APNQkAE76i3ZKZyGhKMZ89alhE1wJ4JCRiiuteg3inUbdCbTRE4xA4icvlroUTkSe2krQn2Pck3pFZCvV_CgR5yjiEmDvNAZObVZeiP-umr0Qc919ku4QkM6tpbgyhxHKCdWrPWNXyEFwg=s10000"
+}
+],
+"overall_rating":
+4.4,
+"reviews":
+269,
+"ratings":
+[
+{
+"stars":
+5,
+"count":
+161
+},
+{
+"stars":
+4,
+"count":
+82
+},
+{
+"stars":
+3,
+"count":
+12
+},
+{
+"stars":
+2,
+"count":
+5
+},
+{
+"stars":
+1,
+"count":
+9
+}
+],
+"location_rating":
+4.8,
+"amenities":
+[
+"Free Wi-Fi",
+"Air conditioning",
+"Beach access",
+"Kid-friendly",
+"Smoke-free property"
+],
+"serpapi_google_hotels_reviews_link":
+"https://serpapi.com/search.json?engine=google_hotels_reviews&hl=en&property_token=ChgI8vePpcfF_OmTARoLL2cvMXRmY181NjYQAQ",
+"serpapi_google_hotels_photos_link":
+"https://serpapi.com/search.json?engine=google_hotels_photos&property_token=ChgI8vePpcfF_OmTARoLL2cvMXRmY181NjYQAQ"
+},

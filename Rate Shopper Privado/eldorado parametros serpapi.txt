@@ -1,0 +1,264 @@
+El Dorado San José
+
+{
+"type":
+"hotel",
+"name":
+"El Dorado San José",
+"description":
+"Hostal de estilo desenfadado con habitaciones sencillas, vistas al mar y piscina exterior.",
+"link":
+"https://hotelesarrecife.es/eldorado/?utm_source=maps&utm_medium=google&utm_campaign=organic_maps&utm_id=organic&utm_content=eldorado",
+"property_token":
+"ChgIhovFtKeG0Kf2ARoLL2cvMXRtYnhnbmgQAQ",
+"serpapi_property_details_link":
+"https://serpapi.com/search.json?adults=2&check_in_date=2026-09-09&check_out_date=2026-09-10&children=0&currency=EUR&engine=google_hotels&gl=es&hl=es&property_token=ChgIhovFtKeG0Kf2ARoLL2cvMXRtYnhnbmgQAQ&q=El+Dorado+San+Jos%C3%A9",
+"gps_coordinates":
+{
+"latitude":
+36.7642637,
+"longitude":
+-2.111746
+},
+"check_in_time":
+"15:00",
+"check_out_time":
+"12:00",
+"rate_per_night":
+{
+"lowest":
+"104 €",
+"extracted_lowest":
+104,
+"before_taxes_fees":
+"92 €",
+"extracted_before_taxes_fees":
+92
+},
+"total_rate":
+{
+"lowest":
+"104 €",
+"extracted_lowest":
+104,
+"before_taxes_fees":
+"92 €",
+"extracted_before_taxes_fees":
+92
+},
+"nearby_places":
+[
+{
+"name":
+"Playa de San José",
+"transportations":
+[
+{
+"type":
+"Walking",
+"duration":
+"8 min"
+}
+]
+},
+{
+"name":
+"San José",
+"transportations":
+[
+{
+"type":
+"Walking",
+"duration":
+"3 min"
+}
+]
+},
+{
+"name":
+"Aeropuerto de Almería",
+"transportations":
+[
+{
+"type":
+"Taxi",
+"duration":
+"32 min"
+},
+{
+"type":
+"Public transport",
+"duration":
+"1 h 3 min"
+}
+]
+},
+{
+"name":
+"La Calavera",
+"transportations":
+[
+{
+"type":
+"Walking",
+"duration":
+"4 min"
+}
+]
+}
+],
+"hotel_class":
+"Hotel de 2 estrellas",
+"extracted_hotel_class":
+2,
+"images":
+[
+{
+"thumbnail":
+"https://lh3.googleusercontent.com/gps-cs-s/APNQkAH9KfDcIzPNvE5OZksbiUjnVLOE4KoTX9RNlN_YVGWKiN1q1A1j7zknOa0KrKvZd8k1P3rxnmFEv2hR642DyiffUIWOT052D2iU3P4AZSRy2pHdpQvjTQaTvGtDnvcPqB2G4Dzg=s287-w287-h192-n-k-no-v1",
+"original_image":
+"https://lh3.googleusercontent.com/gps-cs-s/APNQkAH9KfDcIzPNvE5OZksbiUjnVLOE4KoTX9RNlN_YVGWKiN1q1A1j7zknOa0KrKvZd8k1P3rxnmFEv2hR642DyiffUIWOT052D2iU3P4AZSRy2pHdpQvjTQaTvGtDnvcPqB2G4Dzg=s10000"
+},
+{
+"thumbnail":
+"https://lh3.googleusercontent.com/gps-cs-s/APNQkAEWHyyZxH2tOJV0Qfwd2FVyR_j-DZHtbPVy1y9mJEQSW9Ikk5vVMVChHXyu9tj327nt4IQOFFUy7X5vzodSbEr1t5f_qdc7Tf2K6aMEyHIkgUWkl0K7SEofXJZcf8hzf_7iajs=s287-w287-h192-n-k-no-v1",
+"original_image":
+"https://lh3.googleusercontent.com/gps-cs-s/APNQkAEWHyyZxH2tOJV0Qfwd2FVyR_j-DZHtbPVy1y9mJEQSW9Ikk5vVMVChHXyu9tj327nt4IQOFFUy7X5vzodSbEr1t5f_qdc7Tf2K6aMEyHIkgUWkl0K7SEofXJZcf8hzf_7iajs=s10000"
+},
+{
+"thumbnail":
+"https://lh3.googleusercontent.com/gps-cs-s/APNQkAEkGUdbeQYEiSRP5PVaIomvj1E_HwSBDFdRoU4YfZLS8XsxLpOMAcnXUEvixbpmyU9lww286oCidaT8VnP9ahE5asPlT8iMszzJJLLjhUhdeTqgPEki8u1nch-U2Zq5B1RU_2rraeWg5yku=s287-w287-h192-n-k-no-v1",
+"original_image":
+"https://lh3.googleusercontent.com/gps-cs-s/APNQkAEkGUdbeQYEiSRP5PVaIomvj1E_HwSBDFdRoU4YfZLS8XsxLpOMAcnXUEvixbpmyU9lww286oCidaT8VnP9ahE5asPlT8iMszzJJLLjhUhdeTqgPEki8u1nch-U2Zq5B1RU_2rraeWg5yku=s10000"
+},
+{
+"thumbnail":
+"https://lh3.googleusercontent.com/gps-cs-s/APNQkAGt_fN3uNmMvZ_L6-qJKsg8hsOs-fl_wYv-rM93Wh2HQb-jaigOH_HldEaBk6Rziy4xpJV55RBBNn_hm4jHFNZ-6BpuSoRtj6rEDZnweGz3TsFp-kx25vD0fU5xcNnFhwNC7Hg8bA=s287-w287-h192-n-k-no-v1",
+"original_image":
+"https://lh3.googleusercontent.com/gps-cs-s/APNQkAGt_fN3uNmMvZ_L6-qJKsg8hsOs-fl_wYv-rM93Wh2HQb-jaigOH_HldEaBk6Rziy4xpJV55RBBNn_hm4jHFNZ-6BpuSoRtj6rEDZnweGz3TsFp-kx25vD0fU5xcNnFhwNC7Hg8bA=s10000"
+},
+{
+"thumbnail":
+"https://lh3.googleusercontent.com/gps-cs-s/APNQkAEkkc22VGhdW_Ayco9WK9S9YhXJCcIQUTJG1zlOJUqKJyE1WMZRtZ3sT3cUaH0HVI-FGDrHaH-Lz6qVrS579uJAxTBY7Sofp4UaDUDjpkdQc2nxyQi7zQE8ovdBUA_OjcG4CdTofg=s287-w287-h192-n-k-no-v1",
+"original_image":
+"https://lh3.googleusercontent.com/gps-cs-s/APNQkAEkkc22VGhdW_Ayco9WK9S9YhXJCcIQUTJG1zlOJUqKJyE1WMZRtZ3sT3cUaH0HVI-FGDrHaH-Lz6qVrS579uJAxTBY7Sofp4UaDUDjpkdQc2nxyQi7zQE8ovdBUA_OjcG4CdTofg=s10000"
+},
+{
+"thumbnail":
+"https://lh3.googleusercontent.com/gps-cs-s/APNQkAFhyBkGTppblU1W9M6akqE_Xsi0az4yT2mUcwSqjZn-2rgk3fuW1WTmDZBsrpJQ3zN-MUYW_v4Shge1_XlrKcT1ra0_hP6tVaPC4GqvhfeghT4pK1zeVP-e5HhtQkzbcUcAc7nP=s287-w287-h192-n-k-no-v1",
+"original_image":
+"https://lh3.googleusercontent.com/gps-cs-s/APNQkAFhyBkGTppblU1W9M6akqE_Xsi0az4yT2mUcwSqjZn-2rgk3fuW1WTmDZBsrpJQ3zN-MUYW_v4Shge1_XlrKcT1ra0_hP6tVaPC4GqvhfeghT4pK1zeVP-e5HhtQkzbcUcAc7nP=s10000"
+},
+{
+"thumbnail":
+"https://lh3.googleusercontent.com/gps-cs-s/APNQkAEeAznbhE9BxJLUhOglPy6ZwOw_TCQTEPn_B8qsIJPks_I3C3lvM5AOZ8ZFbAJA8t9xBG4CUCVZuoPUR6ZuRCwBHjUw3cYrDI4849sMWfR1Tig_Dzm3M_hAcboU1mvIXFxUTG9Ljg=s287-w287-h192-n-k-no-v1",
+"original_image":
+"https://lh3.googleusercontent.com/gps-cs-s/APNQkAEeAznbhE9BxJLUhOglPy6ZwOw_TCQTEPn_B8qsIJPks_I3C3lvM5AOZ8ZFbAJA8t9xBG4CUCVZuoPUR6ZuRCwBHjUw3cYrDI4849sMWfR1Tig_Dzm3M_hAcboU1mvIXFxUTG9Ljg=s10000"
+},
+{
+"thumbnail":
+"https://lh3.googleusercontent.com/gps-cs-s/APNQkAHBcByyuWvAN3U3lhNUnXLxTSIbxHo_aVGICxtzXq64GPRLvTSg0rhUgupDwDcWx-hww5ApjbhtEVbEZFCGtFEX9_ywRVn5gz3GRmL2oKkC5G1W8HK94jtxD4034cKGeYqzaXkzKA=s287-w287-h192-n-k-no-v1",
+"original_image":
+"https://lh3.googleusercontent.com/gps-cs-s/APNQkAHBcByyuWvAN3U3lhNUnXLxTSIbxHo_aVGICxtzXq64GPRLvTSg0rhUgupDwDcWx-hww5ApjbhtEVbEZFCGtFEX9_ywRVn5gz3GRmL2oKkC5G1W8HK94jtxD4034cKGeYqzaXkzKA=s10000"
+},
+{
+"thumbnail":
+"https://lh3.googleusercontent.com/gps-cs-s/APNQkAE50Y_lYkq_E6X-ddS9immfL3lQrf98PWTHnlRfgpBEFwiIOZc5QvTEI7-N1FFIVwomNdoSU4_vgqvGHxUBGEJGgxGQqd32CqwQNSteuATCTg9HEfiEmuuBzGJq8S-ZMSPQPU5R=s287-w287-h192-n-k-no-v1",
+"original_image":
+"https://lh3.googleusercontent.com/gps-cs-s/APNQkAE50Y_lYkq_E6X-ddS9immfL3lQrf98PWTHnlRfgpBEFwiIOZc5QvTEI7-N1FFIVwomNdoSU4_vgqvGHxUBGEJGgxGQqd32CqwQNSteuATCTg9HEfiEmuuBzGJq8S-ZMSPQPU5R=s10000"
+}
+],
+"overall_rating":
+4.4,
+"reviews":
+507,
+"ratings":
+[
+{
+"stars":
+5,
+"count":
+282
+},
+{
+"stars":
+4,
+"count":
+156
+},
+{
+"stars":
+3,
+"count":
+47
+},
+{
+"stars":
+2,
+"count":
+9
+},
+{
+"stars":
+1,
+"count":
+13
+}
+],
+"location_rating":
+4.7,
+"reviews_breakdown":
+[
+{
+"name":
+"Habitación",
+"description":
+"Room amenities",
+"total_mentioned":
+5,
+"positive":
+5,
+"negative":
+0,
+"neutral":
+0,
+"category_token":
+"kk_ldnica1yRnFiSmp5fVDl5XVB-fq5CYm5qXmZJZmoxw2qPxKTMksTkzMOb8wBSpRDp",
+"serpapi_link":
+"https://serpapi.com/search.json?category_token=kk_ldnica1yRnFiSmp5fVDl5XVB-fq5CYm5qXmZJZmoxw2qPxKTMksTkzMOb8wBSpRDp&engine=google_hotels_reviews&hl=en&property_token=ChgIhovFtKeG0Kf2ARoLL2cvMXRtYnhnbmgQAQ"
+},
+{
+"name":
+"Propiedad",
+"description":
+"Property",
+"total_mentioned":
+6,
+"positive":
+5,
+"negative":
+0,
+"neutral":
+1,
+"category_token":
+"E9HH6Xica1yRnFiSmp5fVDl5RUBRfkFqUUklw0oQKzM1JTEFAN6pDWk",
+"serpapi_link":
+"https://serpapi.com/search.json?category_token=E9HH6Xica1yRnFiSmp5fVDl5RUBRfkFqUUklw0oQKzM1JTEFAN6pDWk&engine=google_hotels_reviews&hl=en&property_token=ChgIhovFtKeG0Kf2ARoLL2cvMXRtYnhnbmgQAQ"
+}
+],
+"amenities":
+[
+"Breakfast ($)",
+"Free Wi-Fi",
+"Outdoor pool",
+"Air conditioning",
+"Pet-friendly",
+"Full-service laundry",
+"Kid-friendly",
+"Smoke-free property"
+],
+"serpapi_google_hotels_reviews_link":
+"https://serpapi.com/search.json?engine=google_hotels_reviews&hl=en&property_token=ChgIhovFtKeG0Kf2ARoLL2cvMXRtYnhnbmgQAQ",
+"serpapi_google_hotels_photos_link":
+"https://serpapi.com/search.json?engine=google_hotels_photos&property_token=ChgIhovFtKeG0Kf2ARoLL2cvMXRtYnhnbmgQAQ"
+},
