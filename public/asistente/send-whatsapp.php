@@ -19,6 +19,11 @@ ob_start();
  *   contacto humano (hotelesarrecife.es §3 ESCALADO A HUMANO) — requiere
  *   además 'customer_phone', el teléfono del cliente para que el equipo
  *   pueda devolverle la llamada.
+ * - "consulta_reserva": detalle de una reserva al teléfono DE LA RESERVA,
+ *   cuando el huésped la consulta desde la web o Instagram de
+ *   hotelesarrecife.es (docs/consulta-reserva-fase2.md en ese repo). Requiere
+ *   además 'variables' con exactamente hotel, fechas, categoria, regimen y
+ *   estado, que van a {{1}}..{{5}} en ese orden.
  */
 
 $allowed_origins = ['https://hotelesarrecife.es', 'https://hotelads.es'];
@@ -89,7 +94,7 @@ $phone_number_id = trim((string) ($input['phone_number_id'] ?? ''));
 $template        = trim((string) ($input['template'] ?? 'info_hotel'));
 $customer_phone  = trim((string) ($input['customer_phone'] ?? ''));
 
-$allowed_templates = ['info_hotel', 'aviso_de_cliente'];
+$allowed_templates = ['info_hotel', 'aviso_de_cliente', 'consulta_reserva'];
 if (!in_array($template, $allowed_templates, true)) {
     ob_end_clean();
     http_response_code(400);
@@ -112,6 +117,25 @@ if ($template === 'aviso_de_cliente' && $customer_phone === '') {
     echo json_encode(['success' => false, 'error' => 'Falta customer_phone para aviso_de_cliente']);
     sw_log("ERROR | Falta customer_phone | template='{$template}' phone='{$phone}'");
     exit;
+}
+
+// consulta_reserva: 5 variables con nombre y orden fijos. Cada una a una sola
+// línea (Meta rechaza \n, \t y más de 4 espacios seguidos en un parámetro).
+// Se mantiene UTF-8: son valores que el huésped lee tal cual ("San José").
+$consulta_vars = [];
+if ($template === 'consulta_reserva') {
+    $recibidas = is_array($input['variables'] ?? null) ? $input['variables'] : [];
+    foreach (['hotel', 'fechas', 'categoria', 'regimen', 'estado'] as $clave) {
+        $valor = trim((string) preg_replace('/\s+/u', ' ', (string) ($recibidas[$clave] ?? '')));
+        if ($valor === '') {
+            ob_end_clean();
+            http_response_code(400);
+            echo json_encode(['success' => false, 'error' => 'Faltan variables para consulta_reserva']);
+            sw_log("ERROR | Falta la variable '{$clave}' | template=consulta_reserva phone='{$phone}'");
+            exit;
+        }
+        $consulta_vars[] = mb_substr($valor, 0, 200);
+    }
 }
 
 // Whitelist de phone_number_id conocidos de la red Hotelads — no confiar en
@@ -152,7 +176,20 @@ $param1 = mb_substr($toAscii($nombre), 0, 60);
 $param2 = mb_substr($toAscii($hotel), 0, 60);
 $param3 = mb_substr($toAscii($info), 0, 600);
 
-if ($template === 'aviso_de_cliente') {
+if ($template === 'consulta_reserva') {
+    // Sin valores en el log: son datos de una reserva, y el acceso ya queda
+    // auditado en hotelesarrecife (reservas_auditoria).
+    sw_log("SENDING | template=consulta_reserva phone='{$phone}'");
+    $template_components = [
+        [
+            'type'       => 'body',
+            'parameters' => array_map(
+                static fn (string $v): array => ['type' => 'text', 'text' => $v],
+                $consulta_vars
+            ),
+        ],
+    ];
+} elseif ($template === 'aviso_de_cliente') {
     $param_phone = mb_substr($toAscii($customer_phone), 0, 30);
     sw_log("SENDING | template=aviso_de_cliente nombre='{$param1}' customer_phone='{$param_phone}' target='{$param2}' phone='{$phone}' resumen='" . substr($param3, 0, 80) . "'");
     $template_components = [
