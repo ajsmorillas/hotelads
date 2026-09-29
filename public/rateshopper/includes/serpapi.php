@@ -9,7 +9,7 @@
  * del hotel solo para satisfacer el requisito, property_token sigue fijando el hotel exacto.
  */
 function rateshopper_consultar_serpapi(
-    string $apiKey,
+    #[\SensitiveParameter] string $apiKey,
     string $hotelNombre,
     string $propertyToken,
     string $checkIn,
@@ -27,6 +27,7 @@ function rateshopper_consultar_serpapi(
         'tarifa_inclusiones'     => null,
         'error'                  => null,
         'raw_json'               => null,
+        'cuota'                  => null, // 'mes' | 'hora' si SerpApi rechaza por cuota (esa fila no se guarda)
     ];
 
     $params = http_build_query([
@@ -65,16 +66,19 @@ function rateshopper_consultar_serpapi(
     $data = json_decode($response, true);
     if (!is_array($data)) {
         $resultado['error'] = 'Respuesta de SerpApi no es JSON válido (HTTP ' . $httpCode . ')';
+        $resultado['cuota'] = rateshopper_tipo_cuota_agotada($httpCode, '');
         return $resultado;
     }
 
     if (isset($data['error'])) {
         $resultado['error'] = 'SerpApi: ' . $data['error'];
+        $resultado['cuota'] = rateshopper_tipo_cuota_agotada($httpCode, (string) $data['error']);
         return $resultado;
     }
 
     if ($httpCode !== 200) {
         $resultado['error'] = 'SerpApi devolvió HTTP ' . $httpCode;
+        $resultado['cuota'] = rateshopper_tipo_cuota_agotada($httpCode, '');
         return $resultado;
     }
 
@@ -130,7 +134,10 @@ function rateshopper_extraer_detalle_habitacion(array $data, $precioRaiz): array
         if ($precioFuente === null) {
             continue;
         }
-        $diferencia = abs($precioFuente - $precioRaiz);
+        if (!is_numeric($precioFuente)) {
+            continue;
+        }
+        $diferencia = abs((float) $precioFuente - (float) $precioRaiz);
         if ($mejorDiferencia === null || $diferencia < $mejorDiferencia) {
             $mejorDiferencia = $diferencia;
             $fuente = $entry;
@@ -194,4 +201,61 @@ function rateshopper_extraer_detalle_habitacion(array $data, $precioRaiz): array
     }
 
     return $detalle;
+}
+
+/** 'mes' | 'hora' | null: si el error de SerpApi es por cuota agotada. */
+function rateshopper_tipo_cuota_agotada(int $httpCode, string $mensaje): ?string
+{
+    if (preg_match('/hour|throughput/i', $mensaje)) {
+        return 'hora';
+    }
+    if ($httpCode === 429 || preg_match('/run out of searches|searches.{0,40}(limit|exceeded|left)/i', $mensaje)) {
+        return 'mes';
+    }
+    return null;
+}
+
+/**
+ * Cuota de la cuenta vía Account API de SerpApi (gratis: no gasta búsquedas).
+ * 'quedan' null = no se pudo saber; la página avisa pero no bloquea.
+ */
+function rateshopper_cuenta(#[\SensitiveParameter] string $apiKey): array
+{
+    $cuenta = [
+        'quedan'      => null,
+        'por_mes'     => null,
+        'plan'        => null,
+        'renovacion'  => null,
+        'hora'        => null,
+        'limite_hora' => null,
+        'error'       => null,
+    ];
+
+    $ch = curl_init('https://serpapi.com/account.json?' . http_build_query(['api_key' => $apiKey]));
+    curl_setopt_array($ch, [
+        CURLOPT_RETURNTRANSFER => true,
+        CURLOPT_SSL_VERIFYPEER => true,
+        CURLOPT_TIMEOUT        => 15,
+    ]);
+    $response = curl_exec($ch);
+    $httpCode = curl_getinfo($ch, CURLINFO_HTTP_CODE);
+    curl_close($ch);
+
+    $data = $response === false ? null : json_decode($response, true);
+    if (!is_array($data) || isset($data['error']) || $httpCode !== 200) {
+        $cuenta['error'] = is_array($data) && isset($data['error'])
+            ? (string) $data['error']
+            : 'Sin respuesta de SerpApi (HTTP ' . $httpCode . ')';
+        return $cuenta;
+    }
+
+    $int = static fn($v) => is_numeric($v) ? (int) $v : null;
+    $cuenta['quedan']      = $int($data['total_searches_left'] ?? null);
+    $cuenta['por_mes']     = $int($data['searches_per_month'] ?? null);
+    $cuenta['plan']        = isset($data['plan_name']) ? (string) $data['plan_name'] : null;
+    $cuenta['renovacion']  = isset($data['plan_renewal_date']) ? (string) $data['plan_renewal_date'] : null;
+    $cuenta['hora']        = $int($data['this_hour_searches'] ?? null);
+    $cuenta['limite_hora'] = $int($data['account_rate_limit_per_hour'] ?? null);
+
+    return $cuenta;
 }

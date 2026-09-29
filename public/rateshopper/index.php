@@ -1,6 +1,19 @@
 <?php
 declare(strict_types=1);
 
+// Nunca mostrar trazas: podrían llevar la api_key o la contraseña de BD como argumentos.
+@ini_set('display_errors', '0');
+
+// Sesión propia solo para el token CSRF. SameSite=Strict: un formulario de otro
+// sitio no lleva la cookie, así que no puede gastar cuota aprovechando las
+// credenciales Basic que el navegador ya tiene guardadas.
+session_name('rateshopper');
+session_set_cookie_params(['path' => '/rateshopper/', 'secure' => true, 'httponly' => true, 'samesite' => 'Strict']);
+session_start();
+$_SESSION['csrf'] ??= bin2hex(random_bytes(32));
+
+const RATESHOPPER_MAX_FECHAS = 31;
+
 require_once __DIR__ . '/includes/config-loader.php';
 require_once __DIR__ . '/includes/db.php';
 require_once __DIR__ . '/includes/serpapi.php';
@@ -12,12 +25,20 @@ $apiKey  = $config['serpapi']['api_key'];
 $resultadosPorFecha = [];
 $busquedasRealizadas = 0;
 $erroresGenerales = [];
+$cuenta = empty($apiKey) ? null : rateshopper_cuenta($apiKey);
+$cuotaAgotada = null; // 'mes' | 'hora' si SerpApi corta a mitad de ejecución
+$sinConsultar = 0;
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    $fechasInput = $_POST['fechas'] ?? [];
-    $hotelesSeleccionados = $_POST['hoteles'] ?? [];
-    $noches  = max(1, (int) ($_POST['noches'] ?? 1));
-    $adultos = max(1, (int) ($_POST['adultos'] ?? 1));
+    $csrf = (string) ($_POST['csrf'] ?? '');
+    if ($csrf === '' || !hash_equals($_SESSION['csrf'], $csrf)) {
+        http_response_code(403);
+        exit('Sesión caducada. Recarga la página.');
+    }
+    $fechasInput = (array) ($_POST['fechas'] ?? []);
+    $hotelesSeleccionados = (array) ($_POST['hoteles'] ?? []);
+    $noches  = max(1, min(30, (int) ($_POST['noches'] ?? 1)));
+    $adultos = max(1, min(10, (int) ($_POST['adultos'] ?? 1)));
 
     $fechas = [];
     foreach ($fechasInput as $f) {
@@ -30,6 +51,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     $hotelesValidos = array_intersect($hotelesSeleccionados, array_keys($hoteles));
 
+    if (count($fechas) > RATESHOPPER_MAX_FECHAS) {
+        $erroresGenerales[] = 'Como máximo ' . RATESHOPPER_MAX_FECHAS . ' fechas por consulta.';
+    }
     if (empty($fechas)) {
         $erroresGenerales[] = 'Indica al menos una fecha de check-in válida.';
     }
@@ -40,11 +64,33 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $erroresGenerales[] = 'Falta configurar serpapi.api_key en config.php.';
     }
 
+    $necesarias = count($fechas) * count($hotelesValidos);
+    if ($cuenta !== null && $cuenta['quedan'] === null) {
+        // Sin saber la cuota no se gasta: es compartida con /staff/rateshopper de hotelesarrecife.
+        $erroresGenerales[] = 'No se pudo leer la cuota de SerpApi; no se ha lanzado ninguna búsqueda. Inténtalo en un rato.';
+    } elseif ($cuenta !== null && $necesarias > 0) {
+        if ($cuenta['quedan'] <= 0) {
+            $erroresGenerales[] = 'La cuota de SerpApi está agotada: no se ha lanzado ninguna búsqueda.';
+        } elseif ($necesarias > $cuenta['quedan']) {
+            $erroresGenerales[] = "Esta consulta necesita {$necesarias} búsquedas y solo quedan {$cuenta['quedan']} este mes. Quita fechas u hoteles.";
+        }
+        if ($cuenta['limite_hora'] !== null && $cuenta['hora'] !== null
+            && $cuenta['hora'] + $necesarias > $cuenta['limite_hora']) {
+            $libres = max(0, $cuenta['limite_hora'] - $cuenta['hora']);
+            $erroresGenerales[] = "El plan permite {$cuenta['limite_hora']} búsquedas por hora y ahora mismo quedan {$libres}; esta consulta necesita {$necesarias}. Divídela o espera un rato.";
+        }
+    }
+
     if (empty($erroresGenerales)) {
+      try {
         foreach ($fechas as $checkIn) {
             $checkOut = date('Y-m-d', strtotime($checkIn . " +{$noches} days"));
 
             foreach ($hotelesValidos as $hotelKey) {
+                if ($cuotaAgotada !== null) {
+                    $sinConsultar++;
+                    continue;
+                }
                 $hotel = $hoteles[$hotelKey];
 
                 $r = rateshopper_consultar_serpapi(
@@ -55,6 +101,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                     $checkOut,
                     $adultos
                 );
+                if ($r['cuota'] !== null) {
+                    $cuotaAgotada = $r['cuota'];
+                    $sinConsultar++;
+                    continue;
+                }
                 $busquedasRealizadas++;
 
                 $fila = [
@@ -83,6 +134,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 $resultadosPorFecha[$checkIn][] = $fila;
             }
         }
+      } catch (Throwable $e) {
+        // Solo el mensaje: la traza podría incluir la api_key o la contraseña de BD.
+        error_log('[rateshopper] ' . $e->getMessage());
+        $erroresGenerales[] = 'Error interno al consultar o guardar precios. Las búsquedas ya hechas sí se han gastado.';
+      }
 
         foreach ($resultadosPorFecha as $checkIn => &$filas) {
             usort($filas, function ($a, $b) {
@@ -93,8 +149,19 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         }
         unset($filas);
         ksort($resultadosPorFecha);
+
+        if ($busquedasRealizadas > 0 || $cuotaAgotada !== null) {
+            $cuenta = rateshopper_cuenta($apiKey); // cifra ya descontada
+        }
     }
 }
+
+$agotada = $cuotaAgotada === 'mes' || ($cuenta !== null && $cuenta['quedan'] !== null && $cuenta['quedan'] <= 0);
+$pocas = !$agotada && $cuenta !== null && $cuenta['quedan'] !== null
+    && $cuenta['quedan'] <= max(25, (int) (($cuenta['por_mes'] ?? 0) * 0.1));
+$renovacionTxt = !empty($cuenta['renovacion'])
+    ? ' Se renueva el ' . date('d/m/Y', strtotime($cuenta['renovacion'])) . '.'
+    : '';
 
 function e(?string $v): string
 {
@@ -135,6 +202,27 @@ function e(?string $v): string
 <h1>Rate Shopper &mdash; Hoteles Arrecife</h1>
 <p>Consulta manual de precios (Google Hotels vía SerpApi) frente a la competencia de Cabo de Gata / San José / Las Negras.</p>
 
+<?php if ($agotada): ?>
+<div class="errores" role="alert">
+    <strong>Cuota de SerpApi agotada.</strong> No se pueden consultar más precios este mes.<?= e($renovacionTxt) ?>
+    <?= $sinConsultar ? 'Se quedaron sin consultar ' . $sinConsultar . ' combinaciones de esta ejecución.' : '' ?>
+</div>
+<?php elseif ($cuotaAgotada === 'hora'): ?>
+<div class="aviso-busquedas" role="alert">
+    <strong>Límite de búsquedas por hora alcanzado.</strong> Se quedaron sin consultar <?= $sinConsultar ?> combinaciones. Vuelve a intentarlo dentro de un rato.
+</div>
+<?php elseif ($pocas): ?>
+<div class="aviso-busquedas" role="status">
+    Quedan solo <strong><?= (int) $cuenta['quedan'] ?></strong> búsquedas de SerpApi este mes.<?= e($renovacionTxt) ?>
+</div>
+<?php endif; ?>
+
+<?php if ($cuenta !== null && $cuenta['error'] !== null): ?>
+<p class="errores">No se pudo leer la cuota de SerpApi (<?= e($cuenta['error']) ?>). No se lanzarán búsquedas hasta que se pueda comprobar.</p>
+<?php elseif ($cuenta !== null && !$agotada): ?>
+<p>Cuota: <strong><?= (int) $cuenta['quedan'] ?></strong> búsquedas disponibles<?= $cuenta['por_mes'] ? ' de ' . (int) $cuenta['por_mes'] . ' al mes' : '' ?><?= $cuenta['plan'] ? ' (plan ' . e($cuenta['plan']) . ')' : '' ?>.<?= e($renovacionTxt) ?></p>
+<?php endif; ?>
+
 <?php if (!empty($erroresGenerales)): ?>
 <div class="errores">
     <ul>
@@ -153,11 +241,12 @@ function e(?string $v): string
 <?php endif; ?>
 
 <form method="post">
+    <input type="hidden" name="csrf" value="<?= e($_SESSION['csrf']) ?>">
     <fieldset>
         <legend>Fechas de check-in</legend>
         <div id="fechas-container">
         <?php
-            $fechasPrevias = $_POST['fechas'] ?? [date('Y-m-d')];
+            $fechasPrevias = (array) ($_POST['fechas'] ?? [date('Y-m-d')]);
             foreach ($fechasPrevias as $f):
         ?>
             <div class="fechas-row">
@@ -173,7 +262,7 @@ function e(?string $v): string
         <legend>Hoteles a consultar</legend>
         <div class="hoteles-grid">
         <?php
-            $hotelesPrevios = $_POST['hoteles'] ?? array_keys($hoteles);
+            $hotelesPrevios = (array) ($_POST['hoteles'] ?? array_keys($hoteles));
             foreach ($hoteles as $key => $hotel):
                 $checked = in_array($key, $hotelesPrevios, true) ? 'checked' : '';
                 $claseLabel = $hotel['propio'] ? 'hotel propio' : 'hotel';
@@ -195,7 +284,7 @@ function e(?string $v): string
         </div>
     </fieldset>
 
-    <button type="submit">Consultar precios</button>
+    <button type="submit"<?= $agotada ? ' disabled style="background:#999;cursor:not-allowed"' : '' ?>>Consultar precios</button>
 </form>
 
 <?php foreach ($resultadosPorFecha as $checkIn => $filas): ?>
