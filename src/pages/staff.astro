@@ -283,6 +283,18 @@ const dia = [
               <figcaption>Llegadas del día</figcaption>
             </figure>
             <p class="st-aside">El hotel recibe un aviso cada vez que un huésped completa su check-in.</p>
+            <aside class="st-notice" aria-labelledby="st-notice-booking">
+              <p class="st-notice-label" id="st-notice-booking">Aviso · Reservas de Booking.com</p>
+              <p>
+                Booking.com ha dejado de enviar el teléfono del cliente a los PMS de los hoteles. Por eso /staff
+                envía el mensaje de check-in online a través de la extranet de Booking.com, como un mensaje nativo
+                de la plataforma: el huésped lo recibe en su cuenta de Booking.com aunque el hotel no tenga su teléfono.
+              </p>
+              <p>
+                Al completar el check-in, el huésped deja su móvil, y el mensaje de después de la estancia le llega
+                por WhatsApp como a cualquier otro cliente.
+              </p>
+            </aside>
           </article>
 
           <!-- 15:20 -->
@@ -618,6 +630,14 @@ const dia = [
   /* la tabla sigue a la derecha en el portal: se funde en lugar de cortarse */
   .st-plate--fade img { -webkit-mask-image: linear-gradient(90deg, #000 88%, transparent); mask-image: linear-gradient(90deg, #000 88%, transparent); }
   .st-aside { margin-top: 1.25rem; font-size: 0.95rem; color: var(--tinta-2); }
+  .st-notice {
+    margin-top: 2rem; max-width: 56rem; padding: 1.25rem 1.5rem; background: var(--tarjeta);
+    border: 1px solid var(--pauta); border-left: 3px solid var(--marca); border-radius: 0.5rem;
+  }
+  .st-notice-label {
+    font-size: 0.8rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--marca-hondo);
+  }
+  .st-notice p:not(.st-notice-label) { margin-top: 0.6rem; font-size: 0.975rem; line-height: 1.6; color: var(--tinta); max-width: 70ch; }
 
   .st-entry--quiet { display: grid; gap: 2rem; align-items: center; padding: 3.5rem 0; }
   @media (min-width: 900px) { .st-entry--quiet { grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr); } }
