@@ -1,0 +1,768 @@
+---
+import Layout from '../layouts/layout.astro';
+
+const CALENDARIO = 'https://calendar.app.google/ouMpShqMGVHmtUJU7';
+
+// Un día del hotel: cada bloque aparece a la hora en que /staff trabaja.
+// "resumen" alimenta el índice final y el aviso "a esta hora…" del hero.
+const dia = [
+  { id: 'madrugada', hora: '03:12', area: 'Frontdesk', resumen: 'atiende consultas y reservas en web, WhatsApp y teléfono' },
+  { id: 'nuevo', hora: '06:45', area: 'Equipo', resumen: 'tiene los manuales del hotel a mano' },
+  { id: 'turno', hora: '07:00', area: 'Equipo', resumen: 'registra la jornada de quien entra a trabajar' },
+  { id: 'cuadrante', hora: '08:30', area: 'Equipo', resumen: 'reparte turnos y controla el coste de personal' },
+  { id: 'precio', hora: '09:15', area: 'Ventas', resumen: 'propone la tarifa del día y vigila a la competencia' },
+  { id: 'mensajes', hora: '11:40', area: 'Frontdesk', resumen: 'pasa a recepción las conversaciones que piden una persona' },
+  { id: 'llegadas', hora: '13:00', area: 'Concierge', resumen: 'recibe a los huéspedes con el check-in hecho' },
+  { id: 'vip', hora: '15:20', area: 'Concierge', resumen: 'reconoce a los clientes de siempre' },
+  { id: 'grupos', hora: '16:30', area: 'Ventas', resumen: 'hace el seguimiento de grupos y presupuestos' },
+  { id: 'bonos', hora: '18:05', area: 'Ventas', resumen: 'vende, envía y canjea bonos regalo' },
+  { id: 'opiniones', hora: '21:30', area: 'Concierge', resumen: 'recoge las opiniones de quien acaba de irse' },
+  { id: 'conserje', hora: '22:10', area: 'Concierge', resumen: 'contesta desde la habitación como un conserje' },
+];
+---
+<Layout
+  title="/staff | Frontdesk y concierge para hoteles, las 24 horas | Hotel Ads"
+  description="/staff aúna frontdesk y concierge: un asistente que atiende web, WhatsApp y teléfono, y el portal de tu equipo para check-in online, mensajes, bonos regalo, opiniones, turnos, fichajes, grupos y tarifas."
+  image="/images/staff/hoy.webp"
+>
+  <Fragment slot="head">
+    <link rel="preload" href="/fonts/archivo-latin-var.woff2" as="font" type="font/woff2" crossorigin />
+    <script type="application/ld+json" is:inline set:html={JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "/staff",
+      "alternateName": "Hotel Ads /staff",
+      "applicationCategory": "BusinessApplication",
+      "operatingSystem": "Web",
+      "url": "https://hotelads.es/staff",
+      "description": "Frontdesk y concierge para hoteles independientes: asistente de IA en web, WhatsApp y teléfono, y portal del equipo con check-in online, mensajes, bonos regalo, opiniones, turnos, fichajes, grupos y recomendación de tarifas.",
+      "provider": { "@type": "Organization", "name": "Hotel Ads", "url": "https://hotelads.es" }
+    })} />
+  </Fragment>
+
+  <main class="st">
+    <!-- ───────── Primer viewport ───────── -->
+    <header class="st-hero">
+      <div class="st-wrap st-hero-grid">
+        <div class="st-hero-copy">
+          <h1 class="st-title">/staff</h1>
+          <p class="st-sub">Frontdesk y concierge.<br />Las 24 horas.</p>
+          <p class="st-lead">
+            Un asistente que atiende la web, WhatsApp y el teléfono, y el portal donde tu equipo
+            recibe a los huéspedes, cobra los bonos, reparte los turnos y decide el precio del día.
+            Todo en un mismo sitio, y funcionando ya en hoteles de verdad.
+          </p>
+          <div class="st-actions">
+            <a class="st-btn" href={CALENDARIO} target="_blank" rel="noopener">Probar en vivo</a>
+            <a class="st-link" href="#dia">Recorrer un día con /staff</a>
+          </div>
+        </div>
+
+        <div class="st-hero-visual">
+          <figure class="st-plate st-plate--hero">
+            <img src="/images/staff/hoy.webp" width="1600" height="1000"
+                 alt="Portal /staff, pantalla Hoy: tarjeta de jornada, próximos turnos, mensajes pendientes y accesos a check-ins, clientes VIP, bonos y opiniones"
+                 fetchpriority="high" />
+          </figure>
+          <div class="st-ruler" aria-hidden="true">
+            <div class="st-ruler-track">
+              {Array.from({ length: 25 }, (_, h) => (
+                <span class="st-tick" style={`--h:${h}`} data-major={h % 6 === 0 ? '' : undefined}>
+                  {h % 6 === 0 && <em>{String(h).padStart(2, '0')}</em>}
+                </span>
+              ))}
+              <span class="st-now" id="st-now" style="--pos:0.5"></span>
+            </div>
+          </div>
+          <p class="st-nowline" id="st-nowline">A cualquier hora del día, /staff está trabajando.</p>
+        </div>
+      </div>
+    </header>
+
+    <!-- ───────── El día ───────── -->
+    <section id="dia" class="st-day" aria-label="Un día en un hotel con /staff">
+      <div class="st-wrap st-day-grid">
+        <div class="st-miniclock" aria-hidden="true"><b id="st-mclock">03:12</b><span id="st-marea">Frontdesk</span></div>
+        <aside class="st-rail" aria-hidden="true">
+          <div class="st-clock">
+            <span class="st-clock-time" id="st-clock">03:12</span>
+            <span class="st-clock-area" id="st-clock-area">Frontdesk</span>
+          </div>
+          <ol class="st-rail-list">
+            {dia.map((d) => (
+              <li data-for={d.id}><span>{d.hora}</span></li>
+            ))}
+          </ol>
+        </aside>
+
+        <div class="st-entries">
+
+          <!-- 03:12 -->
+          <article class="st-entry st-entry--split" id="madrugada" data-hora="03:12" data-area="Frontdesk">
+            <div class="st-entry-copy">
+              <p class="st-hour">03:12</p>
+              <h2>Alguien quiere reservar de madrugada. Le atiende /staff.</h2>
+              <p>
+                El asistente contesta al momento en el chat de tu web, en WhatsApp y al teléfono, con los precios
+                y la disponibilidad reales. Detecta cuándo alguien quiere reservar y le lleva a la reserva con las
+                fechas y las personas ya puestas.
+              </p>
+              <ul class="st-points">
+                <li>Si esas fechas están llenas, propone otras cercanas u otra habitación antes de dar un «no».</li>
+                <li>Habla español, inglés, francés y alemán, por voz y por escrito.</li>
+                <li>Después de una llamada, manda toda la información por WhatsApp sin que el cliente dicte su número.</li>
+                <li>Solo cuenta lo que tú decides que puede contar.</li>
+              </ul>
+              <ul class="st-channels" aria-label="Canales">
+                <li>
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h16v11H9l-5 4z" /></svg>
+                  Chat web
+                </li>
+                <li>
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3a9 9 0 0 0-7.8 13.5L3 21l4.6-1.2A9 9 0 1 0 12 3z" /></svg>
+                  WhatsApp
+                </li>
+                <li>
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 3h4l2 5-2.5 1.5a11 11 0 0 0 6 6L16 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 5a2 2 0 0 1 2-2z" /></svg>
+                  Teléfono
+                </li>
+              </ul>
+            </div>
+            <figure class="st-phone" aria-label="Conversación de ejemplo por WhatsApp">
+              <div class="st-phone-head">
+                <span class="st-avatar" aria-hidden="true">S</span>
+                <div><strong>Hotel Salinar</strong><small>responde el asistente</small></div>
+              </div>
+              <div class="st-thread">
+                <p class="st-msg st-msg--in">Hola, ¿tenéis habitación doble del 14 al 16 de octubre? Somos dos adultos y un bebé.<time>03:12</time></p>
+                <p class="st-msg st-msg--out">¡Hola! Para esas noches la doble estándar está completa, pero tengo la <b>doble superior con cuna</b>, o la estándar del 15 al 17. ¿Cuál te preparo?<time>03:12</time></p>
+                <p class="st-msg st-msg--in">La superior.<time>03:13</time></p>
+                <p class="st-msg st-msg--out">Perfecto. Aquí la tienes con fechas, 2 adultos y cuna ya seleccionados:<span class="st-msg-cta">Reservar 14–16 oct</span><time>03:13</time></p>
+              </div>
+              <figcaption>Conversación de ejemplo</figcaption>
+            </figure>
+          </article>
+
+          <!-- 06:45 -->
+          <article class="st-entry st-entry--quiet" id="nuevo" data-hora="06:45" data-area="Equipo">
+            <p class="st-hour">06:45</p>
+            <div class="st-quiet-body">
+              <h2>Hoy empieza alguien nuevo en recepción.</h2>
+              <p>
+                Los manuales del hotel viven dentro de /staff: cómo canjear un bono, cómo se hace el check-in,
+                cuándo tomar el control de un WhatsApp, qué contar al huésped. Con buscador y sin tener que poner tildes.
+              </p>
+            </div>
+            <figure class="st-plate st-plate--small">
+              <img src="/images/staff/manuales.webp" width="1100" height="768" loading="lazy"
+                   alt="Manuales y ayuda: buscador y guías de bonos regalo, check-in online, WhatsApp del hotel y fichaje" />
+            </figure>
+          </article>
+
+          <!-- 07:00 -->
+          <article class="st-entry st-entry--split st-entry--flip" id="turno" data-hora="07:00" data-area="Equipo">
+            <div class="st-entry-copy">
+              <p class="st-hour">07:00</p>
+              <h2>Empieza el turno. Se ficha desde el móvil.</h2>
+              <p>
+                Registro de jornada conforme a la ley: entrada, pausa y salida desde el panel o por WhatsApp,
+                indicando en qué hotel se trabaja. Cada persona ve su horario de los próximos días nada más entrar.
+              </p>
+              <ul class="st-points">
+                <li>Si alguien ficha fuera de orden, no se le bloquea: el responsable recibe la incidencia para revisarla.</li>
+                <li>Ausencias, vacaciones y bajas en el mismo sitio.</li>
+                <li>Exportación a PDF y Excel, y un acceso temporal para la Inspección de Trabajo.</li>
+              </ul>
+            </div>
+            <figure class="st-device">
+              <img src="/images/staff/m_hoy.webp" width="640" height="1386" loading="lazy"
+                   alt="Portal /staff en el móvil: tarjeta de jornada con entrada, pausa, vuelta y salida, y botón Fichar entrada" />
+            </figure>
+          </article>
+
+          <!-- 08:30 -->
+          <article class="st-entry st-entry--wide" id="cuadrante" data-hora="08:30" data-area="Equipo">
+            <div class="st-entry-head">
+              <p class="st-hour">08:30</p>
+              <h2>El cuadrante de la semana ya está hecho, para los dos hoteles.</h2>
+              <p>
+                Turnos de mañana, tarde y noche en varios centros de trabajo, con plantillas para asignarlos rápido,
+                cambios de turno entre compañeros e importación desde Excel. Al lado, lo que cuesta el personal:
+                lo planificado frente a lo fichado, persona a persona.
+              </p>
+            </div>
+            <div class="st-plates st-plates--stack">
+              <figure class="st-plate">
+                <img src="/images/staff/turnos.webp" width="1400" height="1080" loading="lazy"
+                     alt="Cuadrante de turnos semanal por empleado y centro de trabajo" />
+                <figcaption>Cuadrante de turnos</figcaption>
+              </figure>
+              <figure class="st-plate">
+                <img src="/images/staff/costes.webp" width="1300" height="726" loading="lazy"
+                     alt="Coste de personal del mes: coste planificado frente a coste real por empleado" />
+                <figcaption>Coste de personal</figcaption>
+              </figure>
+            </div>
+          </article>
+
+          <!-- 09:15 -->
+          <article class="st-entry st-entry--wide" id="precio" data-hora="09:15" data-area="Ventas">
+            <div class="st-entry-head">
+              <p class="st-hour">09:15</p>
+              <h2>Sobre la mesa, el precio que conviene hoy.</h2>
+              <p>
+                Cada mañana /staff compara cómo va la ocupación con lo esperado para esa antelación y propone
+                subir o bajar la tarifa, con el motivo a la vista y un freno para no malvender. Y en un calendario,
+                lo que cobra tu competencia día a día y cuántos hoteles han movido precio.
+              </p>
+            </div>
+            <div class="st-plates st-plates--pair">
+              <figure class="st-plate">
+                <img src="/images/staff/revenue.webp" width="1400" height="780" loading="lazy"
+                     alt="Recomendación de tarifas: tarifa actual, tarifa sugerida, movimiento, ocupación media y motivo" />
+                <figcaption>Recomendación de tarifas</figcaption>
+              </figure>
+              <figure class="st-plate">
+                <img src="/images/staff/rateshopper.webp" width="1400" height="1080" loading="lazy"
+                     alt="Calendario con el precio mediano de la competencia cada día del mes" />
+                <figcaption>Precios de la competencia</figcaption>
+              </figure>
+            </div>
+          </article>
+
+          <!-- 11:40 -->
+          <article class="st-entry st-entry--split" id="mensajes" data-hora="11:40" data-area="Frontdesk">
+            <div class="st-entry-copy">
+              <p class="st-hour">11:40</p>
+              <h2>Un huésped prefiere hablar con una persona. Recepción toma el relevo.</h2>
+              <p>
+                Todas las conversaciones de WhatsApp llegan a una bandeja compartida. Cualquiera del equipo puede
+                entrar en una, contestar en persona y devolvérsela al asistente cuando termine.
+              </p>
+              <ul class="st-points">
+                <li>Quien ya tiene reserva la consulta por WhatsApp: fechas, habitación e importe.</li>
+                <li>Envíos de WhatsApp a listas de huéspedes para avisos y campañas.</li>
+                <li>Funciona igual en el ordenador de recepción que en el móvil.</li>
+              </ul>
+            </div>
+            <div class="st-duo">
+              <figure class="st-plate st-plate--list">
+                <img src="/images/staff/walist.webp" width="560" height="1444" loading="lazy"
+                     alt="Bandeja de mensajes de WhatsApp con conversaciones sin leer y sin asignar" />
+                <figcaption>Bandeja de mensajes</figcaption>
+              </figure>
+              <figure class="st-phone st-phone--short" aria-label="Conversación de ejemplo en modo humano">
+                <div class="st-phone-head">
+                  <span class="st-avatar" aria-hidden="true">M</span>
+                  <div><strong>+34 6•• ••• 204</strong><small>Modo humano · Lucía, recepción</small></div>
+                </div>
+                <div class="st-thread">
+                  <p class="st-msg st-msg--in">¿Podéis preparar una tarta para el cumpleaños de mi madre el sábado?<time>11:38</time></p>
+                  <p class="st-msg st-msg--staff">¡Claro! Soy Lucía, de recepción. La dejamos en la habitación a las 18:00, ¿os parece?<time>11:40</time></p>
+                  <span class="st-handback">Devolver al asistente</span>
+                </div>
+                <figcaption>Conversación de ejemplo</figcaption>
+              </figure>
+            </div>
+          </article>
+
+          <!-- 13:00 -->
+          <article class="st-entry st-entry--wide" id="llegadas" data-hora="13:00" data-area="Concierge">
+            <div class="st-entry-head">
+              <p class="st-hour">13:00</p>
+              <h2>Llegan los huéspedes, y el check-in ya está hecho.</h2>
+              <p>
+                Antes de llegar, cada huésped recibe su enlace y rellena desde el móvil los datos del registro
+                obligatorio de viajeros, los suyos y los de sus acompañantes. En recepción solo queda firmar
+                en la tableta de firma, todos los ocupantes de la habitación, y entregar la llave.
+              </p>
+            </div>
+            <figure class="st-plate st-plate--mid st-plate--fade">
+              <img src="/images/staff/checkin.webp" width="1300" height="800" loading="lazy"
+                   alt="Llegadas del día: hotel, número de reserva, teléfono, titular, fechas y estado del check-in online" />
+              <figcaption>Llegadas del día</figcaption>
+            </figure>
+            <p class="st-aside">El hotel recibe un aviso cada vez que un huésped completa su check-in.</p>
+          </article>
+
+          <!-- 15:20 -->
+          <article class="st-entry st-entry--wide" id="vip" data-hora="15:20" data-area="Concierge">
+            <div class="st-entry-head">
+              <p class="st-hour">15:20</p>
+              <h2>Llama un cliente de siempre. Recepción lo sabe antes de descolgar.</h2>
+              <p>
+                Con el teléfono basta para saber si es cliente VIP por fidelidad o por noches acumuladas, en
+                cualquiera de tus hoteles. Al lado, la norma de descuento que le corresponde, para que todo el
+                equipo aplique el mismo criterio.
+              </p>
+            </div>
+            <figure class="st-plate st-plate--mid">
+              <img src="/images/staff/vip.webp" width="1400" height="610" loading="lazy"
+                   alt="Búsqueda de cliente VIP por teléfono y tabla de descuentos en reserva directa" />
+              <figcaption>Clientes VIP</figcaption>
+            </figure>
+          </article>
+
+          <!-- 16:30 -->
+          <article class="st-entry st-entry--wide" id="grupos" data-hora="16:30" data-area="Ventas">
+            <div class="st-entry-head">
+              <p class="st-hour">16:30</p>
+              <h2>Una agencia pide presupuesto para cuarenta personas.</h2>
+              <p>
+                Cada grupo con su ficha, su estado y su próxima acción: desde el primer contacto hasta el rooming.
+                La propuesta y el dossier salen del mismo sitio, en cuatro idiomas, y el resumen enseña cuánto
+                se ha confirmado y por qué se pierden los que se pierden.
+              </p>
+            </div>
+            <figure class="st-plate st-plate--full">
+              <img src="/images/staff/grupos.webp" width="1400" height="1080" loading="lazy"
+                   alt="Seguimiento de grupos: embudo por estado, tasa de conversión y listado con próxima acción" />
+              <figcaption>Seguimiento de grupos</figcaption>
+            </figure>
+          </article>
+
+          <!-- 18:05 -->
+          <article class="st-entry st-entry--split" id="bonos" data-hora="18:05" data-area="Ventas">
+            <div class="st-entry-copy">
+              <p class="st-hour">18:05</p>
+              <h2>Alguien regala una escapada. El bono llega solo.</h2>
+              <p>
+                Venta de bonos regalo en tu web con pago online seguro. El comprador recibe el bono al momento,
+                y recepción lo encuentra por código, email o nombre para canjearlo.
+              </p>
+              <ul class="st-points">
+                <li>Control de lo vendido: activos, canjeados, caducados y anulados.</li>
+                <li>Cada bono con su vigencia, su PDF y reenvío por email.</li>
+              </ul>
+            </div>
+            <figure class="st-plate st-plate--tall">
+              <img src="/images/staff/bonos.webp" width="1400" height="1070" loading="lazy"
+                   alt="Bonos regalo: contadores por estado, buscador y bonos con importe, caducidad y comprador" />
+              <figcaption>Bonos regalo</figcaption>
+            </figure>
+          </article>
+
+          <!-- 21:30 -->
+          <article class="st-entry st-entry--wide" id="opiniones" data-hora="21:30" data-area="Concierge">
+            <div class="st-entry-head">
+              <p class="st-hour">21:30</p>
+              <h2>Quien se fue esta mañana te cuenta qué tal.</h2>
+              <p>
+                Tras la estancia, el huésped recibe un mensaje que le invita a dejar su opinión en la plataforma
+                propia del hotel. Tú ves la media y cada comentario, por hotel y por apartado, antes de que acabe
+                en ningún otro sitio.
+              </p>
+            </div>
+            <figure class="st-plate st-plate--full">
+              <img src="/images/staff/opiniones.webp" width="1400" height="1080" loading="lazy"
+                   alt="Opiniones de clientes: valoración media, puntuación por apartado y comentarios" />
+              <figcaption>Opiniones de clientes</figcaption>
+            </figure>
+          </article>
+
+          <!-- 22:10 -->
+          <article class="st-entry st-entry--split st-entry--flip" id="conserje" data-hora="22:10" data-area="Concierge">
+            <div class="st-entry-copy">
+              <p class="st-hour">22:10</p>
+              <h2>Desde la habitación 12: «¿a qué hora abre la piscina?»</h2>
+              <p>
+                Un código QR en la habitación abre un conserje digital pensado para quien ya se aloja contigo.
+                Responde sobre el hotel al momento y no intenta venderle nada. Recepción descansa; el huésped, también.
+              </p>
+            </div>
+            <figure class="st-phone st-phone--short" aria-label="Conversación de ejemplo con el conserje digital">
+              <div class="st-phone-head">
+                <span class="st-avatar" aria-hidden="true">S</span>
+                <div><strong>Conserje · Hab. 12</strong><small>Hotel Salinar</small></div>
+              </div>
+              <div class="st-thread">
+                <p class="st-msg st-msg--in">¿A qué hora abre la piscina mañana?<time>22:10</time></p>
+                <p class="st-msg st-msg--out">De 10:00 a 20:00. El desayuno es de 8:00 a 10:30 en la terraza. ¿Te ayudo con algo más?<time>22:10</time></p>
+              </div>
+              <figcaption>Conversación de ejemplo</figcaption>
+            </figure>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ───────── Cierre ───────── -->
+    <section class="st-close" aria-labelledby="st-close-title">
+      <div class="st-wrap">
+        <h2 id="st-close-title" class="st-close-title">Un día con /staff, de un vistazo</h2>
+        <ol class="st-sheet">
+          {dia.map((d) => (
+            <li>
+              <a href={`#${d.id}`}>
+                <span class="st-sheet-hour">{d.hora}</span>
+                <span class="st-sheet-area">{d.area}</span>
+                <span class="st-sheet-what">/staff {d.resumen}</span>
+              </a>
+            </li>
+          ))}
+        </ol>
+
+        <div class="st-cta">
+          <p class="st-cta-text">
+            Te lo enseñamos funcionando. Elige hueco en el calendario y lo recorremos juntos con tu hotel en mente.
+          </p>
+          <a class="st-btn st-btn--big" href={CALENDARIO} target="_blank" rel="noopener">Probar en vivo</a>
+        </div>
+
+        <p class="st-note">
+          Las capturas son del portal /staff en producción, con datos de demostración: los nombres, teléfonos,
+          importes y el hotel que aparecen son ficticios.
+        </p>
+      </div>
+    </section>
+  </main>
+</Layout>
+
+<style is:global>
+  @font-face {
+    font-family: 'Archivo';
+    src: url('/fonts/archivo-latin-var.woff2') format('woff2');
+    font-weight: 400 900;
+    font-stretch: 62% 125%;
+    font-display: swap;
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+</style>
+
+<style>
+  .st {
+    --pared: #e2e0dc;
+    --tarjeta: #fcfbf8;
+    --pauta: #d8d2c6;
+    --tinta: #1f3d52;
+    --tinta-2: #4b5560;
+    --marca: #284b62;
+    --marca-hondo: #1c3648;
+    --hora: #c2531b;
+    --hora-hondo: #9e3f10;
+    --sombra: 0 1px 0 rgba(26, 29, 33, 0.05), 0 18px 40px -22px rgba(40, 32, 18, 0.45);
+    --display: 'Archivo', 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+
+    background: var(--pared);
+    color: var(--tinta);
+    font-family: var(--display);
+    margin-bottom: -5rem; /* el footer del layout trae mt-20: la pared llega hasta él */
+    padding-bottom: 5rem;
+  }
+  .st ::selection { background: var(--marca); color: var(--tarjeta); }
+  .st :focus-visible { outline: 2px solid var(--hora); outline-offset: 3px; border-radius: 4px; }
+
+  .st-wrap { max-width: 76rem; margin: 0 auto; padding: 0 1rem; }
+  @media (min-width: 768px) { .st-wrap { padding: 0 2rem; } }
+
+  /* ── Primer viewport ── */
+  .st-hero { padding: 3.5rem 0 4.5rem; overflow: hidden; }
+  .st-hero-grid { display: grid; gap: 3rem; align-items: center; }
+  @media (min-width: 1024px) {
+    .st-hero { padding: 4.5rem 0 6rem; }
+    .st-hero-grid { grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); gap: 3.5rem; }
+  }
+  .st-title {
+    font-size: clamp(4.5rem, 14vw, 6rem);
+    font-weight: 850;
+    font-stretch: 72%;
+    line-height: 0.85;
+    letter-spacing: -0.04em;
+    color: var(--marca-hondo);
+  }
+  .st-sub {
+    margin-top: 1.25rem;
+    font-size: clamp(1.6rem, 3.6vw, 2.25rem);
+    font-weight: 700;
+    font-stretch: 88%;
+    line-height: 1.08;
+    letter-spacing: -0.02em;
+    text-wrap: balance;
+  }
+  .st-lead { margin-top: 1.5rem; font-size: 1.125rem; line-height: 1.6; color: var(--tinta-2); max-width: 36rem; }
+  .st-actions { margin-top: 2.25rem; display: flex; flex-wrap: wrap; align-items: center; gap: 1.25rem 1.75rem; }
+
+  .st-btn {
+    display: inline-flex; align-items: center; justify-content: center;
+    min-height: 3.25rem; padding: 0 1.75rem; border-radius: 999px;
+    background: var(--hora); color: #fff; font-weight: 700; font-size: 1.05rem; letter-spacing: -0.005em;
+    box-shadow: 0 10px 24px -12px rgba(158, 63, 16, 0.7);
+    transition: background-color 0.2s ease, transform 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+  .st-btn:hover { background: var(--hora-hondo); transform: translateY(-1px); }
+  .st-btn:active { transform: translateY(0); }
+  .st-btn--big { min-height: 3.75rem; padding: 0 2.25rem; font-size: 1.15rem; }
+  .st-link {
+    font-weight: 600; color: var(--marca-hondo);
+    text-decoration: underline; text-underline-offset: 0.3em; text-decoration-thickness: 1px;
+    text-decoration-color: color-mix(in srgb, var(--marca) 45%, transparent);
+  }
+  .st-link:hover { text-decoration-color: var(--marca); }
+
+  .st-hero-visual { position: relative; }
+  .st-plate {
+    margin: 0; background: var(--tarjeta); border: 1px solid var(--pauta); border-radius: 12px;
+    box-shadow: var(--sombra); overflow: hidden;
+  }
+  .st-plate { width: 100%; }
+  .st-plate img { display: block; width: 100%; height: auto; }
+  .st-plate figcaption {
+    padding: 0.6rem 0.9rem; font-size: 0.8rem; font-weight: 600; color: var(--tinta-2);
+    border-top: 1px solid var(--pauta); letter-spacing: 0.01em;
+  }
+  @media (min-width: 1024px) { .st-plate--hero { margin-right: -6rem; } }
+
+  /* Regla de 24 horas */
+  .st-ruler { margin-top: 1.75rem; }
+  .st-ruler-track { position: relative; height: 2.5rem; border-bottom: 1px solid var(--tinta); }
+  .st-tick {
+    position: absolute; bottom: 0; left: calc(var(--h) / 24 * 100%);
+    width: 1px; height: 0.5rem; background: var(--tinta); opacity: 0.45;
+  }
+  .st-tick[data-major] { height: 0.9rem; opacity: 1; }
+  .st-tick em {
+    position: absolute; bottom: 1.1rem; left: 0; transform: translateX(-50%);
+    font-style: normal; font-size: 0.75rem; font-weight: 600; font-variant-numeric: tabular-nums; color: var(--tinta-2);
+  }
+  .st-tick:last-of-type em { transform: translateX(-100%); }
+  .st-now {
+    position: absolute; bottom: -0.35rem; left: calc(var(--pos) * 100%);
+    width: 0.7rem; height: 0.7rem; margin-left: -0.35rem; border-radius: 50%;
+    background: var(--hora); box-shadow: 0 0 0 4px color-mix(in srgb, var(--hora) 22%, transparent);
+  }
+  .st-nowline { margin-top: 1rem; font-size: 0.95rem; color: var(--tinta-2); min-height: 1.5em; }
+  .st-nowline :global(b) { color: var(--hora-hondo); font-variant-numeric: tabular-nums; }
+  .st-nowline :global(a) {
+    color: var(--marca-hondo); text-decoration: underline; text-underline-offset: 0.3em; text-decoration-thickness: 1px;
+    text-decoration-color: color-mix(in srgb, var(--marca) 45%, transparent);
+  }
+
+  /* ── El día ── */
+  .st-day { padding: 2rem 0 4rem; border-top: 1px solid var(--pauta); }
+  .st-day-grid { display: grid; gap: 0; }
+  @media (min-width: 1024px) { .st-day-grid { grid-template-columns: 11rem minmax(0, 1fr); gap: 3rem; } }
+
+  .st-miniclock {
+    position: sticky; top: 5rem; z-index: 20; display: flex; align-items: baseline; gap: 0.75rem;
+    margin: 0 -1rem; padding: 0.55rem 1rem; background: var(--pared);
+    border-bottom: 1px solid var(--pauta);
+  }
+  .st-miniclock b { font-size: 1.9rem; line-height: 1; font-weight: 800; font-stretch: 70%; font-variant-numeric: tabular-nums; color: var(--hora); }
+  .st-miniclock span { font-size: 0.75rem; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: var(--tinta-2); }
+  @media (min-width: 768px) { .st-miniclock { margin: 0 -2rem; padding: 0.55rem 2rem; } }
+  @media (min-width: 1024px) { .st-miniclock { display: none; } }
+  .st-rail { display: none; }
+  @media (min-width: 1024px) {
+    .st-rail { display: block; position: sticky; top: 7rem; align-self: start; padding-top: 3.5rem; }
+  }
+  .st-clock { display: flex; flex-direction: column; gap: 0.35rem; }
+  .st-clock-time {
+    font-size: 3.5rem; font-weight: 800; font-stretch: 70%; line-height: 1; letter-spacing: -0.03em;
+    font-variant-numeric: tabular-nums; color: var(--hora);
+  }
+  .st-clock-time.is-ticking { animation: st-tick 0.45s cubic-bezier(0.16, 1, 0.3, 1); }
+  @keyframes st-tick { from { opacity: 0.2; transform: translateY(0.35em); filter: blur(3px); } }
+  .st-clock-area { font-size: 0.8rem; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: var(--tinta-2); }
+  .st-rail-list { margin-top: 1.75rem; border-left: 1px solid var(--pauta); }
+  .st-rail-list li {
+    position: relative; padding: 0.3rem 0 0.3rem 1rem; font-size: 0.85rem; font-weight: 500;
+    font-variant-numeric: tabular-nums; color: color-mix(in srgb, var(--tinta) 45%, transparent);
+    transition: color 0.3s ease;
+  }
+  .st-rail-list li::before {
+    content: ''; position: absolute; left: -1px; top: 0.3rem; bottom: 0.3rem; width: 2px;
+    background: var(--hora); transform: scaleY(0); transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+  .st-rail-list li.is-past { color: var(--tinta-2); }
+  .st-rail-list li.is-active { color: var(--tinta); font-weight: 700; }
+  .st-rail-list li.is-active::before { transform: scaleY(1); }
+
+  .st-entry { padding: 4.5rem 0; border-bottom: 1px solid var(--pauta); scroll-margin-top: 6rem; }
+  .st-entry:last-child { border-bottom: 0; }
+  .st-hour {
+    font-size: 3rem; font-weight: 800; font-stretch: 70%; line-height: 1; letter-spacing: -0.03em;
+    font-variant-numeric: tabular-nums; color: var(--marca-hondo);
+  }
+  @media (min-width: 1024px) { .st-hour { display: none; } }
+  .st-entry h2 {
+    margin-top: 0.5rem; font-size: clamp(1.75rem, 3.4vw, 2.6rem); font-weight: 750; font-stretch: 86%;
+    line-height: 1.06; letter-spacing: -0.025em; text-wrap: balance; max-width: 22ch;
+  }
+  @media (min-width: 1024px) { .st-entry h2 { margin-top: 0; } }
+  .st-entry h2 + p, .st-entry-copy > p:not(.st-hour), .st-entry-head > p:not(.st-hour) {
+    margin-top: 1.25rem; font-size: 1.075rem; line-height: 1.65; color: var(--tinta-2); max-width: 62ch;
+  }
+  .st-points { margin-top: 1.5rem; display: grid; gap: 0.7rem; max-width: 58ch; }
+  .st-points li { position: relative; padding-left: 1.4rem; line-height: 1.55; color: var(--tinta); }
+  .st-points li::before {
+    content: ''; position: absolute; left: 0; top: 0.72em; width: 0.6rem; height: 1px; background: var(--marca);
+  }
+
+  .st-entry--split { display: grid; gap: 2.5rem; align-items: center; }
+  @media (min-width: 900px) {
+    .st-entry--split { grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); gap: 3.5rem; }
+    .st-entry--flip { grid-template-columns: minmax(0, 7fr) minmax(0, 5fr); }
+    .st-entry--flip > figure { order: -1; }
+  }
+  .st-entry-head { max-width: 50rem; }
+  .st-entry--wide > figure, .st-entry--wide > .st-plates { margin-top: 2.5rem; }
+
+  .st-plates { display: grid; gap: 1.5rem; }
+  @media (min-width: 900px) {
+    .st-plates--pair { grid-template-columns: 1.1fr 1fr; align-items: start; }
+    .st-plates--stack > :last-child { max-width: 48rem; justify-self: end; margin-top: -3rem; position: relative; }
+  }
+  @media (min-width: 1280px) { .st-plate--full { margin-right: -3rem; } }
+  .st-plate--mid { max-width: 56rem; }
+  /* la tabla sigue a la derecha en el portal: se funde en lugar de cortarse */
+  .st-plate--fade img { -webkit-mask-image: linear-gradient(90deg, #000 88%, transparent); mask-image: linear-gradient(90deg, #000 88%, transparent); }
+  .st-aside { margin-top: 1.25rem; font-size: 0.95rem; color: var(--tinta-2); }
+
+  .st-entry--quiet { display: grid; gap: 2rem; align-items: center; padding: 3.5rem 0; }
+  @media (min-width: 900px) { .st-entry--quiet { grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr); } }
+  .st-entry--quiet .st-hour { grid-column: 1 / -1; margin-bottom: -1.5rem; }
+  .st-entry--quiet h2 { font-size: clamp(1.4rem, 2.4vw, 1.85rem); }
+  .st-plate--small { max-width: 30rem; justify-self: end; }
+
+  .st-channels { margin-top: 1.75rem; display: flex; flex-wrap: wrap; gap: 0.6rem; }
+  .st-channels li {
+    display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.45rem 0.9rem 0.45rem 0.75rem;
+    border: 1px solid var(--pauta); border-radius: 999px; background: var(--tarjeta);
+    font-size: 0.9rem; font-weight: 600; color: var(--marca-hondo);
+  }
+  .st-channels svg { width: 1rem; height: 1rem; fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linejoin: round; }
+
+  /* Teléfono con conversación de ejemplo */
+  .st-phone {
+    margin: 0 auto; width: 100%; max-width: 23rem; background: var(--tarjeta); border: 1px solid var(--pauta);
+    border-radius: 2rem; box-shadow: var(--sombra); overflow: hidden;
+  }
+  .st-phone-head { display: flex; align-items: center; gap: 0.75rem; padding: 1rem 1.25rem; background: var(--marca); color: var(--tarjeta); }
+  .st-phone-head strong { display: block; font-size: 0.95rem; }
+  .st-phone-head small { display: block; font-size: 0.75rem; opacity: 0.8; }
+  .st-avatar {
+    display: grid; place-items: center; width: 2.25rem; height: 2.25rem; border-radius: 50%;
+    background: var(--tarjeta); color: var(--marca); font-weight: 800;
+  }
+  .st-thread { display: flex; flex-direction: column; gap: 0.6rem; padding: 1.25rem 1rem 1.5rem; background: #ece7dd; }
+  .st-msg { position: relative; max-width: 85%; padding: 0.6rem 0.8rem 1.25rem; border-radius: 0.9rem; font-size: 0.9rem; line-height: 1.45; }
+  .st-msg time { position: absolute; right: 0.7rem; bottom: 0.3rem; font-size: 0.65rem; color: var(--tinta-2); font-variant-numeric: tabular-nums; }
+  .st-msg--in { align-self: flex-start; background: #fff; border-top-left-radius: 0.25rem; }
+  .st-msg--out { align-self: flex-end; background: #dcefd9; border-top-right-radius: 0.25rem; }
+  .st-msg--staff { align-self: flex-end; background: #f6e7c8; border-top-right-radius: 0.25rem; }
+  .st-handback {
+    align-self: center; margin-top: 0.4rem; padding: 0.4rem 0.9rem; border: 1px solid var(--marca); border-radius: 999px;
+    font-size: 0.8rem; font-weight: 700; color: var(--marca);
+  }
+  .st-duo { display: grid; gap: 1.5rem; align-items: start; }
+  @media (min-width: 640px) { .st-duo { grid-template-columns: minmax(0, 0.85fr) minmax(0, 1fr); } }
+  .st-plate--list { max-height: 34rem; }
+  .st-plate--list img { height: 30rem; object-fit: cover; object-position: top; }
+  .st-msg b { font-weight: 700; }
+  .st-msg-cta {
+    display: block; margin-top: 0.6rem; padding: 0.55rem 0.8rem; border-radius: 0.6rem;
+    background: var(--marca); color: #fff; font-weight: 700; text-align: center;
+  }
+  .st-phone figcaption { padding: 0.65rem 1rem; font-size: 0.75rem; font-weight: 600; color: var(--tinta-2); text-align: center; border-top: 1px solid var(--pauta); }
+
+  .st-device {
+    margin: 0 auto; width: 100%; max-width: 19rem; padding: 0.6rem; border-radius: 2.4rem;
+    background: var(--tinta); box-shadow: var(--sombra);
+  }
+  .st-device img { display: block; width: 100%; height: auto; border-radius: 1.9rem; }
+
+
+  /* ── Cierre ── */
+  .st-close { padding: 5rem 0 2rem; background: var(--tarjeta); border-top: 1px solid var(--pauta); }
+  .st-close-title {
+    font-size: clamp(1.9rem, 4vw, 3rem); font-weight: 800; font-stretch: 80%; letter-spacing: -0.03em;
+    line-height: 1.02; text-wrap: balance; max-width: 18ch;
+  }
+  .st-sheet { margin-top: 2.5rem; border-top: 1px solid var(--tinta); }
+  .st-sheet a {
+    display: grid; grid-template-columns: 4.25rem 1fr; gap: 0.15rem 1rem; padding: 0.9rem 0.25rem;
+    border-bottom: 1px solid var(--pauta); transition: background-color 0.2s ease;
+  }
+  @media (min-width: 768px) { .st-sheet a { grid-template-columns: 5.5rem 8rem 1fr; align-items: baseline; } }
+  .st-sheet a:hover { background: color-mix(in srgb, var(--pared) 55%, transparent); }
+  .st-sheet-hour { font-weight: 800; font-stretch: 75%; font-size: 1.25rem; font-variant-numeric: tabular-nums; color: var(--marca-hondo); }
+  .st-sheet-area { font-size: 0.78rem; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: var(--tinta-2); align-self: center; }
+  .st-sheet-what { grid-column: 2; line-height: 1.45; }
+  @media (min-width: 768px) { .st-sheet-what { grid-column: 3; } }
+
+  .st-cta { margin-top: 4rem; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 1.5rem 2.5rem; padding: 2.5rem 0; border-top: 1px solid var(--tinta); border-bottom: 1px solid var(--tinta); }
+  .st-cta-text { font-size: clamp(1.3rem, 2.6vw, 1.75rem); font-weight: 650; font-stretch: 90%; line-height: 1.25; letter-spacing: -0.015em; max-width: 34ch; }
+  .st-note { margin-top: 1.5rem; font-size: 0.85rem; line-height: 1.55; color: var(--tinta-2); max-width: 70ch; }
+
+  /* Entrada de las láminas: visibles por defecto; solo se animan con JS y sin reduced-motion */
+  :global(.st-js) .st-reveal { opacity: 0; transform: translateY(1.5rem); }
+  :global(.st-js) .st-reveal.is-in { opacity: 1; transform: none; transition: opacity 0.7s cubic-bezier(0.16, 1, 0.3, 1), transform 0.9s cubic-bezier(0.16, 1, 0.3, 1); }
+</style>
+
+<script>
+  const tz = 'Europe/Madrid';
+  const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  // Hora real (Madrid) en la regla del primer viewport + qué está haciendo /staff a esa hora.
+  const entries = Array.from(document.querySelectorAll<HTMLElement>('.st-entry'));
+  const toMin = (hhmm: string) => { const [h, m] = hhmm.split(':').map(Number); return h * 60 + m; };
+  function pintarAhora() {
+    const partes = new Intl.DateTimeFormat('es-ES', { timeZone: tz, hour: '2-digit', minute: '2-digit', hour12: false }).formatToParts(new Date());
+    const h = Number(partes.find((p) => p.type === 'hour')?.value ?? 0) % 24;
+    const m = Number(partes.find((p) => p.type === 'minute')?.value ?? 0);
+    const ahora = h * 60 + m;
+    document.getElementById('st-now')?.style.setProperty('--pos', String(ahora / 1440));
+    // bloque más reciente anterior a esta hora (o el último del día anterior)
+    let actual = entries[entries.length - 1];
+    for (const e of entries) if (toMin(e.dataset.hora!) <= ahora) actual = e;
+    const hora = `${String(h).padStart(2, '0')}:${String(m).padStart(2, '0')}`;
+    const que = actual.querySelector('h2')?.textContent?.trim() ?? '';
+    const linea = document.getElementById('st-nowline');
+    if (linea && que) {
+      linea.innerHTML = '';
+      const b = document.createElement('b'); b.textContent = `Ahora, ${hora}. `;
+      const a = document.createElement('a'); a.href = `#${actual.id}`; a.textContent = `A las ${actual.dataset.hora}: ${que}`;
+      linea.append(b, a);
+    }
+  }
+  pintarAhora();
+  setInterval(pintarAhora, 60_000);
+
+  // Reloj del carril: la hora del bloque visible.
+  const reloj = document.getElementById('st-clock');
+  const area = document.getElementById('st-clock-area');
+  const items = new Map(Array.from(document.querySelectorAll<HTMLElement>('.st-rail-list li')).map((li) => [li.dataset.for, li]));
+  function activar(e: HTMLElement) {
+    if (!reloj || reloj.textContent === e.dataset.hora) return;
+    reloj.textContent = e.dataset.hora ?? '';
+    if (area) area.textContent = e.dataset.area ?? '';
+    const mr = document.getElementById('st-mclock'); const ma = document.getElementById('st-marea');
+    if (mr) mr.textContent = e.dataset.hora ?? ''; if (ma) ma.textContent = e.dataset.area ?? '';
+    if (!reduce) { reloj.classList.remove('is-ticking'); void reloj.offsetWidth; reloj.classList.add('is-ticking'); }
+    let pasado = true;
+    for (const en of entries) {
+      const li = items.get(en.id);
+      if (!li) continue;
+      li.classList.toggle('is-active', en === e);
+      if (en === e) pasado = false;
+      li.classList.toggle('is-past', pasado);
+    }
+  }
+  const io = new IntersectionObserver((obs) => {
+    for (const o of obs) if (o.isIntersecting) activar(o.target as HTMLElement);
+  }, { rootMargin: '-40% 0px -55% 0px' });
+  entries.forEach((e) => io.observe(e));
+  if (entries[0]) activar(entries[0]);
+
+  // Láminas que entran al hacer scroll.
+  if (!reduce && 'IntersectionObserver' in window) {
+    document.documentElement.classList.add('st-js');
+    const plates = document.querySelectorAll('.st-entry figure');
+    plates.forEach((p) => p.classList.add('st-reveal'));
+    const rv = new IntersectionObserver((obs) => {
+      for (const o of obs) if (o.isIntersecting) { o.target.classList.add('is-in'); rv.unobserve(o.target); }
+    }, { rootMargin: '0px 0px -10% 0px' });
+    plates.forEach((p) => rv.observe(p));
+  }
+</script>

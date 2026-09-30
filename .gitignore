@@ -28,3 +28,6 @@ rateshopper-config/.htpasswd
 
 # jetbrains setting folder
 .idea/
+
+# capturas de revisión de diseño (Impeccable), locales
+.impeccable/review/

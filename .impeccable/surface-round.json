@@ -1,0 +1,67 @@
+{
+  "title": "Estructura de la landing /staff",
+  "question": "Tres maneras de contar /staff con las capturas reales. Elige una (o pide otra tirada).",
+  "options": [
+    {
+      "id": "manual",
+      "label": "El manual de recepción",
+      "kicker": "THE ROLL",
+      "lineage": "la carpeta de procedimientos que toda recepción tiene detrás del mostrador",
+      "thesis": "Cada módulo se presenta como la página del manual que resuelve: «Cuando llega un huésped…», «Cuando alguien escribe a las 3 de la mañana…».",
+      "palette": ["#e2dfda", "#23445a", "#fbfaf7", "#d9772b"],
+      "materials": ["pestañas de separador", "capturas reales como láminas"],
+      "viewport": "Titular '/staff' + subtítulo frontdesk+concierge a la izquierda; a la derecha la captura 'Hoy' del portal; debajo, el índice de pestañas (Atender · Recibir · Cuidar · Organizar · Vender).",
+      "risk": "Si las pestañas se quedan en decoración, se lee como un listado de funciones con otro nombre.",
+      "wireframe": {"cols": 12, "rows": 12, "regions": [
+        {"label": "título /staff + CTA", "x": 0, "y": 0, "w": 5, "h": 4, "accent": true},
+        {"label": "captura portal Hoy", "x": 5, "y": 0, "w": 7, "h": 5},
+        {"label": "pestañas índice", "x": 0, "y": 5, "w": 12, "h": 1, "accent": true},
+        {"label": "«Cuando…» texto", "x": 0, "y": 6, "w": 4, "h": 3},
+        {"label": "captura módulo", "x": 4, "y": 6, "w": 8, "h": 3},
+        {"label": "«Cuando…» texto", "x": 8, "y": 9, "w": 4, "h": 3},
+        {"label": "captura módulo", "x": 0, "y": 9, "w": 8, "h": 3}
+      ]}
+    },
+    {
+      "id": "conversacion",
+      "label": "La conversación que lo mueve todo",
+      "lineage": "un hilo de WhatsApp entre huésped y hotel",
+      "thesis": "El hero es un hilo de WhatsApp; al hacer scroll la conversación sigue y cada mensaje enciende el módulo que lo resuelve (reserva, check-in, bono, opinión).",
+      "palette": ["#e2dfda", "#23445a", "#fbfaf7", "#2f9e6e"],
+      "materials": ["burbujas de chat", "capturas que aparecen junto al mensaje"],
+      "viewport": "Teléfono con hilo en vivo centrado-izquierda, titular grande a la derecha; la primera respuesta la da la IA a las 03:12.",
+      "risk": "Lo interno del equipo (turnos, fichajes, tarifas) encaja peor en una conversación de huésped.",
+      "wireframe": {"cols": 12, "rows": 12, "regions": [
+        {"label": "teléfono con hilo", "x": 0, "y": 0, "w": 5, "h": 7, "accent": true},
+        {"label": "titular /staff + CTA", "x": 6, "y": 1, "w": 6, "h": 4},
+        {"label": "mensaje", "x": 0, "y": 7, "w": 5, "h": 1},
+        {"label": "captura módulo", "x": 6, "y": 7, "w": 6, "h": 3},
+        {"label": "mensaje", "x": 0, "y": 10, "w": 5, "h": 1},
+        {"label": "captura", "x": 6, "y": 10, "w": 6, "h": 2}
+      ]}
+    },
+    {
+      "id": "dia24h",
+      "label": "Un día de 24 horas",
+      "lineage": "la hoja de turno / el parte de recepción con horas",
+      "thesis": "La página es un día del hotel: una columna de horas recorre la página y cada módulo aparece a la hora en que actúa (03:12 IA atiende · 07:00 fichaje · 12:00 check-ins · 21:30 opinión).",
+      "palette": ["#e2dfda", "#23445a", "#fbfaf7", "#d9772b"],
+      "materials": ["reloj/horas como eje", "capturas fechadas"],
+      "viewport": "Titular '/staff — el turno que nunca se acaba' con un reloj de 24 h marcando la hora actual; captura del portal al lado.",
+      "risk": "Página larga; exige ritmo para no hacerse monótona hora tras hora.",
+      "wireframe": {"cols": 12, "rows": 12, "regions": [
+        {"label": "titular + CTA", "x": 0, "y": 0, "w": 6, "h": 4, "accent": true},
+        {"label": "captura portal", "x": 6, "y": 0, "w": 6, "h": 4},
+        {"label": "eje horas", "x": 0, "y": 4, "w": 1, "h": 8, "accent": true},
+        {"label": "03:12 IA", "x": 1, "y": 4, "w": 5, "h": 2},
+        {"label": "captura", "x": 6, "y": 4, "w": 6, "h": 2},
+        {"label": "12:00 check-in", "x": 1, "y": 7, "w": 5, "h": 2},
+        {"label": "captura", "x": 6, "y": 7, "w": 6, "h": 2},
+        {"label": "21:30 opinión", "x": 1, "y": 10, "w": 5, "h": 2}
+      ]}
+    }
+  ],
+  "reroll": true,
+  "buildPath": {"value": "code"},
+  "steer": true
+}

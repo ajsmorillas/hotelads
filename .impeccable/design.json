@@ -1,0 +1,423 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-09-30T10:33:00.647Z",
+  "title": "Design System: Hotel Ads /staff",
+  "extensions": {
+    "scope": "Page-scoped to src/pages/staff.astro (tokens declared on .st, not :root). The shared layout nav/footer and other hotelads.es pages are the older Tailwind slate/blue look, out of scope.",
+    "colorMeta": {
+      "hora": {
+        "role": "primary",
+        "displayName": "Hora, burnt orange",
+        "canonical": "#c2531b",
+        "oklch": "oklch(57.8% 0.156 43.3)",
+        "tonalRamp": [
+          "#250000",
+          "#4a0500",
+          "#712000",
+          "#9b3b01",
+          "#c85b28",
+          "#e9865c",
+          "#ffb28d",
+          "#ffdaba"
+        ]
+      },
+      "hora-hondo": {
+        "role": "primary",
+        "displayName": "Hora hondo, ember",
+        "canonical": "#9e3f10",
+        "oklch": "oklch(49.1% 0.138 42.4)",
+        "tonalRamp": [
+          "#260000",
+          "#4a0500",
+          "#712100",
+          "#9a3c0d",
+          "#bc6541",
+          "#dd8e6e",
+          "#fdb89c",
+          "#ffdfc7"
+        ]
+      },
+      "marca": {
+        "role": "secondary",
+        "displayName": "Marca, harbour blue",
+        "canonical": "#284b62",
+        "oklch": "oklch(39.7% 0.056 -120.9)",
+        "tonalRamp": [
+          "#000d1b",
+          "#092739",
+          "#22445a",
+          "#426278",
+          "#688499",
+          "#8fa8ba",
+          "#b9cedd",
+          "#e0f1fe"
+        ]
+      },
+      "marca-hondo": {
+        "role": "secondary",
+        "displayName": "Marca hondo, deep harbour",
+        "canonical": "#1c3648",
+        "oklch": "oklch(32.1% 0.045 -119.6)",
+        "tonalRamp": [
+          "#000d19",
+          "#0e2737",
+          "#2a4355",
+          "#4a6171",
+          "#6f8392",
+          "#96a7b4",
+          "#becdd8",
+          "#e5f0f9"
+        ]
+      },
+      "tinta": {
+        "role": "neutral",
+        "displayName": "Tinta, marine ink",
+        "canonical": "#1f3d52",
+        "oklch": "oklch(34.7% 0.052 -119.1)",
+        "tonalRamp": [
+          "#000d1b",
+          "#0b2739",
+          "#264358",
+          "#476175",
+          "#6c8495",
+          "#93a8b7",
+          "#bccdda",
+          "#e3f1fb"
+        ]
+      },
+      "tinta-2": {
+        "role": "neutral",
+        "displayName": "Tinta 2, slate pencil",
+        "canonical": "#4b5560",
+        "oklch": "oklch(44.5% 0.022 -109.2)",
+        "tonalRamp": [
+          "#070c12",
+          "#1e252d",
+          "#38414a",
+          "#555f6a",
+          "#78818b",
+          "#9da6af",
+          "#c4cbd3",
+          "#e9eff6"
+        ]
+      },
+      "pared": {
+        "role": "neutral",
+        "displayName": "Pared, warm wall",
+        "canonical": "#e2e0dc",
+        "oklch": "oklch(90.7% 0.006 84.6)",
+        "tonalRamp": [
+          "#0c0b09",
+          "#252422",
+          "#41403d",
+          "#5f5d5b",
+          "#81807d",
+          "#a6a4a1",
+          "#cccac7",
+          "#f0eeea"
+        ]
+      },
+      "tarjeta": {
+        "role": "neutral",
+        "displayName": "Tarjeta, sheet paper",
+        "canonical": "#fcfbf8",
+        "oklch": "oklch(98.8% 0.004 91.4)",
+        "tonalRamp": [
+          "#0c0b09",
+          "#252422",
+          "#40403d",
+          "#5e5d5b",
+          "#81807d",
+          "#a5a4a2",
+          "#cbcac8",
+          "#efeeeb"
+        ]
+      },
+      "pauta": {
+        "role": "neutral",
+        "displayName": "Pauta, ruled line",
+        "canonical": "#d8d2c6",
+        "oklch": "oklch(86.5% 0.018 84.6)",
+        "tonalRamp": [
+          "#0c0b09",
+          "#262420",
+          "#423f3b",
+          "#605d57",
+          "#848078",
+          "#a9a49a",
+          "#d0cabe",
+          "#f3eee3"
+        ]
+      },
+      "hilo": {
+        "role": "neutral",
+        "displayName": "Hilo, thread ground (phone mock only)",
+        "canonical": "#ece7dd",
+        "oklch": "oklch(92.9% 0.014 84.6)",
+        "tonalRamp": [
+          "#0c0b09",
+          "#252421",
+          "#413f3c",
+          "#605d59",
+          "#83807a",
+          "#a8a49d",
+          "#cecac1",
+          "#f3eee4"
+        ]
+      },
+      "burbuja-asistente": {
+        "role": "neutral",
+        "displayName": "Burbuja asistente (phone mock only)",
+        "canonical": "#dcefd9",
+        "oklch": "oklch(93.2% 0.036 141.4)",
+        "tonalRamp": [
+          "#090c09",
+          "#212520",
+          "#3b423a",
+          "#586156",
+          "#798477",
+          "#9ba999",
+          "#bfd0bd",
+          "#e2f5df"
+        ]
+      },
+      "burbuja-recepcion": {
+        "role": "neutral",
+        "displayName": "Burbuja recepción (phone mock only)",
+        "canonical": "#f6e7c8",
+        "oklch": "oklch(93.2% 0.044 85.2)",
+        "tonalRamp": [
+          "#0d0b07",
+          "#27241c",
+          "#443f34",
+          "#645d4e",
+          "#887f6d",
+          "#afa38d",
+          "#d6c9ae",
+          "#fcedce"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display",
+        "purpose": "The product name /staff only."
+      },
+      "clock": {
+        "displayName": "Clock",
+        "purpose": "Every time of day: rail clock 3.5rem, entry hour 3rem, mini-clock 1.9rem, sheet hour 1.25rem; tabular, condensed."
+      },
+      "headline": {
+        "displayName": "Headline",
+        "purpose": "One per hour-entry, max 22ch, balanced."
+      },
+      "title": {
+        "displayName": "Title",
+        "purpose": "Hero subline; CTA sentence at 650."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Entry paragraphs, max 62ch, tinta-2."
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "Uppercase area name beside a time only; never a kicker above a heading."
+      },
+      "caption": {
+        "displayName": "Caption",
+        "purpose": "Plate and phone captions below a hairline."
+      }
+    },
+    "fonts": [
+      {
+        "family": "Archivo",
+        "src": "/fonts/archivo-latin-var.woff2",
+        "axes": {
+          "wght": "400 900",
+          "wdth": "62% 125%"
+        },
+        "display": "swap",
+        "preload": true
+      }
+    ],
+    "shadows": [
+      {
+        "name": "sheet-lift",
+        "value": "0 1px 0 rgba(26, 29, 33, 0.05), 0 18px 40px -22px rgba(40, 32, 18, 0.45)",
+        "purpose": "Plates, phone mocks, device frame."
+      },
+      {
+        "name": "ember-cast",
+        "value": "0 10px 24px -12px rgba(158, 63, 16, 0.7)",
+        "purpose": "Orange CTA only."
+      },
+      {
+        "name": "now-halo",
+        "value": "0 0 0 4px color-mix(in srgb, #c2531b 22%, transparent)",
+        "purpose": "Current-time dot on the 24-hour ruler."
+      }
+    ],
+    "motion": [
+      {
+        "name": "ease-out-expo",
+        "value": "cubic-bezier(0.16, 1, 0.3, 1)",
+        "purpose": "CTA lift, rail active bar, clock tick, plate reveal."
+      },
+      {
+        "name": "clock-tick",
+        "value": "0.45s",
+        "purpose": "Clock digits rise from 0.35em with 3px blur when the hour changes; off under reduced motion."
+      },
+      {
+        "name": "plate-reveal",
+        "value": "opacity 0.7s, transform 0.9s from translateY(1.5rem)",
+        "purpose": "Entry plates on scroll; JS-only, visible by default, off under prefers-reduced-motion."
+      },
+      {
+        "name": "state",
+        "value": "0.2s ease",
+        "purpose": "Button fill, sheet row hover."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "sm",
+        "value": "640px"
+      },
+      {
+        "name": "md",
+        "value": "768px"
+      },
+      {
+        "name": "split",
+        "value": "900px"
+      },
+      {
+        "name": "lg",
+        "value": "1024px"
+      },
+      {
+        "name": "xl",
+        "value": "1280px"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "The single orange action, \"Probar en vivo\".",
+      "html": "<a class=\"ds-btn\" href=\"#\">Probar en vivo</a>",
+      "css": ".ds-btn{display:inline-flex;align-items:center;justify-content:center;min-height:3.25rem;padding:0 1.75rem;border-radius:999px;background:#c2531b;color:#fff;font-family:Archivo,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif;font-weight:700;font-size:1.05rem;letter-spacing:-0.005em;text-decoration:none;box-shadow:0 10px 24px -12px rgba(158,63,16,0.7);transition:background-color .2s ease,transform .2s cubic-bezier(0.16,1,0.3,1)}.ds-btn:hover{background:#9e3f10;transform:translateY(-1px)}.ds-btn:active{transform:translateY(0)}.ds-btn:focus-visible{outline:2px solid #c2531b;outline-offset:3px}"
+    },
+    {
+      "name": "Underlined Link",
+      "kind": "button",
+      "refersTo": "link-underlined",
+      "description": "Secondary action beside the CTA.",
+      "html": "<a class=\"ds-link\" href=\"#\">Recorrer un día con /staff</a>",
+      "css": ".ds-link{font-family:Archivo,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif;font-weight:600;color:#1c3648;text-decoration:underline;text-underline-offset:.3em;text-decoration-thickness:1px;text-decoration-color:color-mix(in srgb,#284b62 45%,transparent)}.ds-link:hover{text-decoration-color:#284b62}.ds-link:focus-visible{outline:2px solid #c2531b;outline-offset:3px;border-radius:4px}"
+    },
+    {
+      "name": "Channel Chip",
+      "kind": "chip",
+      "refersTo": "channel-chip",
+      "description": "Paper pill naming a channel, with a stroked line icon.",
+      "html": "<span class=\"ds-chip\"><svg viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M4 5h16v11H9l-5 4z\"/></svg>Chat web</span>",
+      "css": ".ds-chip{display:inline-flex;align-items:center;gap:.5rem;padding:.45rem .9rem .45rem .75rem;border:1px solid #d8d2c6;border-radius:999px;background:#fcfbf8;font-family:Archivo,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif;font-size:.9rem;font-weight:600;color:#1c3648}.ds-chip svg{width:1rem;height:1rem;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linejoin:round}"
+    },
+    {
+      "name": "Plate",
+      "kind": "card",
+      "refersTo": "plate",
+      "description": "A real, anonymized product screenshot on paper with caption.",
+      "html": "<figure class=\"ds-plate\"><div class=\"ds-plate-img\"></div><figcaption>Cuadrante de turnos</figcaption></figure>",
+      "css": ".ds-plate{margin:0;max-width:22rem;background:#fcfbf8;border:1px solid #d8d2c6;border-radius:12px;box-shadow:0 1px 0 rgba(26,29,33,0.05),0 18px 40px -22px rgba(40,32,18,0.45);overflow:hidden}.ds-plate-img{height:9rem;background:repeating-linear-gradient(0deg,#fcfbf8 0 1.4rem,#d8d2c6 1.4rem calc(1.4rem + 1px))}.ds-plate figcaption{padding:.6rem .9rem;font-family:Archivo,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif;font-size:.8rem;font-weight:600;color:#4b5560;border-top:1px solid #d8d2c6;letter-spacing:.01em}"
+    },
+    {
+      "name": "Hour Rail Clock",
+      "kind": "nav",
+      "refersTo": "rail-clock",
+      "description": "Sticky clock showing the hour of the entry in view, with the day list below.",
+      "html": "<div class=\"ds-rail\"><span class=\"ds-clock\">09:15</span><span class=\"ds-area\">Ventas</span><ol><li class=\"past\">07:00</li><li class=\"past\">08:30</li><li class=\"on\">09:15</li><li>11:40</li></ol></div>",
+      "css": ".ds-rail{font-family:Archivo,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif;color:#1f3d52;display:flex;flex-direction:column;gap:.35rem;width:11rem}.ds-clock{font-size:3.5rem;font-weight:800;font-stretch:70%;line-height:1;letter-spacing:-.03em;font-variant-numeric:tabular-nums;color:#c2531b}.ds-area{font-size:.8rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:#4b5560}.ds-rail ol{list-style:none;margin:1.4rem 0 0;padding:0;border-left:1px solid #d8d2c6}.ds-rail li{position:relative;padding:.3rem 0 .3rem 1rem;font-size:.85rem;font-weight:500;font-variant-numeric:tabular-nums;color:color-mix(in srgb,#1f3d52 45%,transparent);transition:color .3s ease}.ds-rail li.past{color:#4b5560}.ds-rail li.on{color:#1f3d52;font-weight:700}.ds-rail li.on::before{content:'';position:absolute;left:-1px;top:.3rem;bottom:.3rem;width:2px;background:#c2531b}"
+    },
+    {
+      "name": "24-hour Ruler",
+      "kind": "custom",
+      "description": "Baseline with hour ticks and the real current time as an orange dot.",
+      "html": "<div class=\"ds-ruler\"><span style=\"left:0%\">00</span><span style=\"left:25%\">06</span><span style=\"left:50%\">12</span><span style=\"left:75%\">18</span><span style=\"left:100%\">24</span><i style=\"left:42%\"></i></div>",
+      "css": ".ds-ruler{position:relative;height:2.5rem;width:22rem;margin:0 1rem;border-bottom:1px solid #1f3d52;font-family:Archivo,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif;background:repeating-linear-gradient(90deg,rgba(31,61,82,.45) 0 1px,transparent 1px calc(100%/24)) bottom/100% .5rem no-repeat}.ds-ruler span{position:absolute;bottom:1.1rem;transform:translateX(-50%);font-size:.75rem;font-weight:600;font-variant-numeric:tabular-nums;color:#4b5560}.ds-ruler i{position:absolute;bottom:-.35rem;width:.7rem;height:.7rem;margin-left:-.35rem;border-radius:50%;background:#c2531b;box-shadow:0 0 0 4px color-mix(in srgb,#c2531b 22%,transparent)}"
+    },
+    {
+      "name": "Phone Mock",
+      "kind": "custom",
+      "refersTo": "phone-head",
+      "description": "Example conversation built in HTML: marine header, thread, bubbles with squared tail corner.",
+      "html": "<figure class=\"ds-phone\"><div class=\"ds-ph-head\"><span class=\"ds-av\">S</span><div><strong>Hotel Salinar</strong><small>responde el asistente</small></div></div><div class=\"ds-thread\"><p class=\"ds-in\">¿A qué hora abre la piscina mañana?<time>22:10</time></p><p class=\"ds-out\">De 10:00 a 20:00. ¿Te ayudo con algo más?<time>22:10</time></p></div><figcaption>Conversación de ejemplo</figcaption></figure>",
+      "css": ".ds-phone{margin:0;max-width:23rem;background:#fcfbf8;border:1px solid #d8d2c6;border-radius:2rem;box-shadow:0 1px 0 rgba(26,29,33,0.05),0 18px 40px -22px rgba(40,32,18,0.45);overflow:hidden;font-family:Archivo,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif;color:#1f3d52}.ds-ph-head{display:flex;align-items:center;gap:.75rem;padding:1rem 1.25rem;background:#284b62;color:#fcfbf8}.ds-ph-head strong{display:block;font-size:.95rem}.ds-ph-head small{display:block;font-size:.75rem;opacity:.8}.ds-av{display:grid;place-items:center;width:2.25rem;height:2.25rem;border-radius:50%;background:#fcfbf8;color:#284b62;font-weight:800}.ds-thread{display:flex;flex-direction:column;gap:.6rem;padding:1.25rem 1rem 1.5rem;background:#ece7dd}.ds-thread p{position:relative;margin:0;max-width:85%;padding:.6rem .8rem 1.25rem;border-radius:.9rem;font-size:.9rem;line-height:1.45}.ds-thread time{position:absolute;right:.7rem;bottom:.3rem;font-size:.65rem;color:#4b5560;font-variant-numeric:tabular-nums}.ds-in{align-self:flex-start;background:#fff;border-top-left-radius:.25rem}.ds-out{align-self:flex-end;background:#dcefd9;border-top-right-radius:.25rem}.ds-phone figcaption{padding:.65rem 1rem;font-size:.75rem;font-weight:600;color:#4b5560;text-align:center;border-top:1px solid #d8d2c6}"
+    },
+    {
+      "name": "Day Sheet Row",
+      "kind": "custom",
+      "description": "Closing index of the day: hour / area / what, ruled rows linking to entries.",
+      "html": "<ol class=\"ds-sheet\"><li><a href=\"#\"><b>09:15</b><span>Ventas</span><em>/staff propone la tarifa del día y vigila a la competencia</em></a></li><li><a href=\"#\"><b>11:40</b><span>Frontdesk</span><em>/staff pasa a recepción las conversaciones que piden una persona</em></a></li></ol>",
+      "css": ".ds-sheet{list-style:none;margin:0;padding:0;border-top:1px solid #1f3d52;font-family:Archivo,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif;color:#1f3d52;background:#fcfbf8}.ds-sheet a{display:grid;grid-template-columns:5.5rem 8rem 1fr;align-items:baseline;gap:.15rem 1rem;padding:.9rem .25rem;border-bottom:1px solid #d8d2c6;color:inherit;text-decoration:none;transition:background-color .2s ease}.ds-sheet a:hover{background:color-mix(in srgb,#e2e0dc 55%,transparent)}.ds-sheet a:focus-visible{outline:2px solid #c2531b;outline-offset:3px;border-radius:4px}.ds-sheet b{font-weight:800;font-stretch:75%;font-size:1.25rem;font-variant-numeric:tabular-nums;color:#1c3648}.ds-sheet span{font-size:.78rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:#4b5560}.ds-sheet em{font-style:normal;line-height:1.45}"
+    }
+  ],
+  "narrative": {
+    "northStar": "La hoja de turno",
+    "overview": "The page is the portal's own world: a shift sheet pinned to a warm grey wall. Screens of the real product sit on it as paper plates with a soft lift; the text is set in marine ink; hours are the only ornament, printed large in condensed tabular numerals. The reading order is the day itself, 00:00 to 23:59, and every module appears at the hour it works.\n\nDensity is editorial, not dashboard: one idea per hour-entry, long vertical rhythm, a fine ruled line between entries like the rows of a cuadrante. Colour is almost entirely ink-on-paper; a single burnt orange marks \"now\" and the one action. There are no gradients as surfaces, no glass panels, no icon-grid feature cards.",
+    "keyCharacteristics": [
+      "Warm grey wall, off-white paper plates, marine ink; one orange for the hour and the CTA.",
+      "Archivo variable, width axis doing the hierarchy: condensed for hours and titles, normal for reading.",
+      "Hours in tabular figures as the structural device (ruler, sticky clock, rail, closing sheet).",
+      "Real, anonymized product screenshots framed as plates; conversations built in HTML, not faked as images.",
+      "Hairline rules (1px) instead of boxes to separate the day."
+    ],
+    "rules": [
+      {
+        "name": "The One Hour Rule",
+        "body": "Orange means \"this hour\" or \"do this\". It appears on the current or active time and the CTA (plus the focus ring), nowhere else: not on headings, not on section hours at rest, not as decoration.",
+        "section": "colors"
+      },
+      {
+        "name": "The Ink-on-Paper Rule",
+        "body": "Every surface is `pared` or `tarjeta`; depth comes from paper, hairline and a soft shadow, never from colour fills or gradients.",
+        "section": "colors"
+      },
+      {
+        "name": "The Tabular Hour Rule",
+        "body": "Every time is set with tabular figures in condensed heavy Archivo, so hours align and tick without jitter.",
+        "section": "typography"
+      },
+      {
+        "name": "The Label Belongs to a Time Rule",
+        "body": "Uppercase tracked text exists only as the area beside a clock or sheet hour. It never sits above a heading as a kicker.",
+        "section": "typography"
+      },
+      {
+        "name": "The One Sheet Rule",
+        "body": "Anything that is a piece of the product (screenshot, phone, device) gets the sheet lift and a `pauta` border; nothing else is lifted.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "**Do** put the time first: every module is introduced by the hour it happens, in condensed tabular Archivo.",
+      "**Do** keep orange to the current/active hour, the CTA and the focus ring (The One Hour Rule).",
+      "**Do** show real, anonymized product screenshots as plates (12px, `pauta` hairline, sheet lift), each with a provenance sidecar and a caption.",
+      "**Do** separate content with 1px `pauta` hairlines and use `tinta` rules only to frame the closing sheet and CTA band.",
+      "**Do** build conversations in HTML with the phone mock, and mark them as examples.",
+      "**Do** keep all motion behind `prefers-reduced-motion` with content visible by default."
+    ],
+    "donts": [
+      "**Don't** use icon-grid feature cards; the day's sequence is the structure.",
+      "**Don't** use gradients as surface fills or glass panels as surfaces; the only gradient is the alpha mask that fades a cropped table.",
+      "**Don't** put uppercase tracked kickers or eyebrows above headings; tracked uppercase is only an area beside a time.",
+      "**Don't** use orange for headings, entry hours at rest, bullets or decoration.",
+      "**Don't** show real guest, employee or client-hotel data, or supplier brands, in any screenshot or mock.",
+      "**Don't** inherit the layout's slate/blue Tailwind look inside this world."
+    ]
+  }
+}
