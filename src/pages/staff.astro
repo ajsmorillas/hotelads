@@ -18,11 +18,12 @@ const dia = [
   { id: 'bonos', hora: '18:05', area: 'Ventas', resumen: 'vende, envía y canjea bonos regalo' },
   { id: 'opiniones', hora: '21:30', area: 'Concierge', resumen: 'recoge las opiniones de quien acaba de irse' },
   { id: 'conserje', hora: '22:10', area: 'Concierge', resumen: 'contesta desde la habitación como un conserje' },
+  { id: 'sin-recepcion', hora: '23:40', area: 'Frontdesk', resumen: 'abre la puerta a quien llega con la recepción cerrada' },
 ];
 ---
 <Layout
   title="/staff | Frontdesk y concierge para hoteles, las 24 horas | Hotel Ads"
-  description="/staff aúna frontdesk y concierge: un asistente que atiende web, WhatsApp y teléfono, y el portal de tu equipo para check-in online, mensajes, bonos regalo, opiniones, turnos, fichajes, grupos y tarifas."
+  description="/staff aúna frontdesk y concierge: un asistente que atiende web, WhatsApp y teléfono, llegadas sin recepción y el portal de tu equipo para check-in online, mensajes, bonos regalo, opiniones, turnos, fichajes, grupos y tarifas."
   image="/images/staff/hoy.webp"
 >
   <Fragment slot="head">
@@ -35,7 +36,7 @@ const dia = [
       "applicationCategory": "BusinessApplication",
       "operatingSystem": "Web",
       "url": "https://hotelads.es/staff",
-      "description": "Frontdesk y concierge para hoteles independientes: asistente de IA en web, WhatsApp y teléfono, y portal del equipo con check-in online, mensajes, bonos regalo, opiniones, turnos, fichajes, grupos y recomendación de tarifas.",
+      "description": "Frontdesk y concierge para hoteles independientes: asistente de IA en web, WhatsApp y teléfono, llegada autónoma fuera del horario de recepción y portal del equipo con check-in online, mensajes, bonos regalo, opiniones, turnos, fichajes, grupos y recomendación de tarifas.",
       "provider": { "@type": "Organization", "name": "Hotel Ads", "url": "https://hotelads.es" }
     })} />
   </Fragment>
@@ -395,6 +396,51 @@ const dia = [
             </figure>
           </article>
 
+          <!-- 23:40 -->
+          <article class="st-entry st-entry--wide" id="sin-recepcion" data-hora="23:40" data-area="Frontdesk">
+            <div class="st-entry-head">
+              <p class="st-hour">23:40</p>
+              <h2>Recepción ya ha cerrado y llega un huésped. Entra solo.</h2>
+              <p>
+                Escribe por WhatsApp o llama: «¿cómo entramos?». /staff le pide el número de reserva, comprueba que
+                coincide con el teléfono desde el que escribe o llama, y le da su habitación, la combinación del
+                cajetín de la llave y el camino hasta la puerta, con fotos.
+              </p>
+              <ul class="st-points">
+                <li>El asistente nunca ve la combinación: la entrega el sistema, solo a quien ha demostrado ser el titular de la reserva.</li>
+                <li>Solo funciona durante la estancia, desde la hora de entrada del día de llegada hasta la salida, y con el documento de entrada firmado desde el móvil.</li>
+                <li>Por teléfono se lo dice de viva voz, repite la combinación y se lo deja también por escrito en WhatsApp.</li>
+                <li>Si algo no cuadra, no entrega nada y pasa con recepción.</li>
+              </ul>
+            </div>
+            <div class="st-duo st-duo--late">
+              <figure class="st-phone" aria-label="Conversación de ejemplo: acceso a la habitación fuera de horario">
+                <div class="st-phone-head">
+                  <span class="st-avatar" aria-hidden="true">S</span>
+                  <div><strong>Hotel Salinar</strong><small>responde /staff</small></div>
+                </div>
+                <div class="st-thread">
+                  <p class="st-msg st-msg--in">Hola, llegamos ahora y la recepción está cerrada. ¿Cómo entramos?<time>23:40</time></p>
+                  <p class="st-msg st-msg--out">Para darte el acceso, dime tu número de reserva.<time>23:40</time></p>
+                  <p class="st-msg st-msg--in">4155433<time>23:41</time></p>
+                  <p class="st-msg st-msg--out">Gracias, Elena. Tu habitación es la <b>32</b>. La llave está en el cajetín junto a su puerta, combinación <b>4718</b>. Sube por las escaleras a la derecha de recepción; es el tercer pasillo a la izquierda.<span class="st-msg-fotos">2 fotos del recorrido</span><time>23:41</time></p>
+                </div>
+                <figcaption>Conversación de ejemplo</figcaption>
+              </figure>
+              <div>
+                <figure class="st-plate">
+                  <img src="/images/staff/llegada.webp" width="1128" height="984" loading="lazy"
+                       alt="Llegada autónoma: rejilla de habitaciones, combinación del cajetín, acceso, wifi, botones de idioma y Copiar mensaje, e imágenes del recorrido" />
+                  <figcaption>Llegada autónoma, para recepción</figcaption>
+                </figure>
+                <p class="st-aside">
+                  Si recepción prefiere enviarlo a mano, cada habitación tiene su mensaje listo para copiar en español,
+                  alemán, inglés y francés, con las fotos del recorrido.
+                </p>
+              </div>
+            </div>
+          </article>
+
         </div>
       </div>
     </section>
@@ -424,7 +470,7 @@ const dia = [
 
         <p class="st-note">
           Las capturas son del portal /staff en producción, con datos de demostración: los nombres, teléfonos,
-          importes y el hotel que aparecen son ficticios.
+          importes, códigos y el hotel que aparecen son ficticios, y las fotos del recorrido de la llegada autónoma son ilustraciones.
         </p>
       </div>
     </section>
@@ -677,6 +723,14 @@ const dia = [
   }
   .st-duo { display: grid; gap: 1.5rem; align-items: start; }
   @media (min-width: 640px) { .st-duo { grid-template-columns: minmax(0, 0.85fr) minmax(0, 1fr); } }
+  @media (min-width: 900px) { .st-duo--late { grid-template-columns: minmax(0, 21rem) minmax(0, 1fr); gap: 3rem; } }
+  .st-entry--wide > .st-duo { margin-top: 2.5rem; }
+  .st-duo--late .st-phone { margin: 0; }
+  .st-entry-head .st-points { margin-top: 1.5rem; }
+  .st-msg-fotos {
+    display: block; margin-top: 0.6rem; padding: 0.45rem 0.7rem; border-radius: 0.6rem;
+    background: color-mix(in srgb, var(--marca) 10%, #fff); color: var(--marca-hondo); font-size: 0.8rem; font-weight: 700;
+  }
   .st-plate--list { max-height: 34rem; }
   .st-plate--list img { height: 30rem; object-fit: cover; object-position: top; }
   .st-msg b { font-weight: 700; }
