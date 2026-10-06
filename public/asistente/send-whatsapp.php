@@ -141,7 +141,8 @@ if ($template === 'consulta_reserva') {
 // Whitelist de phone_number_id conocidos de la red Hotelads — no confiar en
 // cualquier ID que envíe el llamante, aunque ya esté autenticado por token.
 $allowed_phone_number_ids = [
-    '1109730118900166', // hotelesarrecife.es
+    '1109730118900166', // hotelesarrecife.es (950 13 19 11, en retirada)
+    '1327813920425436', // hotelesarrecife.es (950 83 63 43)
 ];
 if (!in_array($phone_number_id, $allowed_phone_number_ids, true)) {
     ob_end_clean();
